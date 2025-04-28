@@ -524,7 +524,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,nE=()=>q.jsx(FT,{children:q.jsxs(WT,{children:[q.jsx(eE,{children:"WHAT CLIENTS SAY"}),q.jsx(tE,{children:"We build strong relationships with our clients through our work and innovation."}),q.jsxs(Lc,{modules:[jT,Sg],spaceBetween:30,slidesPerView:2,loop:!0,pagination:{clickable:!0},autoplay:{delay:3e3},children:[q.jsx(Ti,{children:q.jsx(tc,{path:KT,alt:"Client 1",name:"John Doe",role:"CEO, Example Inc.",rate:"⭐⭐⭐⭐⭐",feedback:`IGNIT Crew helped us achieve fantastic growth with their\r
                 creative marketing strategies.`})}),q.jsx(Ti,{children:q.jsx(tc,{path:PT,alt:"Client 2",name:"Jane Smith",role:"Marketing Head, ABC Corp.",rate:"⭐⭐⭐⭐⭐",feedback:`Amazing team to work with. Very professional and extremely\r
                 innovative.`})}),q.jsx(Ti,{children:q.jsx(tc,{path:JT,alt:"Client 3",name:"Mike Johnson",role:"Product Manager, XYZ Ltd.",rate:"⭐⭐⭐⭐⭐",feedback:`Highly recommend their services to anyone looking for branding\r
-                and marketing excellence!`})})]})]})}),lE=()=>q.jsxs(q.Fragment,{children:[q.jsx(Lb,{}),q.jsx(Ib,{}),q.jsx(iS,{}),q.jsx(mS,{}),q.jsx(DS,{}),q.jsx(YT,{}),q.jsx(nE,{})]}),aE=()=>q.jsx(Qy,{children:q.jsx(zm,{path:"/",element:q.jsx(lE,{})})}),iE=ae.ul`
+                and marketing excellence!`})})]})]})}),lE=()=>q.jsxs(q.Fragment,{children:[q.jsx(Lb,{}),q.jsx(Ib,{}),q.jsx(iS,{}),q.jsx(mS,{}),q.jsx(DS,{}),q.jsx(YT,{}),q.jsx(nE,{})]}),aE=()=>q.jsx(Qy,{children:q.jsx(zm,{path:"/IGNIT-Crew",element:q.jsx(lE,{})})}),iE=ae.ul`
   display: flex;
   flex-direction: row;
   list-style: none;
