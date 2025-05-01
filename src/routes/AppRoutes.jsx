@@ -1,11 +1,15 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from '../pages/HomePage';
+import { HomePage, Error } from '../pages';
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path='/IGNIT-Crew' element={<HomePage />} />
+      <Route
+        path='/IGNIT-Crew'
+        element={<HomePage />}
+        errorElement={<Error></Error>}
+      />
     </Routes>
   );
 };

@@ -47,8 +47,8 @@ const LinksContainer = styled.ul`
 const NavLink = ({ links }) => {
   return (
     <LinksContainer>
-      {links.map((link) => (
-        <li>
+      {links.map((link, index) => (
+        <li key={index}>
           <a href={link.path}>{link.name}</a>
           <span></span>
         </li>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import NavLink from '../components/NavLink';
+import NavLink from './NavLinks';
 import Logo from '../components/Logo';
 
 const NavWrapper = styled.div`
@@ -9,7 +9,6 @@ const NavWrapper = styled.div`
 
 const Nav = styled.nav`
   width: 100%;
-  padding: 3rem 2rem;
   height: 4rem;
   display: flex;
   justify-content: space-between;

@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import proj1 from '../../assets/proj1.jpg';
-import proj2 from '../../assets/proj2.jpg';
-import proj3 from '../../assets/proj3.jpg';
-import proj4 from '../../assets/proj4.jpg';
-import proj5 from '../../assets/proj5.jpg';
+import proj1 from '../../assets/images/projectsImages/proj1.jpg';
+import proj2 from '../../assets/images/projectsImages/proj2.jpg';
+import proj3 from '../../assets/images/projectsImages/proj3.jpg';
+import proj4 from '../../assets/images/projectsImages/proj4.jpg';
+import proj5 from '../../assets/images/projectsImages/proj5.jpg';
+import Wrapper from '../../assets/wrappers/ProjectsSection';
 
 const Section = styled.section`
   background-color: black;
@@ -121,22 +122,22 @@ const ProjectsSection = () => {
 
   return (
     <>
-      <Section>
-        <Container>
-          <Title>FEATURED PROJECTS</Title>
-          <Grid>
+      <Wrapper>
+        <div className='container'>
+          <h2 className='title'>FEATURED PROJECTS</h2>
+          <div className='grid'>
             {projects.map((proj, i) => (
-              <Card key={i} $big={proj.big}>
-                <Image src={proj.img} alt={proj.text} />
-                <Overlay className='overlay' />
-                <Label className='label'>{proj.text}</Label>
-              </Card>
+              <div className='card' key={i} $big={proj.big}>
+                <img className='img' src={proj.img} alt={proj.text} />
+                <div className='overlay' />
+                <div className='label'>{proj.text}</div>
+              </div>
             ))}
-          </Grid>
-          <Button>EXPLORE</Button>
-        </Container>
-      </Section>
-      <Line />
+          </div>
+          <button className='btn'>EXPLORE</button>
+        </div>
+      </Wrapper>
+      <dive className='line' />
     </>
   );
 };

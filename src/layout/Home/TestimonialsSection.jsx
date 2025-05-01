@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
-import Card from '../../components/Card';
+import TestimonialCard from '../../components/TestimonialCard';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
 // Example client images
-import client1 from '../../assets/clients-photo/client1.jpg';
-import client2 from '../../assets/clients-photo/client2.jpg';
-import client3 from '../../assets/clients-photo/client3.jpg';
+import client1 from '../../assets/images/clientsImages/client1.jpg';
+import client2 from '../../assets/images/clientsImages//client2.jpg';
+import client3 from '../../assets/images/clientsImages//client3.jpg';
 
 const Section = styled.section`
   background-color: #ffc107;
@@ -63,7 +63,7 @@ const TestimonialsSection = () => {
           autoplay={{ delay: 3000 }}
         >
           <SwiperSlide>
-            <Card
+            <TestimonialCard
               path={client1}
               alt='Client 1'
               name='John Doe'
@@ -71,11 +71,11 @@ const TestimonialsSection = () => {
               rate='⭐⭐⭐⭐⭐'
               feedback='IGNIT Crew helped us achieve fantastic growth with their
                 creative marketing strategies.'
-            ></Card>
+            ></TestimonialCard>
           </SwiperSlide>
 
           <SwiperSlide>
-            <Card
+            <TestimonialCard
               path={client2}
               alt='Client 2'
               name='Jane Smith'
@@ -83,11 +83,11 @@ const TestimonialsSection = () => {
               rate='⭐⭐⭐⭐⭐'
               feedback='Amazing team to work with. Very professional and extremely
                 innovative.'
-            ></Card>
+            ></TestimonialCard>
           </SwiperSlide>
 
           <SwiperSlide>
-            <Card
+            <TestimonialCard
               path={client3}
               alt='Client 3'
               name='Mike Johnson'
@@ -95,7 +95,7 @@ const TestimonialsSection = () => {
               rate='⭐⭐⭐⭐⭐'
               feedback='Highly recommend their services to anyone looking for branding
                 and marketing excellence!'
-            ></Card>
+            ></TestimonialCard>
           </SwiperSlide>
         </Swiper>
       </Container>
