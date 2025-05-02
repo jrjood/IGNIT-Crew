@@ -1,11 +1,11 @@
-'react';
-import logos from '../../assets/images/sponsorLogo';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+
+import logos from '../../assets/images/sponsorLogo';
 import Wrapper from '../../assets/wrappers/LogoCarousel';
 
-import 'swiper/css';
-import 'swiper/css/autoplay';
+/* import 'swiper/css';
+import 'swiper/css/autoplay'; */
 
 export default function LogoCarousel() {
   return (

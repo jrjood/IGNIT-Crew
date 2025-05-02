@@ -33,7 +33,7 @@ const Wrapper = styled.section`
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    grid-row: ${({ $big }) => $big && '1/3'};
+
     cursor: pointer;
 
     &:hover .overlay {
@@ -45,6 +45,11 @@ const Wrapper = styled.section`
       color: white;
     }
   }
+
+  .big-card {
+    grid-row: 1/3;
+  }
+
   .img {
     width: 100%;
     height: 100%;

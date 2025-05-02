@@ -6,6 +6,7 @@ import ServicesSection from '../layout/Home/ServicesSection';
 import ProjectsSection from '../layout/Home/ProjectsSection';
 import LogoCarousel from '../layout/Home/LogoCarousel';
 import TestimonialsSection from '../layout/Home/TestimonialsSection';
+import ContactsSection from '../layout/Home/ContactsSection';
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <ProjectsSection />
       <LogoCarousel />
       <TestimonialsSection />
+      <ContactsSection />
     </>
   );
 };

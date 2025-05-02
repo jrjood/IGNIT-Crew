@@ -1,6 +1,7 @@
 import React from 'react';
+
+import { Counter } from '../../components';
 import logo2001 from '../../assets/images/logo-2001.png'; // the big transparent 2001
-import Counter from '../../components/Counter';
 import Wrapper from '../../assets/wrappers/MilestonesSection';
 
 const MilestonesSection = () => {

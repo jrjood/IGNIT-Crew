@@ -1,49 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import NavLink from './NavLinks';
-import Logo from '../components/Logo';
+import { FaAlignLeft } from 'react-icons/fa';
 
-const NavWrapper = styled.div`
-  height: 4rem; /* Reserve space for navbar */
-`;
+import { Logo, NavLinks, AsideBar } from '../components';
+import Wrapper from '../assets/wrappers/Navbar';
 
-const Nav = styled.nav`
-  width: 100%;
-  height: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-  z-index: 1000;
-  background-color: ${({ $isSticky }) => ($isSticky ? 'black' : 'transparent')};
-  position: ${({ $isSticky }) => ($isSticky ? 'fixed' : 'relative')};
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: ${({ $isSticky }) =>
-    $isSticky ? '0 2px 8px rgba(0,0,0,0.1)' : 'none'};
-  .logo {
-    display: flex;
-    align-items: center;
-    width: 150px;
-    margin-left: 5rem;
-    transition: all 0.5s ease-in-out;
-
-    /* margin-top: 2rem; */
-  }
-`;
-
-const NavLinks = styled.div`
-  display: flex;
-  gap: 2rem;
-  a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-`;
-
-const Navbar = () => {
+const NavBar = () => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -71,25 +32,19 @@ const Navbar = () => {
   }, []);
 
   return (
-    <NavWrapper>
-      <Nav $isSticky={isSticky}>
+    <Wrapper $isSticky={isSticky}>
+      <AsideBar className='aside-bar' />
+      <nav className='navbar'>
+        <button type='button' className='toggle-btn'>
+          <FaAlignLeft />
+        </button>
         <Logo />
-        <NavLinks $isSticky={isSticky}>
-          <NavLink
-            links={[
-              { name: 'home', path: '#home' },
-              { name: 'about', path: '#about' },
-              { name: 'services', path: '#services' },
-              { name: 'projects', path: '#projects' },
-              { name: 'clients', path: '#clients' },
-              { name: 'blogs', path: '#blogs' },
-              { name: 'contact', path: '#contact' },
-            ]}
-          />
-        </NavLinks>
-      </Nav>
-    </NavWrapper>
+        <div className='big-bar'>
+          <NavLinks />
+        </div>
+      </nav>
+    </Wrapper>
   );
 };
 
-export default Navbar;
+export default NavBar;

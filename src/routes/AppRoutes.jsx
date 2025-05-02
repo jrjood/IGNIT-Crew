@@ -5,11 +5,7 @@ import { HomePage, Error } from '../pages';
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route
-        path='/IGNIT-Crew'
-        element={<HomePage />}
-        errorElement={<Error></Error>}
-      />
+      <Route path='/' element={<HomePage />} errorElement={<Error></Error>} />
     </Routes>
   );
 };

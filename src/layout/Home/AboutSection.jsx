@@ -1,7 +1,8 @@
 import React from 'react';
-import aboutImage from '../../assets/images/backgrounds/about-bg.jpg'; // replace with your actual image
-import Logo from '../../components/Logo';
+
+import { Logo } from '../../components';
 import Wrapper from '../../assets/wrappers/AboutSection';
+import aboutImage from '../../assets/images/backgrounds/about-bg.jpg';
 
 const AboutSection = () => {
   return (

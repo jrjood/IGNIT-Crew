@@ -1,59 +1,18 @@
-import styled from 'styled-components';
+import links from '../utils/links';
+import { NavLink } from 'react-router-dom';
 
-const LinksContainer = styled.ul`
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  gap: 1rem;
-
-  li {
-    text-transform: uppercase;
-    position: relative;
-    list-style: none;
-    transition: all 0.15s ease-in-out;
-
-    &:hover span {
-      position: absolute;
-      width: 5px;
-      height: 25px;
-      background-color: #fff;
-      top: -25px;
-      left: 50%;
-      transform: translate(-50%);
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-    }
-  }
-  a {
-    display: block;
-    text-decoration: none;
-    background: 0 0;
-    border: 0;
-  }
-  span {
-    position: absolute;
-    width: 5px;
-    height: 0;
-    background-color: #fff;
-    top: -25px;
-    left: 50%;
-    transform: translate(-50%);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: all 0.15s ease-in-out;
-  }
-`;
-
-const NavLink = ({ links }) => {
+const NavLinks = () => {
   return (
-    <LinksContainer>
-      {links.map((link, index) => (
-        <li key={index}>
-          <a href={link.path}>{link.name}</a>
+    <ul className='nav-links'>
+      {links.map((link) => (
+        <li key={link.text}>
+          <NavLink to={link.path} end>
+            {link.text}
+          </NavLink>
           <span></span>
         </li>
       ))}
-    </LinksContainer>
+    </ul>
   );
 };
-export default NavLink;
+export default NavLinks;

@@ -1,4 +1,5 @@
-import logoImage from '../assets/images/logo.png'; // replace with your actual image
+import logoImage from '../assets/images/logo.png';
+
 const Logo = () => {
   return <img src={logoImage} alt='logo' className='logo' />;
 };

@@ -1,5 +1,6 @@
 import React from 'react';
-import heroVideo from '../../assets/images/backgrounds/hero-bg.mp4'; // Replace with your actual video file
+
+import heroVideo from '../../assets/images/backgrounds/hero-bg.mp4';
 import Wrapper from '../../assets/wrappers/HeroSection';
 
 const HeroSection = () => {
