@@ -8,19 +8,24 @@ const Wrapper = styled.div`
   height: 320px;
   margin-bottom: 3rem;
   .client-image {
-    width: 80px;
-    height: 80px;
+    width: 5.7rem;
+    height: 5.7rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
   }
   .client-name {
     margin: 0.5rem 0 0;
+    font-family: 'Rama Gothic M', sans-serif !important;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
   }
   .client-role {
     color: #aaa;
     margin: 0;
     font-size: 0.9rem;
+    text-transform: uppercase;
   }
   .stars {
     margin: 1rem 0;

@@ -4,10 +4,10 @@ import bgImage from '../../assets/images/backgrounds/services-bg.jpg';
 const Wrapper = styled.section`
   position: relative;
   background: url(${bgImage}) center/cover no-repeat;
-  padding: 6rem 2rem;
   color: white;
   text-align: center;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   .overlay {
     position: absolute;
     width: 100%;
@@ -20,48 +20,51 @@ const Wrapper = styled.section`
   .container {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 3rem;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-    gap: 1.5rem;
-  }
-  .line {
-    width: 100%;
-    height: 5px;
-    background-color: #ffc800;
-  }
-  .card {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 6rem 1rem;
-    border-radius: 1rem;
-    font-weight: bold;
-    color: white;
     display: flex;
-    font-size: 1.4rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .title {
+    align-self: flex-start;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .card {
+    /* display: flex; */
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem 0.9rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 1rem;
     backdrop-filter: blur(10px);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
+    width: 100%;
+    height: 27vh;
     cursor: pointer;
+    .card-text {
+      display: flex;
+      align-items: center;
+      height: 1rem;
+    }
 
-    &::before {
-      content: '';
+    .line-highlight {
       display: block;
-      width: 40px;
-      height: 3px;
+      width: 5rem;
+      height: 0.3rem;
       background: #ffc107;
       margin-bottom: 1rem;
       transition: background 0.3s ease;
@@ -71,9 +74,18 @@ const Wrapper = styled.section`
       background-color: #ffc107;
       color: black;
 
-      &::before {
+      .line-highlight {
         background: black;
       }
+    }
+  }
+  @media (max-width: 62rem) {
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 52.5rem) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 `;

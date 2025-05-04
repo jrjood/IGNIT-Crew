@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaAlignLeft } from 'react-icons/fa';
 
 import { Logo, NavLinks, AsideBar } from '../components';
@@ -34,11 +35,13 @@ const NavBar = () => {
   return (
     <Wrapper $isSticky={isSticky}>
       <AsideBar className='aside-bar' />
-      <nav className='navbar'>
+      <nav className='navbar '>
         <button type='button' className='toggle-btn'>
           <FaAlignLeft />
         </button>
-        <Logo />
+        <Link>
+          <Logo />
+        </Link>
         <div className='big-bar'>
           <NavLinks />
         </div>

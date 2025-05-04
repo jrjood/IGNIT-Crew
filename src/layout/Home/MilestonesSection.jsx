@@ -6,15 +6,14 @@ import Wrapper from '../../assets/wrappers/MilestonesSection';
 
 const MilestonesSection = () => {
   return (
-    <Wrapper>
-      <div className='overlay' />
-      <div className='content'>
+    <Wrapper className='flex-center '>
+      <div className='content flex-center'>
         <div className='stats-container'>
           <p className='top-text'>
             These projects were executed in Egypt, USA, KSA, Lebanon, Morocco,
             Algeria, Jordan, Qatar, Kuwait, Bahrain, Sudan, Libya, and Syria
           </p>
-          <div className='stats'>
+          <div className='stats flex-center'>
             <div className='stat-block'>
               CLIENTS
               <span>
@@ -28,10 +27,10 @@ const MilestonesSection = () => {
               </span>
             </div>
           </div>
-          <h2 className='since'>SINCE</h2>
         </div>
 
-        <div className='logo'>
+        <div className='logo-container'>
+          <h2 className='since'>SINCE</h2>
           <img src={logo2001} alt='2001' />
         </div>
       </div>

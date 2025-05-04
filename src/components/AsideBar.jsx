@@ -6,7 +6,7 @@ import Wrapper from '../assets/wrappers/AsideBar';
 const AsideBar = () => {
   return (
     <Wrapper>
-      <div className='sidebar-container show-sidebar'>
+      <div className='sidebar-container show-sidebar flex-center'>
         <div className='content'>
           <button type='button' className='close-btn'>
             <FaTimes />

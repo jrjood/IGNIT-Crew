@@ -6,8 +6,8 @@ import Wrapper from '../../assets/wrappers/ContactsSection';
 
 export default function Footer() {
   return (
-    <Wrapper>
-      <div className='contact-top'>
+    <Wrapper className='section-container'>
+      <div className='contact-top flex-center'>
         <div className='contact-item'>
           <a className='contact-circle' href='#'>
             <IoMdMail />

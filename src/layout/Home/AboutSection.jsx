@@ -6,10 +6,9 @@ import aboutImage from '../../assets/images/backgrounds/about-bg.jpg';
 
 const AboutSection = () => {
   return (
-    <Wrapper>
-      <div className='left'>
-        <img src={aboutImage} alt='' />
-      </div>
+    <Wrapper className='.section-container'>
+      <div className='image-box' role='img ' aria-label='img'></div>
+
       <div className='right'>
         <Logo />
         <p className='text'>

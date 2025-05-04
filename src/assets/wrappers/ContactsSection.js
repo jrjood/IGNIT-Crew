@@ -1,17 +1,16 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.footer`
+const Wrapper = styled.section`
   background: black;
   color: white;
-  padding: 6rem 2rem 3rem;
+  padding: 6rem 6rem 3rem;
 
   .contact-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     transform: translateY(-10.5rem);
+    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-weight: 600;
   }
   .contact-item {
     display: flex;

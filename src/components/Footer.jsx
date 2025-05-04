@@ -9,22 +9,25 @@ const Footer = () => {
       <Logo />
       <div className='social-container'>
         <div className='social-icons'>
-          <a className='facebook' href=''>
+          <a className='facebook' href='#'>
             <FaFacebookF />
           </a>
-          <a className='linkedin' href=''>
+          <a className='linkedin' href='#'>
             <FaLinkedinIn />
           </a>
-          <a className='instagram' href=''>
+          <a className='instagram' href='#'>
             <FaInstagram />
           </a>
         </div>
 
         <div className='copy-text'>
-          <p>Ignitrew Crew 2023. All Rights Reserved.</p>
+          <p>IGNITCREW 2023. All Rights Reserved.</p>
           <p>
             Developed & Designed By
-            <span className='mophx-link'> JORDI TECH</span>
+            <a href='#' className='designer-link'>
+              {' '}
+              JORDI.
+            </a>
           </p>
         </div>
       </div>

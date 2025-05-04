@@ -17,7 +17,7 @@ const services = [
 const ServicesSection = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper className='section-container'>
         <div className='overlay' />
         <div className='container'>
           <h2 className='title'>SERVICES</h2>

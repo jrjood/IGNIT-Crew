@@ -6,7 +6,7 @@ const NavLinks = () => {
     <ul className='nav-links'>
       {links.map((link) => (
         <li key={link.text}>
-          <NavLink to={link.path} end>
+          <NavLink className='nav-link' to={link.path} end>
             {link.text}
           </NavLink>
           <span></span>

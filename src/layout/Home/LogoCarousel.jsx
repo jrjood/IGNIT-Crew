@@ -9,18 +9,25 @@ import 'swiper/css/autoplay'; */
 
 export default function LogoCarousel() {
   return (
-    <Wrapper>
-      <div className='carousel-container'>
+    <Wrapper className='section-container'>
+      <div className='carousel-container flex-center container'>
         <h2 className='title'>CLIENTS</h2>
         <div className='logo-container'>
           <Swiper
             modules={[Autoplay]}
             spaceBetween={30}
-            slidesPerView={5}
             loop={true}
             autoplay={{
               delay: 2000,
               disableOnInteraction: false,
+            }}
+            breakpoints={{
+              840: {
+                slidesPerView: 3,
+              },
+              850: {
+                slidesPerView: 5,
+              },
             }}
           >
             {logos.map((logo, i) => (

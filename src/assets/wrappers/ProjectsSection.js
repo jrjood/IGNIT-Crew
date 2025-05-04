@@ -3,31 +3,43 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   background-color: black;
   color: white;
-  padding: 6rem 2rem;
   text-align: left;
-  .line {
-    width: 100%;
-    height: 5px;
-    background-color: #ffc800;
-  }
+
   .container {
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     margin: 0 auto;
+    position: relative;
   }
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1.5rem;
     margin-bottom: 2rem;
-    max-height: 70vh;
+    max-height: 60vh;
+  }
+  .card-slide {
+    width: 100%;
+    height: 40vh;
+    border-radius: 12px;
+  }
+  .small-screen {
+    border-radius: 12px;
+    display: none;
+    &:hover .overlay {
+      opacity: 0.4;
+    }
+
+    &:hover .label {
+      background: black;
+      color: white;
+    }
+    .img {
+      border-radius: 12px;
+    }
   }
   .card {
     position: relative;
@@ -60,6 +72,7 @@ const Wrapper = styled.section`
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 12px;
     width: 100%;
     height: 100%;
     background: yellow;
@@ -71,31 +84,36 @@ const Wrapper = styled.section`
     position: absolute;
     bottom: 35px;
     left: 0;
+    width: 90%;
+    height: 7vh;
     background: #ffc107;
     padding: 0.5rem 1rem;
     font-weight: bold;
-    font-size: 0.9rem;
+    color: rgb(15, 15, 15);
+    font-size: 1rem;
     border-radius: 0 6px 6px 0;
+    text-transform: uppercase;
     transition: background 0.3s ease, color 0.3s ease;
     z-index: 2;
   }
   .btn {
-    background-color: #ffc107;
-    border: none;
     align-self: flex-end;
-    padding: 0.75rem 2rem;
-    width: 15rem;
-    border-radius: 999px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    color: black;
-    border: 2px solid transparent;
-    transition: all ease-in-out 0.5s;
-    &:hover {
-      background-color: transparent;
-      color: #ffc107;
-      border: 2px solid #ffc800;
+  }
+  @media (max-width: 52.5rem) {
+    .big-screen {
+      display: none;
+    }
+    .small-screen {
+      display: block;
+    }
+    .btn {
+      position: absolute;
+      top: 0;
+      right: 10%;
+    }
+    .label {
+      width: 70%;
+      font-size: 1.3rem;
     }
   }
 `;

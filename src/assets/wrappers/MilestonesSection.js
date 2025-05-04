@@ -3,56 +3,46 @@ import bgImage from '../images/backgrounds/milestones-bg.jpg'; // background ima
 
 const Wrapper = styled.section`
   color: #a9a9a9;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  background: url(${bgImage});
-  height: 80vh;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  object-fit: cover;
+  background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0.26)),
+    url(${bgImage});
+  height: 100vh;
   width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   overflow: hidden;
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #000, transparent);
-    z-index: 1;
-  }
+
   .content {
-    position: relative;
     padding-left: 3rem;
     z-index: 2;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    /* width: 100vw !important; */
+    /* width: 100%; */
     gap: 2rem;
+  }
+
+  .stats-container {
+    display: flex;
+    justify-content: start;
+    align-self: flex-start;
+    padding: 4rem 0;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    gap: 8rem;
+    font-weight: bold;
+    position: relative;
   }
   .top-text {
     font-size: 0.8rem;
     line-height: 1.6;
-    max-width: 700px;
-  }
-  .stats-container {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    flex-direction: column;
-    gap: 3rem;
-    font-weight: bold;
-    position: relative;
+    /* max-width: 700px; */
   }
   .stats {
-    display: flex;
-    align-items: center;
     gap: 3rem;
+    justify-content: start;
   }
+
   .stat-block {
     font-size: 2rem;
     text-align: center;
@@ -61,24 +51,26 @@ const Wrapper = styled.section`
     align-items: start;
     color: #ffc800;
     span {
-      display: flex;
-      align-items: center;
       gap: 0.2rem;
       font-size: 2rem;
       font-weight: bold;
       color: #a9a9a9;
+      display: flex;
       /* margin-top: 0.5rem; */
     }
   }
   .since {
-    font-size: 4.5rem;
+    font-size: 5rem;
+    font-family: 'Proxima Nova Condensed', sans-serif;
     font-weight: bold;
+    font-weight: 500;
     color: #ffc107;
     position: absolute;
-    bottom: 1.5rem;
-    right: -6rem;
+    bottom: 4rem;
+    left: -5rem;
   }
-  .logo {
+  .logo-container {
+    position: relative;
     background: linear-gradient(
       90deg,
       rgba(255, 200, 0, 0.01),
@@ -87,6 +79,41 @@ const Wrapper = styled.section`
     img {
       padding-right: 2rem;
       width: 100%;
+      height: 100vh;
+    }
+  }
+
+  @media (max-width: 62rem) {
+    margin: 0 auto;
+    height: 80vh;
+    .stats-container {
+      gap: 4rem;
+    }
+    .since {
+      bottom: 4rem;
+      left: -6rem;
+    }
+    .logo-container {
+      img {
+        height: 80vh;
+      }
+    }
+    .stats-container {
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 52.5rem) {
+    .stats-container {
+      align-self: flex-start;
+      gap: 8rem;
+    }
+    .since {
+      bottom: 3.5rem;
+      left: -7rem;
+    }
+    .top-text {
+      width: 65%;
     }
   }
 `;
