@@ -35,6 +35,7 @@ const Wrapper = styled.section`
   .text {
     line-height: 1.5;
     margin-bottom: 2rem;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
   }
   .highlight {
     color: #ffc107;
@@ -43,9 +44,9 @@ const Wrapper = styled.section`
   }
   @media (max-width: 62rem) {
     position: relative;
-    display: block;
+
     z-index: -2;
-    height: 100%;
+    height: 80vh;
     width: 100%;
     padding-bottom: 2rem;
 
@@ -57,7 +58,7 @@ const Wrapper = styled.section`
       z-index: -1;
       background-image: linear-gradient(
           to right bottom,
-          rgba(27, 27, 27, 0.45),
+          rgba(17, 17, 17, 0.45),
           rgba(0, 0, 0, 0.81)
         ),
         url(${aboutImage});
@@ -73,6 +74,24 @@ const Wrapper = styled.section`
     }
     .highlight {
       margin-bottom: 1rem;
+    }
+  }
+  @media (max-width: 44rem) {
+    .text {
+      font-size: 1.2rem;
+    }
+    .right {
+      gap: 1rem;
+    }
+  }
+  @media (max-width: 36rem) {
+    .text {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
     }
   }
 `;

@@ -4,7 +4,7 @@ const Wrapper = styled.nav`
   height: 4rem; /* Reserve space for navbar */
   width: 100vw;
   height: ${({ $isSticky }) => ($isSticky ? '4rem' : '6rem')};
-  padding: 0 8rem;
+  padding: 0 4rem;
   position: relative;
   transition: all 0.6s ease-in-out;
   z-index: 10;
@@ -72,18 +72,18 @@ const Wrapper = styled.nav`
     border-bottom-right-radius: 10px;
     transition: all 0.15s ease-in-out;
   }
-  .aside-bar {
+  /*  .aside-bar {
     display: none;
-  }
+  } */
   .toggle-btn {
     display: none;
   }
 
   @media (max-width: 62rem) {
-    .aside-bar {
-      display: none;
+    /* .aside-bar {
+      display: block;
       position: fixed;
-    }
+    } */
     .toggle-btn {
       display: block;
       position: fixed;
@@ -92,7 +92,6 @@ const Wrapper = styled.nav`
       background: transparent;
       border-color: transparent;
       font-size: 2rem;
-      color: white;
       cursor: pointer;
       display: flex;
       align-items: center;

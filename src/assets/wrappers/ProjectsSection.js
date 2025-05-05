@@ -115,6 +115,11 @@ const Wrapper = styled.section`
       width: 70%;
       font-size: 1.3rem;
     }
+    @media (max-width: 36rem) {
+      .label {
+        font-size: 1rem;
+      }
+    }
   }
 `;
 

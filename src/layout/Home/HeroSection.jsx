@@ -19,14 +19,14 @@ const HeroSection = () => {
         ></video>
       </div>
 
-      <div className='content flex-center'>
+      <div className='content '>
         <div className='left flex-center'>
-          <h1>
+          <div className='info'>
             <p>WE</p>
             <p>HELP</p>
             <p>DEVELOP</p>
             <p>BRANDS</p>
-          </h1>
+          </div>
         </div>
         <div className='right '>
           <p>

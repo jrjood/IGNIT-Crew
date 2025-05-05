@@ -3,13 +3,14 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   background: black;
   color: white;
-  padding: 6rem 6rem 3rem;
+  height: 50vh;
+  padding: 4rem 4rem 2rem;
 
   .contact-top {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    transform: translateY(-10.5rem);
-    font-family: 'Proxima Nova Condensed', sans-serif;
+    grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
+    transform: translateY(-8.5rem);
+    font-family: 'Proxima-Nova', sans-serif;
     font-weight: 600;
   }
   .contact-item {
@@ -38,10 +39,12 @@ const Wrapper = styled.section`
   }
   .label {
     margin: 0.5rem 0;
+    font-size: 2rem;
   }
   .info {
     color: #00aaff;
-    font-size: 0.9rem;
+    min-height: 8rem;
+    font-size: 1.2rem;
     text-decoration: none;
     &:hover {
       color: #0075af;
@@ -53,7 +56,23 @@ const Wrapper = styled.section`
     background: white;
     opacity: 0.2;
     margin: 0 1rem;
-    margin-bottom: -6rem;
+  }
+  @media (max-width: 44rem) {
+    height: 100%;
+    .contact-top {
+      display: flex;
+      flex-direction: column;
+      transform: none;
+    }
+
+    .divider {
+      display: none;
+    }
+    .contact-circle {
+      width: 5rem;
+      height: 5rem;
+      font-size: 1.8rem;
+    }
   }
 `;
 

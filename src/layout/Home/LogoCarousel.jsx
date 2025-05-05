@@ -22,6 +22,9 @@ export default function LogoCarousel() {
               disableOnInteraction: false,
             }}
             breakpoints={{
+              200: {
+                slidesPerView: 3,
+              },
               840: {
                 slidesPerView: 3,
               },

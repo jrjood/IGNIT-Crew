@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaAlignLeft } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
+import { IoIosMenu } from 'react-icons/io';
 
-import { Logo, NavLinks, AsideBar } from '../components';
+import { Logo, NavLinks } from '../components';
 import Wrapper from '../assets/wrappers/Navbar';
+import MenuButtonWrapper from '../assets/wrappers/MenuButtonWrapper';
+import AsideMenu from '../assets/wrappers/AsideMenu';
 
 const NavBar = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const heroSection = document.getElementById('hero');
@@ -34,11 +39,20 @@ const NavBar = () => {
 
   return (
     <Wrapper $isSticky={isSticky}>
-      <AsideBar className='aside-bar' />
+      <AsideMenu $open={isOpen}>
+        <div className='content'>
+          <NavLinks />
+        </div>
+      </AsideMenu>
       <nav className='navbar '>
-        <button type='button' className='toggle-btn'>
-          <FaAlignLeft />
-        </button>
+        <MenuButtonWrapper
+          type='button'
+          className='toggle-btn'
+          onClick={() => setIsOpen((prev) => !prev)}
+          $open={isOpen}
+        >
+          {isOpen ? <AiOutlineClose /> : <IoIosMenu />}
+        </MenuButtonWrapper>
         <Link>
           <Logo />
         </Link>

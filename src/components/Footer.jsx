@@ -21,12 +21,10 @@ const Footer = () => {
         </div>
 
         <div className='copy-text'>
-          <p>IGNITCREW 2023. All Rights Reserved.</p>
-          <p>
-            Developed & Designed By
+          <p className='developed-by'>
+            IGNITCREW 2023. All Rights Reserved. Developed & Designed By{' '}
             <a href='#' className='designer-link'>
-              {' '}
-              JORDI.
+              JORDI
             </a>
           </p>
         </div>

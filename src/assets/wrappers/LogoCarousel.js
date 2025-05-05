@@ -8,7 +8,7 @@ const Wrapper = styled.section`
   }
 
   .logo-container {
-    width: 95%;
+    width: 100%;
     cursor: grab;
   }
   .title {
@@ -28,6 +28,14 @@ const Wrapper = styled.section`
       width: 120px;
       height: 120px;
       object-fit: contain;
+    }
+  }
+  @media (max-width: 36rem) {
+    .logo-item {
+      img {
+        width: 5rem;
+        height: 5rem;
+      }
     }
   }
 `;

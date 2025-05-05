@@ -27,6 +27,10 @@ const MilestonesSection = () => {
               </span>
             </div>
           </div>
+          <div className='small-screen'>
+            <span className='small-since'>Since</span>
+            <span className='small-date'>2001</span>
+          </div>
         </div>
 
         <div className='logo-container'>

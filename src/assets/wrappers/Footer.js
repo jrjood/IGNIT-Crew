@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.footer`
   display: flex;
   align-items: center;
-  padding: 0 8rem;
+  padding: 0 4rem;
   justify-content: space-between;
   background-color: black;
   padding-bottom: 4rem;
@@ -33,13 +33,15 @@ const Wrapper = styled.footer`
   }
   .copy-text {
     font-size: 1.1rem;
-    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-family: 'Proxima-Nova', sans-serif;
     letter-spacing: 1.5px;
     font-weight: 600;
     color: #ccc;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: end;
+    max-width: 20rem;
+    text-align: right;
   }
   .designer-link {
     color: #ff0080;
@@ -50,7 +52,17 @@ const Wrapper = styled.footer`
     align-items: start;
     width: 18rem;
   }
+
   @media (max-width: 52.5rem) {
+    .copy-text {
+      max-width: 12rem;
+    }
+    .developed-by {
+      max-width: 20rem;
+      line-height: 1.2;
+    }
+  }
+  @media (max-width: 44rem) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,6 +75,14 @@ const Wrapper = styled.footer`
   }
   .social-icons {
     gap: 3rem;
+  }
+  .copy-text {
+    max-width: 50rem;
+    text-align: center;
+  }
+
+  .designer-link {
+    align-self: center;
   }
 `;
 export default Wrapper;
