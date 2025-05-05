@@ -20,9 +20,12 @@ const Wrapper = styled.nav`
     align-items: center;
     justify-content: space-between;
   }
+  .logo-container {
+    padding-left: 3rem;
+  }
   .logo {
     transition: all 0.3s ease-in-out;
-    width: ${({ $isSticky }) => ($isSticky ? '8rem' : '12rem')};
+    width: ${({ $isSticky }) => ($isSticky ? '8rem' : '10rem')};
   }
   .big-bar {
     display: flex;
@@ -49,10 +52,9 @@ const Wrapper = styled.nav`
 
     &:hover span {
       position: absolute;
-      width: 5px;
-      height: 35px;
+      height: 2.1875rem;
       background-color: #fff;
-      top: -40px;
+      top: -2.5rem;
       left: 50%;
       transform: translate(-50%);
       border-bottom-left-radius: 10px;
@@ -65,7 +67,7 @@ const Wrapper = styled.nav`
     width: 5px;
     height: 0;
     background-color: #fff;
-    top: -40px;
+    top: -2.5rem;
     left: 50%;
     transform: translate(-50%);
     border-bottom-left-radius: 10px;

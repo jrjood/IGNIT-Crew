@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { IoIosMenu } from 'react-icons/io';
 
@@ -53,7 +52,7 @@ const NavBar = () => {
         >
           {isOpen ? <AiOutlineClose /> : <IoIosMenu />}
         </MenuButtonWrapper>
-        <Link>
+        <Link className='logo-container'>
           <Logo />
         </Link>
         <div className='big-bar'>

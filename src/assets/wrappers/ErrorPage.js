@@ -9,7 +9,7 @@ const Wrapper = styled.main`
 
   img {
     width: 90vw;
-    max-width: 600px;
+    max-width: 37rem;
     display: block;
     margin-bottom: 2rem;
     margin-top: -3rem;

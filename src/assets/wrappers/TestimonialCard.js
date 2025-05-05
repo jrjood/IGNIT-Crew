@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   border-radius: 12px;
   padding: 2rem;
   text-align: center;
-  height: 320px;
+  height: 20rem;
   margin-bottom: 3rem;
   .client-image {
     width: 5.7rem;

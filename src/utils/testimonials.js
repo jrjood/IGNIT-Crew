@@ -15,7 +15,7 @@ const testimonials = [
   {
     path: client2,
     alt: 'Client 2',
-    name: 'Jane Smith',
+    name: 'Peter Smith',
     role: 'Marketing Head, ABC Corp.',
     rate: '⭐⭐⭐⭐⭐',
     feedback:

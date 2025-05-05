@@ -12,6 +12,7 @@ const Wrapper = styled.footer`
     flex-direction: column;
     align-items: end;
   }
+
   .social-icons {
     display: flex;
     gap: 2rem;
@@ -45,6 +46,7 @@ const Wrapper = styled.footer`
   }
   .designer-link {
     color: #ff0080;
+    margin-left: 0.2rem;
     cursor: pointer;
   }
   .logo {

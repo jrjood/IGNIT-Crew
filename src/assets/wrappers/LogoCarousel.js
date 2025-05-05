@@ -25,8 +25,8 @@ const Wrapper = styled.section`
     justify-content: center;
     user-select: none; /* prevent text‐select while dragging */
     img {
-      width: 120px;
-      height: 120px;
+      width: 7.5rem;
+      height: 7.5rem;
       object-fit: contain;
     }
   }

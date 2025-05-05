@@ -409,9 +409,6 @@ button:disabled {
   }
 }
 @media (max-width: 36rem) {
-  html {
-    /* font-size: 90%; */
-  }
   .btn {
     font-size: 0.7rem;
     padding: 0.5rem 0.6rem;

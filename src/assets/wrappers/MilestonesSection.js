@@ -36,7 +36,6 @@ const Wrapper = styled.section`
   .top-text {
     font-size: 0.8rem;
     line-height: 1.6;
-    /* max-width: 700px; */
   }
   .stats {
     gap: 3rem;

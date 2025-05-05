@@ -52,7 +52,7 @@ const Wrapper = styled.section`
   }
   .divider {
     width: 1px;
-    height: 80px;
+    height: 5rem;
     background: white;
     opacity: 0.2;
     margin: 0 1rem;

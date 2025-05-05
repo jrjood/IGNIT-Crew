@@ -82,7 +82,7 @@ const Wrapper = styled.section`
   }
   .label {
     position: absolute;
-    bottom: 35px;
+    bottom: 2.1875rem;
     left: 0;
     width: 90%;
     height: 7vh;
