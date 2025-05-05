@@ -94,6 +94,11 @@ const Wrapper = styled.section`
       font-size: 1.6rem;
     }
   }
+  @media (max-width: 27rem) {
+    .highlight {
+      font-size: 1.3rem;
+    }
+  }
 `;
 
 export default Wrapper;

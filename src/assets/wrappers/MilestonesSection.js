@@ -39,7 +39,7 @@ const Wrapper = styled.section`
   }
   .stats {
     gap: 3rem;
-    justify-content: start;
+    /* justify-content: start; */
   }
 
   .stat-block {
@@ -153,6 +153,19 @@ const Wrapper = styled.section`
     }
     .stats-container {
       width: 80%;
+    }
+  }
+  @media (max-width: 27rem) {
+    /* .stats {
+      flex-direction: column;
+    }
+    .stat-block {
+      justify-content: center;
+      align-items: center;
+    } */
+
+    .stat-block {
+      font-size: 120%;
     }
   }
 `;

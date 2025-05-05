@@ -33,6 +33,9 @@ const Wrapper = styled.section`
   .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
     gap: 1rem;
     width: 100%;
   }
@@ -85,6 +88,15 @@ const Wrapper = styled.section`
   @media (max-width: 52.5rem) {
     .grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 27rem) {
+    .card {
+      width: 90%;
+      height: 20vh;
+    }
+    .card-text {
+      font-size: 0.8rem;
     }
   }
 `;

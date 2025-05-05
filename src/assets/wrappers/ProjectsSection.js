@@ -121,6 +121,11 @@ const Wrapper = styled.section`
       }
     }
   }
+  @media (max-width: 27rem) {
+    .label {
+      font-size: 0.75rem;
+    }
+  }
 `;
 
 export default Wrapper;
