@@ -429,3 +429,15 @@ button:disabled {
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 22rem) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 17.5rem) {
+  html {
+    font-size: 70%;
+  }
+}

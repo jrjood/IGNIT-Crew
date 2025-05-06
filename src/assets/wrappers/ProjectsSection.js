@@ -99,6 +99,11 @@ const Wrapper = styled.section`
   .btn {
     align-self: flex-end;
   }
+  @media (max-width: 62rem) {
+    .label {
+      font-size: 0.9rem;
+    }
+  }
   @media (max-width: 52.5rem) {
     .big-screen {
       display: none;

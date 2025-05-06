@@ -46,7 +46,7 @@ const Wrapper = styled.section`
     position: relative;
 
     z-index: -2;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     padding-bottom: 2rem;
 
