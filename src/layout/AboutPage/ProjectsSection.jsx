@@ -2,7 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 
-import Wrapper from '../../assets/wrappers/ProjectsSection';
+import Wrapper from '../../assets/wrappers/AboutPageWrappers/ProjectsSection';
 import projects from '../../utils/projects';
 import useMediaQuery from '../../utils/useMediaQuery';
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bgImage from '../../assets/images/backgrounds/services-bg.jpg';
+import bgImage from '../../../assets/images/backgrounds/HomePageImages/services-bg.jpg';
 
 const Wrapper = styled.section`
   position: relative;

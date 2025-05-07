@@ -1,17 +1,19 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { HomePage, Error } from '../pages';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { HomeLayout, Error, HomePage, AboutPage } from '../pages';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <HomeLayout />,
+    errorElement: <Error />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: 'about', element: <AboutPage /> },
+    ],
+  },
+]);
 
 const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route
-        path='/IGNIT-Crew'
-        element={<HomePage />}
-        errorElement={<Error></Error>}
-      />
-    </Routes>
-  );
+  return <RouterProvider router={router} />;
 };
-
 export default AppRoutes;

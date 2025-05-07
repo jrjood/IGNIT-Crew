@@ -12,7 +12,7 @@ const AsideMenu = styled.aside`
   /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
   transform: translateY(${({ $open }) => ($open ? '0' : '-100%')});
   opacity: ${({ $open }) => ($open ? '1' : '0')};
   pointer-events: ${({ $open }) => ($open ? 'auto' : 'none')};
@@ -34,7 +34,7 @@ const AsideMenu = styled.aside`
     font-family: 'Rama Gothic M';
     color: rgba(0, 0, 0, 0.75);
     font-size: 2rem;
-    transition: color 0.2s ease;
+    transition: all 0.3s ease-in-out;
     &:hover {
       color: rgba(0, 0, 0, 0.58);
     }

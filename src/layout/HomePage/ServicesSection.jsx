@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Wrapper from '../../assets/wrappers/ServicesSection';
+import Wrapper from '../../assets/wrappers/HomePageWrappers/ServicesSection';
 import { ServicesCard } from '../../components';
 
 const services = [
@@ -20,7 +20,7 @@ const ServicesSection = () => {
       <Wrapper className='section-container'>
         <div className='overlay' />
         <div className='container'>
-          <h2 className='title'>SERVICES</h2>
+          <h2 className='title title-medium'>SERVICES</h2>
           <ServicesCard services={services} />
         </div>
       </Wrapper>

@@ -7,9 +7,9 @@ import {
   LogoCarousel,
   TestimonialsSection,
   ContactsSection,
-} from '../layout/HomePage/';
+} from '../layout/AboutPage/';
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
     <>
       <HeroSection />
@@ -24,4 +24,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default AboutPage;

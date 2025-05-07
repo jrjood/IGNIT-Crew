@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bgImage from '../images/backgrounds/milestones-bg.jpg'; // background image
+import bgImage from '../../images/backgrounds/HomePageImages/milestones-bg.jpg'; // background image
 
 const Wrapper = styled.section`
   color: #a9a9a9;

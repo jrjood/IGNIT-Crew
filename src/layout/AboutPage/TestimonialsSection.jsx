@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 
 import { TestimonialCard } from '../../components';
-import Wrapper from '../../assets/wrappers/TestimonialsSection';
+import Wrapper from '../../assets/wrappers/AboutPageWrappers/TestimonialsSection';
 import testimonials from '../../utils/testimonials';
 
 /* import 'swiper/css';

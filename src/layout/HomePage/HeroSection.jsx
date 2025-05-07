@@ -1,7 +1,7 @@
 import React from 'react';
 
-import heroVideo from '../../assets/images/backgrounds/hero-bg.mp4';
-import Wrapper from '../../assets/wrappers/HeroSection';
+import heroVideo from '../../assets/images/backgrounds/HomePageImages/hero-bg.mp4';
+import Wrapper from '../../assets/wrappers/HomePageWrappers/HeroSection';
 
 const HeroSection = () => {
   return (

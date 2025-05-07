@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import aboutImage from '../../assets/images/backgrounds/about-bg.jpg';
+import aboutImage from '../../../assets/images/backgrounds/HomePageImages/about-bg.jpg';
 
 const Wrapper = styled.section`
   display: flex;
   background-color: black;
   gap: 5rem;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   .logo {
     display: flex;
     align-items: center;
@@ -15,53 +15,46 @@ const Wrapper = styled.section`
 
   .image-box {
     margin: auto 0;
-    height: 80%;
+    height: 80vh;
     width: 100%;
     display: block;
     background-image: url(${aboutImage});
     background-size: cover;
     background-position: center;
+    margin: 3rem 0;
   }
   .right {
     flex: 1;
     min-width: 40%;
+    padding-right: 1rem;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2rem;
-    font-size: 1.625rem;
   }
   .text {
+    font-size: 1.625rem;
     line-height: 1.5;
     margin-bottom: 2rem;
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
   }
   .highlight {
     color: #ffc107;
-    /* font-size: 1.25rem; */
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
   @media (max-width: 62rem) {
-    position: relative;
-
-    z-index: -2;
-    height: 100vh;
-    width: 100%;
-    padding-bottom: 2rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(17, 17, 17, 0.45),
+        rgba(0, 0, 0, 0.81)
+      ),
+      url(${aboutImage});
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 4rem;
 
     .image-box {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      z-index: -1;
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(17, 17, 17, 0.45),
-          rgba(0, 0, 0, 0.81)
-        ),
-        url(${aboutImage});
+      display: none;
     }
     .right {
       align-items: center;
@@ -72,9 +65,9 @@ const Wrapper = styled.section`
       max-width: 95%;
       font-size: 1.4rem;
     }
-    .highlight {
+    /*   .highlight {
       margin-bottom: 1rem;
-    }
+    } */
   }
   @media (max-width: 44rem) {
     .text {

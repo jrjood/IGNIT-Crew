@@ -2,7 +2,7 @@ import React from 'react';
 import { FaPhone, FaLocationDot } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
 
-import Wrapper from '../../assets/wrappers/ContactsSection';
+import Wrapper from '../../assets/wrappers/HomePageWrappers/ContactsSection';
 
 export default function Footer() {
   return (

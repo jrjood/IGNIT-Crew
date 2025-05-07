@@ -1,0 +1,94 @@
+import styled from 'styled-components';
+import aboutImage from '../../images/backgrounds/AboutPagesImages/about-bg2.jpeg';
+
+const Wrapper = styled.section`
+  display: flex;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+
+  .image-box {
+    margin: auto 0;
+    height: 100vh;
+    width: 45%;
+    display: block;
+    background-image: url(${aboutImage});
+    background-size: cover;
+    /* background-position: center; */
+  }
+  .right {
+    flex: 1;
+    min-width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  .text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  }
+  .highlight {
+    font-size: 1.7rem;
+    color: #ffc107;
+    font-family: 'Rama Gothic M';
+    margin-bottom: 2.5rem;
+  }
+  @media (max-width: 62rem) {
+    background: linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.66)),
+      url(${aboutImage});
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+    .image-box {
+      display: none;
+    }
+    .right {
+      align-items: center;
+      text-align: center;
+    }
+    .text {
+      margin-bottom: 1rem;
+      max-width: 95%;
+      font-size: 1.4rem;
+    }
+    /*  .highlight {
+      margin-bottom: 2.5rem;
+    } */
+  }
+  @media (max-width: 44rem) {
+    .text {
+      font-size: 1.2rem;
+    }
+    .right {
+      gap: 1rem;
+    }
+  }
+  @media (max-width: 36rem) {
+    .text {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+    }
+  }
+  @media (max-width: 27rem) {
+    .highlight {
+      font-size: 1.3rem;
+    }
+  }
+`;
+
+export default Wrapper;

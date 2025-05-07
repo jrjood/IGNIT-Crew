@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Logo } from '../../components';
-import Wrapper from '../../assets/wrappers/AboutSection';
-import aboutImage from '../../assets/images/backgrounds/about-bg.jpg';
+import Wrapper from '../../assets/wrappers/HomePageWrappers/AboutSection';
+import aboutImage from '../../assets/images/backgrounds/HomePageImages/about-bg.jpg';
 
 const AboutSection = () => {
   return (
