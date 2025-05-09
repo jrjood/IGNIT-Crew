@@ -174,7 +174,6 @@ h5 {
 
 .text {
   margin-bottom: 1.5rem;
-  max-width: 40em;
 }
 
 small,
@@ -332,7 +331,9 @@ button:disabled {
   font-weight: bold;
   text-transform: uppercase;
 }
-
+.title-extra {
+  font-size: 4.375rem;
+}
 .title-big {
   font-size: 3.75rem;
 }

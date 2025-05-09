@@ -1,4 +1,4 @@
-import bgImage from '../../images/backgrounds/AboutPagesImages/about-bg.png'; // background image
+import bgImage from '../../images/backgrounds/AboutPageImages/about-bg.png'; // background image
 
 import styled from 'styled-components';
 
@@ -9,12 +9,12 @@ const Wrapper = styled.section`
   display: flex;
   align-items: center;
   z-index: 1;
-  padding: 0 2rem;
-  height: 62vh;
+  padding: 0 5rem;
+  height: fit-content;
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.89),
-      rgba(0, 0, 0, 0.06)
+      rgba(0, 0, 0, 0.06),
+      rgba(0, 0, 0, 0.77)
     ),
     url(${bgImage}) no-repeat;
   background-size: cover;
@@ -23,6 +23,7 @@ const Wrapper = styled.section`
   .content {
     display: flex;
     width: 100%;
+    height: 62vh;
     align-content: center;
     justify-content: start;
     padding: 0 2rem;
@@ -33,11 +34,10 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
     font-family: 'Rama Gothic M';
-    font-size: 4rem;
     font-weight: bold;
     color: #ffc107;
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 5rem;
     text-align: center;
   }
 

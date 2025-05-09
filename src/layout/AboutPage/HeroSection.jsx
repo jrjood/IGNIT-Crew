@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <Wrapper id='hero' className='section-container'>
       <div className='content '>
-        <p className='info'> about us</p>
+        <h2 className='info'> about us</h2>
       </div>
     </Wrapper>
   );

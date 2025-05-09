@@ -1,42 +1,43 @@
 import styled from 'styled-components';
-import bgImage from '../../../assets/images/backgrounds/HomePageImages/services-bg.jpg';
+import bgImage from '../../../assets/images/backgrounds/AboutPageImages/valuesSection-bg.png';
 
 const Wrapper = styled.section`
   position: relative;
   background: url(${bgImage}) center/cover no-repeat;
   color: white;
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: fit-content;
+  background-color: black;
   .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #111, transparent);
+    /* background: linear-gradient(to bottom, #111, transparent); */
     top: 0;
     left: 0;
-    z-index: 1;
+    /* z-index: 1; */
   }
   .container {
     position: relative;
     z-index: 2;
-    display: flex;
+    /*   display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   .title {
     align-self: flex-start;
   }
 
-  .grid {
+  .cards-box {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     justify-items: center;
     align-content: center;
-    gap: 1rem;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
     width: 100%;
   }
 

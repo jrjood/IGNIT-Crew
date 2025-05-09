@@ -1,9 +1,9 @@
 import {
   HeroSection,
   AboutSection,
-  MilestonesSection,
-  ServicesSection,
-  ProjectsSection,
+  InspirationSection,
+  ValuesSection,
+  PropositionSection,
   LogoCarousel,
   TestimonialsSection,
   ContactsSection,
@@ -14,9 +14,9 @@ const AboutPage = () => {
     <>
       <HeroSection />
       <AboutSection />
-      <MilestonesSection />
-      <ServicesSection />
-      <ProjectsSection />
+      <InspirationSection />
+      <ValuesSection />
+      <PropositionSection />
       <LogoCarousel />
       <TestimonialsSection />
       <ContactsSection />

@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { Logo } from '../../components';
 import Wrapper from '../../assets/wrappers/AboutPageWrappers/AboutSection';
-import aboutImage from '../../assets/images/backgrounds/HomePageImages/about-bg.jpg';
 
 const AboutSection = () => {
   return (

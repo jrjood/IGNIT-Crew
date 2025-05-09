@@ -1,25 +1,20 @@
 import styled from 'styled-components';
-import aboutImage from '../../images/backgrounds/AboutPagesImages/about-bg2.jpeg';
+import aboutImage from '../../images/backgrounds/AboutPageImages/about-bg2.jpeg';
 
 const Wrapper = styled.section`
   display: flex;
   background-color: black;
   height: 100%;
   width: 100%;
-  .logo {
-    display: flex;
-    align-items: center;
-    width: 60%;
-  }
 
   .image-box {
     margin: auto 0;
     height: 100vh;
-    width: 45%;
+    width: 42%;
     display: block;
     background-image: url(${aboutImage});
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
   }
   .right {
     flex: 1;
@@ -28,7 +23,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 1rem 6rem;
   }
   .text {
     font-size: 1.25rem;
@@ -59,7 +54,7 @@ const Wrapper = styled.section`
     }
     .text {
       margin-bottom: 1rem;
-      max-width: 95%;
+      /* max-width: 95%; */
       font-size: 1.4rem;
     }
     /*  .highlight {
