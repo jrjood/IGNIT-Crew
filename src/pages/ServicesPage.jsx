@@ -1,11 +1,18 @@
 import bgImage from '../assets/images/backgrounds/ServicesPageImages/services-bg.jpg'; // background image
-import { PageStarter, ServicesSection } from '../layout/ServicesPage/';
+import services from '../utils/services';
+
+import {
+  PageStarter,
+  CardsSection,
+  InspirationSection,
+} from '../layout/ServicesPage/';
 
 const ServicesPage = () => {
   return (
     <>
       <PageStarter title='services' imgPath={bgImage} />
-      <ServicesSection />
+      <CardsSection cardsData={services} gridRows='grid grid--3--row' />
+      <InspirationSection />
     </>
   );
 };

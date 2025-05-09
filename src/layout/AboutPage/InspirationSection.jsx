@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Wrapper from '../../assets/wrappers/AboutPageWrappers/InspirationSection';
+import Wrapper from '../../assets/wrappers/InspirationSection';
 
 const InspirationSection = () => {
   return (
