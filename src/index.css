@@ -58,7 +58,7 @@ button {
   /* colors */
   --primary-50: #fff5e5;
   --primary-100: #ffe0b3;
-  --primary-200: #ffc266;
+  --primary-200: #ffc800;
   --primary-300: #ffa733;
   --primary-400: #ff8c00;
   --primary-500: #ff6a00; /* main flame orange */
@@ -197,7 +197,7 @@ ul {
 /* buttons */
 
 .btn {
-  background-color: #ffc107;
+  background-color: #ffc800;
   border: none;
   padding: 0.75rem 2rem;
   width: 15rem;
@@ -213,7 +213,7 @@ ul {
 
 .btn:hover {
   background-color: transparent;
-  color: #ffc107;
+  color: #ffc800;
   border: 2px solid #ffc800;
 }
 

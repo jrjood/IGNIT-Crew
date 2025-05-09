@@ -39,7 +39,7 @@ const Wrapper = styled.section`
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
   }
   .highlight {
-    color: #ffc107;
+    color: #ffc800;
     margin-bottom: 2.5rem;
   }
   @media (max-width: 62rem) {

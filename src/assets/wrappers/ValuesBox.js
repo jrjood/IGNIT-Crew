@@ -45,7 +45,7 @@ const Wrapper = styled.div`
     opacity: 0;
     transition: all 0.3s ease-in-out;
     position: absolute;
-    width: 67%;
+    max-width: 80%;
   }
 
   &:hover {
@@ -69,6 +69,20 @@ const Wrapper = styled.div`
       position: absolute;
       top: 17%;
       opacity: 1;
+    }
+  }
+  @media (max-width: 36rem) {
+    .card-title {
+      /* font-size: 1.2rem; */
+    }
+    .card-box {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      /* align-items: center; */
+    }
+    .card-text {
+      max-width: 90%;
     }
   }
 `;

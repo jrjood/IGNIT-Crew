@@ -1,4 +1,4 @@
-import bgImage from '../../images/backgrounds/AboutPageImages/about-bg.png'; // background image
+// import bgImage from '../images/backgrounds/AboutPageImages/about-bg.png'; // background image
 
 import styled from 'styled-components';
 
@@ -14,9 +14,9 @@ const Wrapper = styled.section`
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.06),
-      rgba(0, 0, 0, 0.77)
+      rgba(0, 0, 0, 0.57)
     ),
-    url(${bgImage}) no-repeat;
+    url(${(props) => props.$imgPath}) no-repeat;
   background-size: cover;
   background-position: center;
 
@@ -35,7 +35,7 @@ const Wrapper = styled.section`
     justify-content: center;
     font-family: 'Rama Gothic M';
     font-weight: bold;
-    color: #ffc107;
+    color: #ffc800;
     text-transform: uppercase;
     font-size: 5rem;
     text-align: center;

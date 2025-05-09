@@ -63,7 +63,7 @@ const Wrapper = styled.section`
     font-family: 'Proxima-Nova', sans-serif;
     font-weight: bold;
     font-weight: 500;
-    color: #ffc107;
+    color: #ffc800;
     position: absolute;
     bottom: 4rem;
     left: -5rem;
@@ -138,14 +138,14 @@ const Wrapper = styled.section`
         font-family: 'Proxima-Nova', sans-serif;
         text-transform: uppercase;
         font-weight: 500;
-        color: #ffc107;
+        color: #ffc800;
       }
       .small-date {
         font-size: 7rem;
         font-family: 'Rama Gothic M', sans-serif;
         text-transform: uppercase;
         font-weight: 500;
-        color: #ffc107;
+        color: #ffc800;
       }
     }
     .top-text {

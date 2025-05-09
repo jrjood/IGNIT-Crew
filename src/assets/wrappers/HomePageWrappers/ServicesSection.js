@@ -67,13 +67,13 @@ const Wrapper = styled.section`
       display: block;
       width: 5rem;
       height: 0.3rem;
-      background: #ffc107;
+      background: #ffc800;
       margin-bottom: 1rem;
       transition: background 0.3s ease;
     }
 
     &:hover {
-      background-color: #ffc107;
+      background-color: #ffc800;
       color: black;
 
       .line-highlight {

@@ -1,24 +1,23 @@
+import bgImage from '../assets/images/backgrounds/AboutPageImages/about-bg.png'; // background image
 import {
-  HeroSection,
+  PageStarter,
   AboutSection,
   InspirationSection,
   ValuesSection,
   PropositionSection,
-  LogoCarousel,
-  TestimonialsSection,
+  SmallSection,
   ContactsSection,
 } from '../layout/AboutPage/';
 
 const AboutPage = () => {
   return (
     <>
-      <HeroSection />
+      <PageStarter title='about us' imgPath={bgImage} />
       <AboutSection />
       <InspirationSection />
       <ValuesSection />
       <PropositionSection />
-      <LogoCarousel />
-      <TestimonialsSection />
+      <SmallSection />
       <ContactsSection />
     </>
   );

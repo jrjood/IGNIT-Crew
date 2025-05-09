@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  background-color: #ffc107;
+  background-color: #ffc800;
   color: white;
   text-align: left;
 

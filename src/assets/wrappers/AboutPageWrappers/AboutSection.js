@@ -23,7 +23,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem 6rem;
+    padding: 1rem 2rem;
   }
   .text {
     font-size: 1.25rem;
@@ -33,7 +33,7 @@ const Wrapper = styled.section`
   }
   .highlight {
     font-size: 1.7rem;
-    color: #ffc107;
+    color: #ffc800;
     font-family: 'Rama Gothic M';
     margin-bottom: 2.5rem;
   }

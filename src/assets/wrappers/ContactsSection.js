@@ -23,7 +23,7 @@ const Wrapper = styled.section`
   .contact-circle {
     width: 8rem;
     height: 8rem;
-    background: #ffc107;
+    background: #ffc800;
     border-radius: 50%;
     display: flex;
     color: white;

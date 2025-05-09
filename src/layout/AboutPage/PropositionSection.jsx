@@ -4,7 +4,7 @@ import { LiaHandHoldingHeartSolid } from 'react-icons/lia';
 import { TbArrowBigUpLinesFilled } from 'react-icons/tb';
 import { BsStars } from 'react-icons/bs'; */
 
-import Wrapper from '../../assets/wrappers/AboutPageWrappers/ValuesSection';
+import Wrapper from '../../assets/wrappers/AboutPageWrappers/PropositionSection';
 import { ValuesBox } from '../../components';
 
 const values = [
@@ -49,7 +49,7 @@ const ServicesSection = () => {
         <div className='container'>
           <div className='content'>
             <h2 className='title title-big'>values</h2>
-            <div className='cards-box'>
+            <div className='cards-grid'>
               {values.map((value, index) => (
                 <ValuesBox
                   icon={value.icon}

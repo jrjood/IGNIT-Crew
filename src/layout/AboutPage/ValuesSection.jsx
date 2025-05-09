@@ -45,7 +45,7 @@ const ServicesSection = () => {
         <div className='container'>
           <div className='content'>
             <h2 className='title title-big'>values</h2>
-            <div className='cards-box'>
+            <div className='cards-grid'>
               {values.map((value, index) => (
                 <ValuesBox
                   icon={value.icon}
