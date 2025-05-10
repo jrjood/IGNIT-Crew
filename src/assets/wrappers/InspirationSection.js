@@ -44,6 +44,7 @@ const Wrapper = styled.section`
     line-height: 1.5;
   }
   .quote {
+    text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 700;
   }

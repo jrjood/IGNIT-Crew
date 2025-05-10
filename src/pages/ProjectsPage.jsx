@@ -10,9 +10,13 @@ import {
 const ProjectsPage = () => {
   return (
     <>
-      <PageStarter title='services' imgPath={bgImage} />
-      <CardsSection cardsData={projects} gridRows='grid grid--2--row' />
-      <InspirationSection />
+      <PageStarter title='projects' imgPath={bgImage} />
+      <CardsSection
+        title='featured projects'
+        cardsData={projects}
+        gridRows='grid grid--2--row'
+      />
+      <InspirationSection quote='ELEVATING POSSIBILITIES' />
     </>
   );
 };

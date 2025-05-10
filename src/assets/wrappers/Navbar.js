@@ -33,7 +33,8 @@ const Wrapper = styled.nav`
     a {
       text-decoration: none;
       color: white;
-      font-weight: 500;
+      font-weight: 600;
+      font-size: 0.9rem;
     }
   }
 

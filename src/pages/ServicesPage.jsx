@@ -11,8 +11,12 @@ const ServicesPage = () => {
   return (
     <>
       <PageStarter title='services' imgPath={bgImage} />
-      <CardsSection cardsData={services} gridRows='grid grid--3--row' />
-      <InspirationSection />
+      <CardsSection
+        title='featured services'
+        cardsData={services}
+        gridRows='grid grid--3--row'
+      />
+      <InspirationSection quote='IGNITING CREATIVE SPARKS' />
     </>
   );
 };

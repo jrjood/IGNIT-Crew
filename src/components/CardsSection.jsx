@@ -5,12 +5,13 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import Wrapper from '../assets/wrappers/CardsSection';
 import useMediaQuery from '../utils/useMediaQuery';
 
-const ProjectsSection = ({ cardsData, gridRows }) => {
+const ProjectsSection = ({ cardsData, gridRows, title }) => {
   const isMobile = useMediaQuery('(max-width: 52.5rem)');
   return (
     <>
       <Wrapper className='section-container'>
         <div className='container '>
+          <h2 className='title title-medium'>{title}</h2>
           {isMobile && (
             <div className='small-screen'>
               <Swiper

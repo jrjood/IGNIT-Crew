@@ -6,6 +6,8 @@ import {
   AboutPage,
   ServicesPage,
   ProjectsPage,
+  ClientsPage,
+  ContactPage,
 } from '../pages';
 
 const router = createBrowserRouter([
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
       { path: 'about', element: <AboutPage /> },
       { path: 'services', element: <ServicesPage /> },
       { path: 'projects', element: <ProjectsPage /> },
+      { path: 'clients', element: <ClientsPage /> },
+      { path: 'contact', element: <ContactPage /> },
     ],
   },
 ]);
