@@ -2,9 +2,9 @@ import bgImage from '../assets/images/backgrounds/ContactPageImages/contactpage-
 
 import {
   PageStarter,
-  InspirationSection,
   ContactForm,
   JoinCrewForm,
+  NewsletterForm,
 } from '../layout/ContactPage/';
 
 const ContactPage = () => {
@@ -13,7 +13,7 @@ const ContactPage = () => {
       <PageStarter title='projects' imgPath={bgImage} />
       <ContactForm />
       <JoinCrewForm />
-      <InspirationSection quote='subscribe to our newsletter' />
+      <NewsletterForm />
     </>
   );
 };

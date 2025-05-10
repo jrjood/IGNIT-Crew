@@ -31,6 +31,7 @@ const Wrapper = styled.section`
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
   .title {
     color: black;
@@ -47,6 +48,53 @@ const Wrapper = styled.section`
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 700;
+  }
+
+  //NewsletterForm style
+  .newsletter-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .input-wrapper input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px 35px 10px 5px;
+    font-size: 14px;
+    color: black;
+    outline: none;
+  }
+
+  .input-wrapper input::placeholder {
+    color: #333;
+  }
+
+  .email-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+
+  .send-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
   }
 
   @media (max-width: 62rem) {

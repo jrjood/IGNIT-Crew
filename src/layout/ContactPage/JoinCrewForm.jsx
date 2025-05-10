@@ -1,118 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-
-const Wrapper = styled.section`
-  background-color: #000;
-  color: white;
-  padding: 50px 30px;
-  font-family: Arial, sans-serif;
-
-  .join-crew-form h2 {
-    font-size: 28px;
-    color: #ffc400;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-
-  .radio-group {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-
-  .radio-group label {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 40px;
-  }
-
-  input,
-  textarea {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #ffc400;
-    padding: 10px 5px;
-    color: white;
-    font-size: 14px;
-    outline: none;
-    width: 100%;
-  }
-
-  textarea {
-    border: 2px solid #ffc400;
-    border-radius: 6px;
-    resize: vertical;
-  }
-
-  input::placeholder,
-  textarea::placeholder {
-    color: #cfcfcf;
-    text-transform: uppercase;
-    font-size: 12px;
-  }
-
-  .upload-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: relative;
-  }
-
-  .upload-label {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffc400;
-    font-size: 13px;
-    font-weight: bold;
-  }
-
-  .upload-label input {
-    display: none;
-  }
-
-  .upload-icon {
-    position: absolute;
-    right: -25px;
-    top: 0;
-    font-size: 18px;
-    color: #ffc400;
-  }
-
-  .or-text {
-    font-size: 12px;
-    color: #cfcfcf;
-  }
-
-  .email {
-    color: #ffc400;
-    font-weight: bold;
-  }
-
-  .full-width {
-    grid-column: 1 / 3;
-  }
-
-  .submit-btn {
-    grid-column: 1 / 3;
-    justify-self: start;
-    background: #ffc400;
-    border: none;
-    color: black;
-    padding: 12px 30px;
-    font-weight: bold;
-    border-radius: 999px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-`;
+import Wrapper from '../../assets/wrappers/ContactPageWrappers/JoinCrewForm';
 
 const JoinCrewForm = () => {
   const [location, setLocation] = useState('CAI');
@@ -123,57 +10,59 @@ const JoinCrewForm = () => {
         WANNA BE A PART OF <br /> <span>THE CREW?</span>
       </h2>
 
-      <div className='radio-group'>
-        <label>
-          <input
-            type='radio'
-            name='location'
-            value='CAI'
-            checked={location === 'CAI'}
-            onChange={(e) => setLocation(e.target.value)}
-          />
-          CAI
-        </label>
-        <label>
-          <input
-            type='radio'
-            name='location'
-            value='DXB'
-            checked={location === 'DXB'}
-            onChange={(e) => setLocation(e.target.value)}
-          />
-          DXB
-        </label>
-      </div>
-
-      <form className='form-grid'>
-        <input type='text' placeholder='FULL NAME*' required />
-        <input type='text' placeholder='POSITION*' required />
-        <input type='email' placeholder='EMAIL ADDRESS*' required />
-
-        <div className='upload-group'>
-          <label className='upload-label'>
-            ATTACH YOUR RESUME
-            <input type='file' />
-            <span className='upload-icon'>📎</span>
+      <form>
+        <div className='radio-group'>
+          <label>
+            <input
+              type='radio'
+              name='location'
+              value='CAI'
+              checked={location === 'CAI'}
+              onChange={(e) => setLocation(e.target.value)}
+            />
+            CAI
           </label>
-          <p className='or-text'>
-            OR SEND YOUR CV AT <br />
-            <span className='email'>INFO@INNOVATIONCREW.COM</span>
-          </p>
+          <label>
+            <input
+              type='radio'
+              name='location'
+              value='DXB'
+              checked={location === 'DXB'}
+              onChange={(e) => setLocation(e.target.value)}
+            />
+            DXB
+          </label>
         </div>
 
-        <input
-          type='tel'
-          placeholder='MOBILE NUMBER*'
-          required
-          className='full-width'
-        />
-        <textarea placeholder='MESSAGE' rows='5' className='full-width' />
+        <div className='form-grid'>
+          <input type='text' placeholder='FULL NAME*' required />
+          <input type='text' placeholder='POSITION*' required />
+          <input type='email' placeholder='EMAIL ADDRESS*' required />
 
-        <button type='submit' className='submit-btn'>
-          SUBMIT
-        </button>
+          <div className='upload-group'>
+            <label className='upload-label'>
+              ATTACH YOUR RESUME
+              <input type='file' />
+              <span className='upload-icon'>📎</span>
+            </label>
+            <p className='or-text'>
+              OR SEND YOUR CV AT <br />
+              <span className='email'>INFO@INNOVATIONCREW.COM</span>
+            </p>
+          </div>
+
+          <input
+            type='tel'
+            placeholder='MOBILE NUMBER*'
+            required
+            className='full-width'
+          />
+          <textarea placeholder='MESSAGE' rows='5' className='full-width' />
+
+          <button type='submit' className='submit-btn'>
+            SUBMIT
+          </button>
+        </div>
       </form>
     </Wrapper>
   );
