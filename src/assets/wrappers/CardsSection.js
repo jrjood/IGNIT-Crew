@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  background-color: black;
+  background-color: var(--black);
   color: white;
   text-align: left;
 
@@ -20,6 +20,7 @@ const Wrapper = styled.section`
     margin-bottom: 2rem;
     max-height: 140vh;
   }
+
   .grid--3--row {
     grid-template-rows: repeat(3, 1fr);
   }
@@ -29,27 +30,31 @@ const Wrapper = styled.section`
   .card-slide {
     width: 100%;
     height: 40vh;
-    border-radius: 12px;
+    border-radius: var(--border-radius);
   }
   .small-screen {
-    border-radius: 12px;
+    border-radius: var(--border-radius);
     display: none;
     &:hover .overlay {
       opacity: 0.4;
     }
 
     &:hover .label {
-      background: black;
+      background: var(--black);
       color: white;
     }
+    &:hover .img {
+      transform: scale(1.1);
+    }
     .img {
-      border-radius: 12px;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
     }
   }
   .card {
     position: relative;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: var(--border-radius);
 
     cursor: pointer;
 
@@ -58,8 +63,11 @@ const Wrapper = styled.section`
     }
 
     &:hover .label {
-      background: black;
+      background: var(--black);
       color: white;
+    }
+    &:hover .img {
+      transform: scale(1.1);
     }
   }
 
@@ -72,34 +80,38 @@ const Wrapper = styled.section`
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: var(--transition);
   }
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 12px;
+    border-radius: var(--border-radius);
     width: 100%;
     height: 100%;
-    background: yellow;
+    background: black;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: var(--transition);
     z-index: 1;
   }
   .label {
     position: absolute;
-    bottom: 2.1875rem;
+    bottom: 3rem;
     left: 0;
     width: 90%;
     height: 7vh;
-    background: #ffc800;
+    background: var(--primary-400);
     padding: 0.5rem 1rem;
     font-weight: bold;
     color: rgb(15, 15, 15);
     font-size: 1rem;
-    border-radius: 0 6px 6px 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
     text-transform: uppercase;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: var(--transition);
     z-index: 2;
+  }
+  .btn {
+    align-self: flex-end;
   }
   @media (max-width: 62rem) {
     .label {
@@ -116,6 +128,11 @@ const Wrapper = styled.section`
     .label {
       width: 70%;
       font-size: 1.3rem;
+    }
+    .btn {
+      position: absolute;
+      top: 0;
+      right: 10%;
     }
     @media (max-width: 36rem) {
       .label {

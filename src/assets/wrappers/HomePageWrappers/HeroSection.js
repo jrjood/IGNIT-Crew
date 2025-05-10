@@ -42,7 +42,7 @@ const Wrapper = styled.section`
     flex-direction: column;
     font-size: 4rem;
     font-weight: bold;
-    color: #ffc107;
+    color: var(--primary-400);
     line-height: 1;
     text-transform: uppercase;
   }

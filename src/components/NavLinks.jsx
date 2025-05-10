@@ -15,8 +15,8 @@ const NavLinks = () => {
             end
           >
             {link.text}
+            <span></span>
           </NavLink>
-          <span></span>
         </li>
       ))}
     </ul>

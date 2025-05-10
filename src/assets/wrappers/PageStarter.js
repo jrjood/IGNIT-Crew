@@ -35,7 +35,7 @@ const Wrapper = styled.section`
     justify-content: center;
     font-family: 'Rama Gothic M';
     font-weight: bold;
-    color: #ffc800;
+    color: var(--primary-400);
     text-transform: uppercase;
     font-size: 5rem;
     text-align: center;

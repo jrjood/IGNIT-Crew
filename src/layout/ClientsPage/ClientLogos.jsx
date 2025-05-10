@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import logos from '../../assets/images/sponsorLogo';
 import Wrapper from '../../assets/wrappers/ClientsPageWrappers/ClientsLogos';
 
-const logosPerPage = 18;
+const logosPerPage = 16;
 
 const ClientLogos = () => {
   const [currentPage, setCurrentPage] = useState(1);

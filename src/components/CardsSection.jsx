@@ -5,7 +5,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import Wrapper from '../assets/wrappers/CardsSection';
 import useMediaQuery from '../utils/useMediaQuery';
 
-const ProjectsSection = ({ cardsData, gridRows, title }) => {
+const ProjectsSection = ({ cardsData, gridRows, title, button }) => {
   const isMobile = useMediaQuery('(max-width: 52.5rem)');
   return (
     <>
@@ -15,7 +15,6 @@ const ProjectsSection = ({ cardsData, gridRows, title }) => {
           {isMobile && (
             <div className='small-screen'>
               <Swiper
-                className='card-slide'
                 modules={[Pagination, Autoplay]}
                 spaceBetween={50}
                 slidesPerView={1}
@@ -25,9 +24,11 @@ const ProjectsSection = ({ cardsData, gridRows, title }) => {
               >
                 {cardsData.map((proj, i) => (
                   <SwiperSlide>
-                    <img className='img' src={proj.img} alt={proj.text} />
-                    <div className='overlay' />
-                    <div className='label'>{proj.text}</div>
+                    <div className='card-slide'>
+                      <img className='img' src={proj.img} alt={proj.text} />
+                      <div className='overlay' />
+                      <div className='label'>{proj.text}</div>
+                    </div>
                   </SwiperSlide>
                 ))}
               </Swiper>
@@ -43,6 +44,7 @@ const ProjectsSection = ({ cardsData, gridRows, title }) => {
               </div>
             ))}
           </div>
+          {button && <button className='btn'>{button}</button>}
         </div>
       </Wrapper>
     </>

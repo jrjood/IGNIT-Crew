@@ -8,7 +8,8 @@ const Wrapper = styled.nav`
   position: relative;
   transition: all 0.6s ease-in-out;
   z-index: 10;
-  background-color: ${({ $isSticky }) => ($isSticky ? 'black' : 'transparent')};
+  background-color: ${({ $isSticky }) =>
+    $isSticky ? 'var(--black)' : 'transparent'};
   position: ${({ $isSticky }) => ($isSticky ? 'fixed' : 'absolute')};
   top: 0;
   left: 0;
@@ -24,17 +25,28 @@ const Wrapper = styled.nav`
     padding-left: 3rem;
   }
   .logo {
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
     width: ${({ $isSticky }) => ($isSticky ? '8rem' : '10rem')};
   }
   .big-bar {
     display: flex;
     gap: 2rem;
-    a {
-      text-decoration: none;
+    .nav-link {
       color: white;
-      font-weight: 600;
       font-size: 0.9rem;
+    }
+    li {
+      &:hover {
+        span {
+          height: 2rem;
+        }
+        .nav-link {
+          color: rgb(211, 211, 211);
+        }
+      }
+      .active {
+        color: var(--primary-400);
+      }
     }
   }
 
@@ -44,23 +56,16 @@ const Wrapper = styled.nav`
   }
   .nav-link {
     display: block;
+    transition: var(--transition);
+    text-decoration: none;
+    font-weight: 600;
   }
+
   li {
     text-transform: uppercase;
     position: relative;
     list-style: none;
-    transition: all 0.15s ease-in-out;
-
-    &:hover span {
-      position: absolute;
-      height: 2.1875rem;
-      background-color: #fff;
-      top: -2.5rem;
-      left: 50%;
-      transform: translate(-50%);
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-    }
+    transition: var(--transition);
   }
 
   span {
@@ -75,11 +80,16 @@ const Wrapper = styled.nav`
     border-bottom-right-radius: 10px;
     transition: all 0.15s ease-in-out;
   }
-  /*  .aside-bar {
-    display: none;
-  } */
+
   .toggle-btn {
     display: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background: transparent;
+    border-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
   }
 
   @media (max-width: 62rem) {
@@ -88,16 +98,9 @@ const Wrapper = styled.nav`
       position: fixed;
     } */
     .toggle-btn {
-      display: block;
-      position: fixed;
-      top: 2rem;
-      left: 2rem;
-      background: transparent;
-      border-color: transparent;
-      font-size: 2rem;
-      cursor: pointer;
       display: flex;
       align-items: center;
+      justify-content: center;
     }
     .big-bar {
       display: none;

@@ -7,7 +7,7 @@ const Wrapper = styled.section`
   color: white;
   width: 100%;
   height: fit-content;
-  background-color: black;
+  background-color: var(--black);
 
   .cards-grid {
     display: grid;
@@ -21,7 +21,7 @@ const Wrapper = styled.section`
   }
   .card-box {
     background-color: transparent;
-    border: 1px solid #ffc800;
+    border: 1px solid var(--primary-400);
   }
   .card-title {
     font-size: 2.5rem;

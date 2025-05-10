@@ -7,7 +7,7 @@ const Wrapper = styled.section`
   color: white;
   width: 100%;
   height: fit-content;
-  background-color: black;
+  background-color: var(--black);
 
   .cards-grid {
     display: grid;

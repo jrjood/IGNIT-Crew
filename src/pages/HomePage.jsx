@@ -1,9 +1,11 @@
+import projects from '../utils/projects';
+
 import {
   HeroSection,
   AboutSection,
   MilestonesSection,
   ServicesSection,
-  ProjectsSection,
+  CardsSection,
   LogoCarousel,
   TestimonialsSection,
   ContactsSection,
@@ -16,7 +18,12 @@ const HomePage = () => {
       <AboutSection />
       <MilestonesSection />
       <ServicesSection />
-      <ProjectsSection />
+      <CardsSection
+        title='featured projects'
+        cardsData={projects}
+        gridRows='big-screen grid grid--2--row'
+        button='EXPLORE'
+      />
       <LogoCarousel />
       <TestimonialsSection />
       <ContactsSection />

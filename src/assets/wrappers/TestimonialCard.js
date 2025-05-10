@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   background: #111;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   padding: 2rem;
   text-align: center;
-  height: 20rem;
+  height: 21rem;
   margin-bottom: 3rem;
   .client-image {
     width: 5.7rem;

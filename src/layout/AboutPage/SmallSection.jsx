@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  background-color: #ffc800;
+  background-color: var(--primary-400);
   width: 100%;
   height: fit-content;
   display: flex;

@@ -14,7 +14,7 @@ const ServicesPage = () => {
       <CardsSection
         title='featured services'
         cardsData={services}
-        gridRows='grid grid--3--row'
+        gridRows='big-screen grid grid--3--row'
       />
       <InspirationSection quote='IGNITING CREATIVE SPARKS' />
     </>

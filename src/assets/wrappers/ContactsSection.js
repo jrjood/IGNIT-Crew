@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  background: black;
+  background: var(--black);
   color: white;
   height: 50vh;
   padding: 4rem 4rem 2rem;
@@ -23,7 +23,7 @@ const Wrapper = styled.section`
   .contact-circle {
     width: 8rem;
     height: 8rem;
-    background: #ffc800;
+    background: var(--primary-400);
     border-radius: 50%;
     display: flex;
     color: white;
@@ -31,7 +31,7 @@ const Wrapper = styled.section`
     justify-content: center;
     margin-bottom: 1rem;
     font-size: 2.1rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
     &:hover {
       font-size: 2.6rem;
       transform: rotate(-20deg);

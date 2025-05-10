@@ -48,7 +48,7 @@ const ServicesSection = () => {
         {/* <div className='overlay' /> */}
         <div className='container'>
           <div className='content'>
-            <h2 className='title title-big'>values</h2>
+            <h2 className='title title-big'>VALUE PROPOSITION</h2>
             <div className='cards-grid'>
               {values.map((value, index) => (
                 <ValuesBox

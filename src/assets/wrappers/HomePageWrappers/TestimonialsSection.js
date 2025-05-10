@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  background-color: #ffc800;
+  background-color: var(--primary-400);
   color: white;
   text-align: left;
 
   .title {
-    color: black;
+    color: var(--black);
   }
   .subtitle {
     color: #ccc;
     font-size: 1rem;
     margin-bottom: 3rem;
-    color: black;
+    color: var(--black);
   }
 `;
 

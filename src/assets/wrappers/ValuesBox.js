@@ -10,13 +10,13 @@ const Wrapper = styled.div`
     background-color: #ffffff40;
     height: 300px;
     width: 100%;
-    transition: 0.3s;
-    border-radius: 8px;
+    transition: var(--transition);
+    border-radius: var(--border-radius);
   }
   .card-icon {
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
     svg {
-      transition: all 0.3s ease-in-out;
+      transition: var(--transition);
       width: 50px;
       height: 50px;
     }
@@ -25,10 +25,10 @@ const Wrapper = styled.div`
     margin: 15px 0;
     width: 30%;
     height: 5px;
-    background-color: #ffc800;
+    background-color: var(--primary-400);
     position: absolute;
     top: 28%;
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
   }
   .card-title {
     text-transform: uppercase;
@@ -36,14 +36,14 @@ const Wrapper = styled.div`
     position: absolute;
     font-size: 1.625rem;
     top: 42%;
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
   }
   .card-text {
     position: absolute;
     line-height: 1.5;
     top: 50%;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
     position: absolute;
     max-width: 80%;
   }

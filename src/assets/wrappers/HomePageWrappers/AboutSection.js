@@ -3,7 +3,7 @@ import aboutImage from '../../../assets/images/backgrounds/HomePageImages/about-
 
 const Wrapper = styled.section`
   display: flex;
-  background-color: black;
+  background-color: var(--black);
   gap: 5rem;
   height: 100%;
   width: 100%;
@@ -39,7 +39,7 @@ const Wrapper = styled.section`
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
   }
   .highlight {
-    color: #ffc800;
+    color: var(--primary-400);
     margin-bottom: 2.5rem;
   }
   @media (max-width: 62rem) {

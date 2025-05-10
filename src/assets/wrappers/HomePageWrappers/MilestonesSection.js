@@ -48,7 +48,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: start;
-    color: #ffc800;
+    color: var(--primary-400);
     span {
       gap: 0.2rem;
       font-size: 2rem;
@@ -63,7 +63,7 @@ const Wrapper = styled.section`
     font-family: 'Proxima-Nova', sans-serif;
     font-weight: bold;
     font-weight: 500;
-    color: #ffc800;
+    color: var(--primary-400);
     position: absolute;
     bottom: 4rem;
     left: -5rem;

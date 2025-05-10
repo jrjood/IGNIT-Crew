@@ -44,7 +44,7 @@ const Wrapper = styled.section`
     /* display: flex; */
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1.5rem 0.9rem;
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
     font-weight: bold;
     color: white;
     font-size: 1.2rem;
@@ -53,7 +53,7 @@ const Wrapper = styled.section`
     backdrop-filter: blur(10px);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    transition: all 0.3s ease;
+    transition: var(--transition);
     width: 100%;
     height: 20vh;
     cursor: pointer;
@@ -67,17 +67,17 @@ const Wrapper = styled.section`
       display: block;
       width: 5rem;
       height: 0.3rem;
-      background: #ffc800;
+      background: var(--primary-400);
       margin-bottom: 1rem;
-      transition: background 0.3s ease;
+      transition: var(--transition);
     }
 
     &:hover {
-      background-color: #ffc800;
-      color: black;
+      background-color: var(--primary-400);
+      color: var(--black);
 
       .line-highlight {
-        background: black;
+        background: var(--black);
       }
     }
   }

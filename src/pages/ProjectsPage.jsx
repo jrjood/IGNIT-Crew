@@ -14,7 +14,7 @@ const ProjectsPage = () => {
       <CardsSection
         title='featured projects'
         cardsData={projects}
-        gridRows='grid grid--2--row'
+        gridRows='big-screen grid grid--2--row'
       />
       <InspirationSection quote='ELEVATING POSSIBILITIES' />
     </>

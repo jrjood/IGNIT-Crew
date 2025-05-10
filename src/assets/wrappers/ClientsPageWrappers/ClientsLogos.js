@@ -7,11 +7,12 @@ const Wrapper = styled.section`
 
   .logos-grid {
     display: grid;
-    grid-template-columns: repeat(6, minmax(100px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    column-gap: 1rem;
+    row-gap: 7rem;
     justify-items: center;
     align-items: center;
-    transition: opacity 0.3s ease;
+    transition: var(--transition);
     opacity: 1;
   }
 
@@ -23,8 +24,8 @@ const Wrapper = styled.section`
     opacity: 1;
   }
   .logos-grid img {
-    max-width: 80px;
-    transition: transform 0.3s ease;
+    max-width: 10rem;
+    transition: var(--transition);
   }
 
   .logos-grid img:hover {
@@ -40,7 +41,7 @@ const Wrapper = styled.section`
   .pagination span {
     padding: 8px 12px;
     background: #fff;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     cursor: pointer;
     font-weight: bold;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -49,6 +50,21 @@ const Wrapper = styled.section`
   .pagination .active {
     background: #007bff;
     color: white;
+  }
+  @media (max-width: 52.5rem) {
+    .logos-grid {
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+  }
+  @media (max-width: 44rem) {
+    .logos-grid {
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+  }
+  @media (max-width: 22rem) {
+    .logos-grid {
+      grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
   }
 `;
 

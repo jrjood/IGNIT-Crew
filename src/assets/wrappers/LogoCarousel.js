@@ -12,7 +12,7 @@ const Wrapper = styled.section`
     cursor: grab;
   }
   .title {
-    color: black;
+    color: var(--black);
     align-self: flex-start;
   }
   .btn {

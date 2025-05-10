@@ -3,7 +3,7 @@ import aboutImage from '../../images/backgrounds/AboutPageImages/about-bg2.jpeg'
 
 const Wrapper = styled.section`
   display: flex;
-  background-color: black;
+  background-color: var(--black);
   height: 100%;
   width: 100%;
 
@@ -33,7 +33,7 @@ const Wrapper = styled.section`
   }
   .highlight {
     font-size: 1.7rem;
-    color: #ffc800;
+    color: var(--primary-400);
     font-family: 'Rama Gothic M';
     margin-bottom: 2.5rem;
   }

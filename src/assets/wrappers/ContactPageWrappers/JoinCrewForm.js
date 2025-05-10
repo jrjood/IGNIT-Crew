@@ -8,7 +8,7 @@ const Wrapper = styled.section`
 
   .join-crew-form h2 {
     font-size: 28px;
-    color: #ffc400;
+    color: var(--primary-400);
     font-weight: 700;
     margin-bottom: 20px;
   }
@@ -36,7 +36,7 @@ const Wrapper = styled.section`
   textarea {
     background: transparent;
     border: none;
-    border-bottom: 2px solid #ffc400;
+    border-bottom: 2px solid var(--primary-400);
     padding: 10px 5px;
     color: white;
     font-size: 14px;
@@ -45,8 +45,8 @@ const Wrapper = styled.section`
   }
 
   textarea {
-    border: 2px solid #ffc400;
-    border-radius: 6px;
+    border: 2px solid var(--primary-400);
+    border-radius: var(--border-radius);
     resize: vertical;
   }
 
@@ -68,7 +68,7 @@ const Wrapper = styled.section`
     position: relative;
     display: inline-block;
     cursor: pointer;
-    color: #ffc400;
+    color: var(--primary-400);
     font-size: 13px;
     font-weight: bold;
   }
@@ -82,7 +82,7 @@ const Wrapper = styled.section`
     right: -25px;
     top: 0;
     font-size: 18px;
-    color: #ffc400;
+    color: var(--primary-400);
   }
 
   .or-text {
@@ -91,7 +91,7 @@ const Wrapper = styled.section`
   }
 
   .email {
-    color: #ffc400;
+    color: var(--primary-400);
     font-weight: bold;
   }
 
@@ -102,9 +102,9 @@ const Wrapper = styled.section`
   .submit-btn {
     grid-column: 1 / 3;
     justify-self: start;
-    background: #ffc400;
+    background: var(--primary-400);
     border: none;
-    color: black;
+    color: var(--black);
     padding: 12px 30px;
     font-weight: bold;
     border-radius: 999px;

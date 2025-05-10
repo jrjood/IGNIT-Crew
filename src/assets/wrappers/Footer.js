@@ -5,7 +5,7 @@ const Wrapper = styled.footer`
   align-items: center;
   padding: 0 4rem;
   justify-content: space-between;
-  background-color: black;
+  background-color: var(--black);
   padding-bottom: 4rem;
   .social-container {
     display: flex;
@@ -20,7 +20,7 @@ const Wrapper = styled.footer`
     font-size: 1.5rem;
     a {
       color: white;
-      transition: all 0.3s ease-in-out;
+      transition: var(--transition);
     }
     .facebook:hover {
       color: #1877f2;

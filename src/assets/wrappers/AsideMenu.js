@@ -6,14 +6,14 @@ const AsideMenu = styled.aside`
   }
   position: fixed;
   inset: 0;
-  background-color: rgb(255, 200, 0);
+  background-color: var(--primary-400);
   color: white;
   display: flex;
   /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
-  transform: translateY(${({ $open }) => ($open ? '0' : '-100%')});
+  transition: transform 0.3s ease-in-out, opacity 0.6s ease-in-out;
+  transform: translateX(${({ $open }) => ($open ? '0' : '-100%')});
   opacity: ${({ $open }) => ($open ? '1' : '0')};
   pointer-events: ${({ $open }) => ($open ? 'auto' : 'none')};
 
@@ -34,15 +34,21 @@ const AsideMenu = styled.aside`
     font-family: 'Rama Gothic M';
     color: rgba(0, 0, 0, 0.75);
     font-size: 2rem;
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
     &:hover {
-      color: rgba(0, 0, 0, 0.58);
+    }
+  }
+  li {
+    &:hover {
+      .nav-link {
+        color: rgba(0, 0, 0, 0.58);
+      }
+    }
+    .active {
+      color: rgb(211, 211, 211);
     }
   }
 
-  .active {
-    /* color: green; */
-  }
   span {
     display: none;
   }

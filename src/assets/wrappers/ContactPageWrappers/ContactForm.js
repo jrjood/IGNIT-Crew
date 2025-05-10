@@ -7,7 +7,7 @@ const Wrapper = styled.section`
   font-family: Arial, sans-serif;
 
   .form-title {
-    color: #ffc400;
+    color: var(--primary-400);
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 40px;
@@ -32,17 +32,17 @@ const Wrapper = styled.section`
   .contact-form textarea {
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #ffc400;
+    border-bottom: 2px solid var(--primary-400);
     padding: 10px 5px;
     color: white;
     font-size: 14px;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: var(--transition);
   }
 
   .contact-form textarea {
-    border: 2px solid #ffc400;
-    border-radius: 6px;
+    border: 2px solid var(--primary-400);
+    border-radius: var(--border-radius);
     resize: vertical;
   }
 
@@ -54,7 +54,7 @@ const Wrapper = styled.section`
   }
 
   .contact-form button {
-    background-color: #ffc400;
+    background-color: var(--primary-400);
     color: #000;
     border: none;
     border-radius: 999px;
@@ -62,7 +62,7 @@ const Wrapper = styled.section`
     font-weight: bold;
     cursor: pointer;
     align-self: center;
-    transition: background-color 0.3s ease;
+    transition: var(--transition);
   }
 
   .contact-form button:hover {
