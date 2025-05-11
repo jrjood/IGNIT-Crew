@@ -16,6 +16,7 @@ const Wrapper = styled.div`
   }
   .client-name {
     margin: 0.5rem 0 0;
+    color: #e6e6e6;
     font-family: 'Rama Gothic M', sans-serif !important;
     font-weight: bold;
     font-size: 2rem;

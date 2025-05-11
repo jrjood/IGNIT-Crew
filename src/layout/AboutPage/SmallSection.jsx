@@ -9,7 +9,7 @@ const Wrapper = styled.section`
   justify-content: center;
   padding: 8rem 6rem;
   h3 {
-    color: #fff;
+    color: var(--white);
     font-weight: 700;
     font-size: 3.2rem;
     text-transform: uppercase;

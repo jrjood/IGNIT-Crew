@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   background-color: #000;
-  color: white;
+  color: var(--white);
   padding: 50px 30px;
   font-family: Arial, sans-serif;
 
@@ -38,7 +38,7 @@ const Wrapper = styled.section`
     border: none;
     border-bottom: 2px solid var(--primary-400);
     padding: 10px 5px;
-    color: white;
+    color: var(--white);
     font-size: 14px;
     outline: none;
     width: 100%;

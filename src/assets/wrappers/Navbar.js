@@ -32,7 +32,7 @@ const Wrapper = styled.nav`
     display: flex;
     gap: 2rem;
     .nav-link {
-      color: white;
+      color: var(--white);
       font-size: 0.9rem;
     }
     li {
@@ -45,7 +45,7 @@ const Wrapper = styled.nav`
         }
       }
       .active {
-        color: var(--primary-400);
+        color: var(--primary-400) !important;
       }
     }
   }
@@ -72,7 +72,7 @@ const Wrapper = styled.nav`
     position: absolute;
     width: 5px;
     height: 0;
-    background-color: #fff;
+    background-color: var(--white);
     top: -2.5rem;
     left: 50%;
     transform: translate(-50%);

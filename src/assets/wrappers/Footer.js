@@ -19,7 +19,7 @@ const Wrapper = styled.footer`
     margin-bottom: 1rem;
     font-size: 1.5rem;
     a {
-      color: white;
+      color: var(--white);
       transition: var(--transition);
     }
     .facebook:hover {

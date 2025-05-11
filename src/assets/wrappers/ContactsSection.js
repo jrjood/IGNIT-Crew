@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   background: var(--black);
-  color: white;
+  color: var(--white);
   height: 50vh;
   padding: 4rem 4rem 2rem;
 
@@ -26,7 +26,7 @@ const Wrapper = styled.section`
     background: var(--primary-400);
     border-radius: 50%;
     display: flex;
-    color: white;
+    color: var(--white);
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
@@ -53,7 +53,7 @@ const Wrapper = styled.section`
   .divider {
     width: 1px;
     height: 5rem;
-    background: white;
+    background: var(--white);
     opacity: 0.2;
     margin: 0 1rem;
   }

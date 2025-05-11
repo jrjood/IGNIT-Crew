@@ -4,7 +4,7 @@ import bgImage from '../../../assets/images/backgrounds/HomePageImages/services-
 const Wrapper = styled.section`
   position: relative;
   background: url(${bgImage}) center/cover no-repeat;
-  color: white;
+  color: var(--white);
   text-align: center;
   width: 100vw;
   height: 100vh;
@@ -46,7 +46,7 @@ const Wrapper = styled.section`
     padding: 1.5rem 0.9rem;
     border-radius: var(--border-radius);
     font-weight: bold;
-    color: white;
+    color: var(--white);
     font-size: 1.2rem;
     flex-direction: column;
     gap: 1rem;

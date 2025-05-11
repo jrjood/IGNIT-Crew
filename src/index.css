@@ -80,7 +80,7 @@ button {
   --grey-900: #111827;
   /* rest of the colors */
   --black: #050505;
-  --white: #fff;
+  --white: #f7f7f7;
   --red-light: #f8d7da;
   --red-dark: #842029;
   --green-light: #d1e7dd;
@@ -145,7 +145,7 @@ h5 {
   margin: 0;
   font-weight: 400;
   line-height: 1;
-  color: #fff;
+  color: var(--white);
   text-transform: capitalize;
   letter-spacing: var(--letter-spacing);
 }

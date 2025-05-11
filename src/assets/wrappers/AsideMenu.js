@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 const AsideMenu = styled.aside`
-  @media (min-width: 62rem) {
-    display: none;
+  @media (max-width: 62rem) {
+    display: flex;
   }
+  display: none;
   position: fixed;
   inset: 0;
   background-color: var(--primary-400);
-  color: white;
-  display: flex;
+  color: var(--white);
   /* justify-content: center; */
   align-items: center;
   flex-direction: column;

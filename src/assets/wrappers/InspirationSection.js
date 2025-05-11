@@ -39,7 +39,7 @@ const Wrapper = styled.section`
     margin-bottom: 5rem;
   }
   .text-box {
-    color: white;
+    color: var(--white);
     font-size: 1.125rem;
     max-width: 62%;
     line-height: 1.5;
@@ -52,7 +52,7 @@ const Wrapper = styled.section`
 
   //NewsletterForm style
   .newsletter-title {
-    color: white;
+    color: var(--white);
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -83,12 +83,12 @@ const Wrapper = styled.section`
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
+    color: var(--white);
   }
 
   .send-btn {
     background-color: var(--black);
-    color: white;
+    color: var(--white);
     border: none;
     padding: 10px 25px;
     font-weight: bold;

@@ -4,7 +4,7 @@ import bgImage from '../../../assets/images/backgrounds/AboutPageImages/proposit
 const Wrapper = styled.section`
   position: relative;
   background: url(${bgImage}) center/cover no-repeat;
-  color: white;
+  color: var(--white);
   width: 100%;
   height: fit-content;
   background-color: var(--black);

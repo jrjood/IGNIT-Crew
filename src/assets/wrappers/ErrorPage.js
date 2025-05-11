@@ -8,7 +8,7 @@ const Wrapper = styled.main`
   align-items: center;
 
   img {
-    width: 90vw;
+    width: 22vw;
     max-width: 37rem;
     display: block;
     margin-bottom: 2rem;

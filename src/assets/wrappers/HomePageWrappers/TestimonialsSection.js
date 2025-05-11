@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   background-color: var(--primary-400);
-  color: white;
+  color: var(--white);
   text-align: left;
 
   .title {

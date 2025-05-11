@@ -36,7 +36,7 @@ const Wrapper = styled.section`
     padding: 0 2rem;
     gap: 2rem;
     /* flex-wrap: wrap; */
-    color: white;
+    color: var(--white);
   }
   .left {
     flex-direction: column;

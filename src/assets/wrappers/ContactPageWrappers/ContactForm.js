@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   background-color: #000;
   padding: 60px 40px;
-  color: #fff;
+  color: var(--white);
   font-family: Arial, sans-serif;
 
   .form-title {
@@ -34,7 +34,7 @@ const Wrapper = styled.section`
     border: none;
     border-bottom: 2px solid var(--primary-400);
     padding: 10px 5px;
-    color: white;
+    color: var(--white);
     font-size: 14px;
     outline: none;
     transition: var(--transition);

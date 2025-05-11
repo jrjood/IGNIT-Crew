@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   background-color: var(--black);
-  color: white;
+  color: var(--white);
   text-align: left;
 
   .container {
@@ -41,7 +41,7 @@ const Wrapper = styled.section`
 
     &:hover .label {
       background: var(--black);
-      color: white;
+      color: var(--white);
     }
     &:hover .img {
       transform: scale(1.1);
@@ -64,7 +64,7 @@ const Wrapper = styled.section`
 
     &:hover .label {
       background: var(--black);
-      color: white;
+      color: var(--white);
     }
     &:hover .img {
       transform: scale(1.1);

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const MenuButtonWrapper = styled.button`
   background: transparent;
   border: none;
-  color: ${({ $open }) => ($open ? 'var(--black)' : 'white')};
+  color: ${({ $open }) => ($open ? 'var(--black)' : 'var(--white)')};
   font-size: 2rem;
   cursor: pointer;
   transition: var(--transition);
