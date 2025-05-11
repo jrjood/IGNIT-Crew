@@ -37,7 +37,7 @@ const Wrapper = styled.section`
     font-family: 'Rama Gothic M';
     margin-bottom: 2.5rem;
   }
-  @media (max-width: 62rem) {
+  @media (max-width: 48rem) {
     background: linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.66)),
       url(${aboutImage});
     background-size: cover;

@@ -26,10 +26,10 @@ const TestimonialsSection = () => {
           pagination={{ clickable: true }}
           autoplay={{ delay: 3000 }}
           breakpoints={{
-            840: {
+            768: {
               slidesPerView: 1,
             },
-            850: {
+            769: {
               slidesPerView: 2,
             },
           }}

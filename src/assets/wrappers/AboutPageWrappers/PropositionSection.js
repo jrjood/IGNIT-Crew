@@ -33,7 +33,7 @@ const Wrapper = styled.section`
 
   @media (max-width: 62rem) {
   }
-  @media (max-width: 52.5rem) {
+  @media (max-width: 48rem) {
     .cards-grid {
       grid-template-columns: 1fr;
     }

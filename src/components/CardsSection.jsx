@@ -1,12 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 import Wrapper from '../assets/wrappers/CardsSection';
 import useMediaQuery from '../utils/useMediaQuery';
 
-const ProjectsSection = ({ cardsData, gridRows, title, button }) => {
-  const isMobile = useMediaQuery('(max-width: 52.5rem)');
+const ProjectsSection = ({ cardsData, gridRows, title, button, link }) => {
+  const isMobile = useMediaQuery('(max-width: 48rem)');
   return (
     <>
       <Wrapper className='section-container'>
@@ -44,7 +45,11 @@ const ProjectsSection = ({ cardsData, gridRows, title, button }) => {
               </div>
             ))}
           </div>
-          {button && <button className='btn'>{button}</button>}
+          {button && (
+            <Link className='btn-container' to={link}>
+              <button className='btn'>{button}</button>
+            </Link>
+          )}
         </div>
       </Wrapper>
     </>

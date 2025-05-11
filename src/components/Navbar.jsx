@@ -63,7 +63,7 @@ const NavBar = () => {
           >
             {isOpen ? <AiOutlineClose /> : <IoIosMenu />}
           </MenuButtonWrapper>
-          <Link className='logo-container'>
+          <Link to='.' className='logo-container'>
             <Logo />
           </Link>
           <div className='big-bar'>

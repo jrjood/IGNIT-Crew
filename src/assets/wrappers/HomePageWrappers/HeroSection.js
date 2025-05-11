@@ -64,7 +64,7 @@ const Wrapper = styled.section`
       text-shadow: 2px 2px 3px rgb(0, 0, 0);
     }
   }
-  @media (max-width: 62rem) {
+  @media (max-width: 48rem) {
     margin: 0 auto;
     max-width: 47rem;
     .info {

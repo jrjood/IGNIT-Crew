@@ -81,19 +81,19 @@ const Wrapper = styled.section`
       }
     }
   }
-  @media (max-width: 62rem) {
+  @media (max-width: 48rem) {
     width: 100%;
     height: 100%;
-  }
-  @media (max-width: 52.5rem) {
     .grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  @media (max-width: 52.5rem) {
+  }
   @media (max-width: 27rem) {
     .card {
       width: 90%;
-      height: 20vh;
+      height: 15vh;
     }
     .card-text {
       font-size: 0.8rem;

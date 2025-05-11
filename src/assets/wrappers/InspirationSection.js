@@ -100,10 +100,7 @@ const Wrapper = styled.section`
     cursor: pointer;
   }
 
-  @media (max-width: 62rem) {
-  }
-
-  @media (max-width: 52.5rem) {
+  @media (max-width: 48rem) {
     .row {
       flex-direction: column;
       gap: 2rem;

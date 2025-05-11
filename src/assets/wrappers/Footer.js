@@ -7,6 +7,7 @@ const Wrapper = styled.footer`
   justify-content: space-between;
   background-color: var(--black);
   padding-bottom: 4rem;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.23);
   .social-container {
     display: flex;
     flex-direction: column;
@@ -67,7 +68,7 @@ const Wrapper = styled.footer`
       line-height: 1.2;
     }
   } */
-  @media (max-width: 52.5rem) {
+  @media (max-width: 48rem) {
     flex-direction: column;
     justify-content: center;
     align-items: center;

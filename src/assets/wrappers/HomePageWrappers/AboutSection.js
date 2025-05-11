@@ -42,7 +42,7 @@ const Wrapper = styled.section`
     color: var(--primary-400);
     margin-bottom: 2.5rem;
   }
-  @media (max-width: 62rem) {
+  @media (max-width: 48rem) {
     background-image: linear-gradient(
         to right bottom,
         rgba(17, 17, 17, 0.45),

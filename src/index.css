@@ -403,7 +403,7 @@ button:disabled {
 }
 @media (max-width: 36rem) {
   .btn {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     padding: 0.3rem 0.6rem;
     width: 6rem;
   }
@@ -414,7 +414,7 @@ button:disabled {
 
 @media (max-width: 27rem) {
   .btn {
-    font-size: 0.7rem;
+    /* font-size: 0.7rem; */
     padding: 0.3rem 0.2rem;
     width: 5rem;
   }

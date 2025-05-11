@@ -92,7 +92,7 @@ const Wrapper = styled.nav`
     cursor: pointer;
   }
 
-  @media (max-width: 62rem) {
+  @media (max-width: 48rem) {
     /* .aside-bar {
       display: block;
       position: fixed;

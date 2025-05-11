@@ -60,6 +60,7 @@ const Wrapper = styled.section`
 
     &:hover .overlay {
       opacity: 0.4;
+      transform: scale(1.1);
     }
 
     &:hover .label {
@@ -99,7 +100,8 @@ const Wrapper = styled.section`
     bottom: 3rem;
     left: 0;
     width: 90%;
-    height: 7vh;
+    /* height: 7vh; */
+    height: 2.5rem;
     background: var(--primary-400);
     padding: 0.5rem 1rem;
     font-weight: bold;
@@ -110,7 +112,7 @@ const Wrapper = styled.section`
     transition: var(--transition);
     z-index: 2;
   }
-  .btn {
+  .btn-container {
     align-self: flex-end;
   }
   @media (max-width: 62rem) {
@@ -118,7 +120,7 @@ const Wrapper = styled.section`
       font-size: 0.9rem;
     }
   }
-  @media (max-width: 52.5rem) {
+  @media (max-width: 48rem) {
     .big-screen {
       display: none;
     }

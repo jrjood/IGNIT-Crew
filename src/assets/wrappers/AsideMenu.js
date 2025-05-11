@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const AsideMenu = styled.aside`
-  @media (max-width: 62rem) {
+  @media (max-width: 48rem) {
     display: flex;
   }
   display: none;

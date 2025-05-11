@@ -69,6 +69,7 @@ const Wrapper = styled.div`
       position: absolute;
       top: 17%;
       opacity: 1;
+      line-height: 1.4;
     }
   }
   @media (max-width: 36rem) {
@@ -82,7 +83,7 @@ const Wrapper = styled.div`
       /* align-items: center; */
     }
     .card-text {
-      max-width: 90%;
+      max-width: 93%;
     }
   }
 `;

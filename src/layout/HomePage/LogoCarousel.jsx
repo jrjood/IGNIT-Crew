@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 import logos from '../../assets/images/sponsorLogo';
 import Wrapper from '../../assets/wrappers/LogoCarousel';
@@ -25,10 +26,10 @@ export default function LogoCarousel() {
               200: {
                 slidesPerView: 3,
               },
-              840: {
+              768: {
                 slidesPerView: 3,
               },
-              850: {
+              769: {
                 slidesPerView: 5,
               },
             }}
@@ -42,7 +43,9 @@ export default function LogoCarousel() {
             ))}
           </Swiper>
         </div>
-        <button className='btn'>SHOW MORE</button>
+        <Link className='btn-container' to='clients'>
+          <button className='btn'>SHOW MORE</button>
+        </Link>
       </div>
     </Wrapper>
   );

@@ -41,7 +41,7 @@ const Wrapper = styled.section`
     text-align: center;
   }
 
-  @media (max-width: 62rem) {
+  @media (max-width: 48rem) {
     .info {
       font-size: 4.1rem;
     }

@@ -3,13 +3,13 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   background: var(--black);
   color: var(--white);
-  height: 50vh;
-  padding: 4rem 4rem 2rem;
+  /* height: fit-content; */
+  /* padding: 4rem 4rem 2rem; */
 
   .contact-top {
     display: grid;
     grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
-    transform: translateY(-8.5rem);
+    transform: translateY(-8rem);
     font-family: 'Proxima-Nova', sans-serif;
     font-weight: 600;
   }
@@ -43,7 +43,7 @@ const Wrapper = styled.section`
   }
   .info {
     color: #00aaff;
-    min-height: 8rem;
+    /* min-height: 8rem; */
     font-size: 1.2rem;
     text-decoration: none;
     &:hover {
@@ -62,6 +62,7 @@ const Wrapper = styled.section`
     .contact-top {
       display: flex;
       flex-direction: column;
+      gap: 2rem;
       transform: none;
     }
 

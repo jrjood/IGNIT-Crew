@@ -15,7 +15,7 @@ const Wrapper = styled.section`
     color: var(--black);
     align-self: flex-start;
   }
-  .btn {
+  .btn-container {
     align-self: flex-end;
   }
 

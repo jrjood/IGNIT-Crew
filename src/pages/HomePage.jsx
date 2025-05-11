@@ -22,6 +22,7 @@ const HomePage = () => {
         title='featured projects'
         cardsData={projects}
         gridRows='big-screen grid grid--2--row'
+        link='projects'
         button='EXPLORE'
       />
       <LogoCarousel />

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Logo } from '../../components';
 import Wrapper from '../../assets/wrappers/HomePageWrappers/AboutSection';
 import aboutImage from '../../assets/images/backgrounds/HomePageImages/about-bg.jpg';
@@ -15,7 +16,9 @@ const AboutSection = () => {
           agency. We're the disruptors, the dreamers, and the doers.
         </p>
         <p className='highlight'>INNOVATION IS OUR DNA</p>
-        <button className='btn'>GET IN TOUCH</button>
+        <Link to='contact'>
+          <button className='btn'>GET IN TOUCH</button>
+        </Link>
       </div>
     </Wrapper>
   );

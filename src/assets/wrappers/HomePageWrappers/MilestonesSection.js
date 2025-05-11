@@ -5,7 +5,7 @@ const Wrapper = styled.section`
   color: #a9a9a9;
   background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0.26)),
     url(${bgImage});
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
   background-size: cover;
   background-position: center;
@@ -59,6 +59,7 @@ const Wrapper = styled.section`
     }
   }
   .since {
+    display: none;
     font-size: 5rem;
     font-family: 'Proxima-Nova', sans-serif;
     font-weight: bold;
@@ -78,44 +79,51 @@ const Wrapper = styled.section`
     img {
       padding-right: 2rem;
       width: 100%;
-      height: 100vh;
+      height: 100%;
+    }
+    position: relative;
+    &::after {
+      content: 'Since';
+      font-size: 5rem;
+      font-family: 'Proxima-Nova' !important;
+      text-transform: uppercase;
+      font-weight: bold;
+      opacity: 0.5;
+      font-weight: 500;
+      color: var(--primary-400);
+      position: absolute;
+      bottom: 4rem;
+      right: 2rem;
     }
   }
   .small-screen {
     display: none;
   }
-  @media (max-width: 62rem) {
-    margin: 0 auto;
-    height: 80vh;
+  @media (max-width: 48rem) {
+    /* margin: 0 auto; */
+    /* height: 80vh; */
     .stats-container {
       gap: 4rem;
-    }
-    .since {
-      bottom: 4rem;
-      left: -6rem;
-    }
-    .logo-container {
-      img {
-        height: 80vh;
-      }
-    }
-    .stats-container {
-      align-self: center;
-    }
-  }
-
-  @media (max-width: 52.5rem) {
-    .stats-container {
-      align-self: flex-start;
-      gap: 8rem;
     }
     .since {
       bottom: 3.5rem;
       left: -7rem;
     }
+    .logo-container {
+      img {
+        /* height: 80vh; */
+      }
+    }
+    .stats-container {
+      align-self: flex-start;
+      gap: 8rem;
+    }
     .top-text {
       width: 65%;
     }
+  }
+
+  @media (max-width: 52.5rem) {
   }
   @media (max-width: 44rem) {
     .logo-container {
@@ -149,6 +157,9 @@ const Wrapper = styled.section`
       }
     }
     .top-text {
+      align-self: center;
+      justify-self: center;
+      text-align: center;
       width: 100%;
     }
     .stats-container {

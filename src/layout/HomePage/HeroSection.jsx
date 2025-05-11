@@ -1,5 +1,6 @@
 import heroVideo from '../../assets/images/backgrounds/HomePageImages/hero-bg.mp4';
 import Wrapper from '../../assets/wrappers/HomePageWrappers/HeroSection';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -34,7 +35,9 @@ const HeroSection = () => {
             proud of our reputation and plan to surpass even higher benchmarks
             in the future.
           </p>
-          <button className='btn'>LEARN MORE</button>
+          <Link className='btn-container' to='about'>
+            <button className='btn'>LEARN MORE</button>
+          </Link>
         </div>
       </div>
     </Wrapper>

@@ -6,7 +6,8 @@ const ServicesCard = ({ services }) => {
       {services.map((service, index) => (
         <Link
           className='card flex-center'
-          to={service.toLowerCase().replace(/\s+/g, '-')}
+          // to={service.toLowerCase().replace(/\s+/g, '-')}
+          to='#'
           key={index}
         >
           <div className='line-highlight'></div>
