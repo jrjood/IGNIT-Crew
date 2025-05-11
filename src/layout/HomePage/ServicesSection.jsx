@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Wrapper from '../../assets/wrappers/HomePageWrappers/ServicesSection';
 import { ServicesCard } from '../../components';
 

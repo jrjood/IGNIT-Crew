@@ -38,6 +38,7 @@ const Wrapper = styled.section`
     width: 25%;
     margin-bottom: 5rem;
   }
+
   .text-box {
     color: var(--white);
     font-size: 1.125rem;
@@ -53,7 +54,8 @@ const Wrapper = styled.section`
   //NewsletterForm style
   .newsletter-title {
     color: var(--white);
-    font-size: 18px;
+    font-family: 'Rama Gothic M';
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -75,6 +77,7 @@ const Wrapper = styled.section`
   }
 
   .input-wrapper input::placeholder {
+    font-size: 0.8rem;
     color: #333;
   }
 
@@ -127,6 +130,11 @@ const Wrapper = styled.section`
   @media (max-width: 27rem) {
     .quote {
       font-size: 2.3rem;
+    }
+  }
+  @media (max-width: 12.5rem) {
+    .input-wrapper input::placeholder {
+      font-size: 0.5rem;
     }
   }
 `;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import logos from '../../assets/images/sponsorLogo';
 import Wrapper from '../../assets/wrappers/ClientsPageWrappers/ClientsLogos';

@@ -1,4 +1,3 @@
-import React from 'react';
 /* import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { LiaHandHoldingHeartSolid } from 'react-icons/lia';
 import { TbArrowBigUpLinesFilled } from 'react-icons/tb';
