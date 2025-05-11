@@ -5,7 +5,7 @@ import Wrapper from '../../assets/wrappers/HomePageWrappers/MilestonesSection';
 const MilestonesSection = () => {
   return (
     <Wrapper className='flex-center '>
-      <div className='content flex-center'>
+      <div className='container flex-center'>
         <div className='stats-container'>
           <p className='top-text'>
             These projects were executed in Egypt, USA, KSA, Lebanon, Morocco,

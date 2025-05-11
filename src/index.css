@@ -354,6 +354,7 @@ button:disabled {
   /* width: var(--fluid-width); */
   margin: 0 auto;
   padding: 0 3rem;
+  max-width: 140rem;
 }
 
 /* BUTTONS AND BADGES */
