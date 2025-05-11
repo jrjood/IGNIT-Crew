@@ -37,6 +37,7 @@ const Wrapper = styled.section`
     display: none;
     &:hover .overlay {
       opacity: 0.4;
+      transform: scale(1.1);
     }
 
     &:hover .label {

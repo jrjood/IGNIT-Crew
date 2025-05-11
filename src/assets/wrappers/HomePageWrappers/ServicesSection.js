@@ -55,7 +55,7 @@ const Wrapper = styled.section`
     letter-spacing: 0.5px;
     transition: var(--transition);
     width: 100%;
-    height: 20vh;
+    height: 11rem;
     cursor: pointer;
     .card-text {
       display: flex;

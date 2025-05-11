@@ -40,7 +40,7 @@ const Wrapper = styled.div`
   }
   .card-text {
     position: absolute;
-    line-height: 1.5;
+    line-height: 1.3;
     top: 50%;
     opacity: 0;
     transition: var(--transition);

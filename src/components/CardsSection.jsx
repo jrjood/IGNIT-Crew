@@ -17,7 +17,7 @@ const ProjectsSection = ({ cardsData, gridRows, title, button, link }) => {
             <div className='small-screen'>
               <Swiper
                 modules={[Pagination, Autoplay]}
-                spaceBetween={50}
+                spaceBetween={100}
                 slidesPerView={1}
                 loop={true}
                 pagination={{ clickable: true }}

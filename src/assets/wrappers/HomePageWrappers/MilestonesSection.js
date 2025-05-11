@@ -12,6 +12,7 @@ const Wrapper = styled.section`
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
+  height: fit-content;
 
   .content {
     padding-left: 3rem;
@@ -19,6 +20,11 @@ const Wrapper = styled.section`
     /* width: 100vw !important; */
     /* width: 100%; */
     gap: 2rem;
+    height: 200rem !important;
+  }
+
+  .container {
+    height: 35rem;
   }
 
   .stats-container {
