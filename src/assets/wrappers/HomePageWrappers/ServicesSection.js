@@ -6,7 +6,7 @@ const Wrapper = styled.section`
   background: url(${bgImage}) center/cover no-repeat;
   color: var(--white);
   text-align: center;
-  height: 100vh;
+  /* height: 65vh; */
   .overlay {
     position: absolute;
     width: 100%;
@@ -57,6 +57,7 @@ const Wrapper = styled.section`
     transition: var(--transition);
     width: 100%;
     height: 100%;
+    min-height: 10rem;
     cursor: pointer;
     .card-text {
       display: flex;

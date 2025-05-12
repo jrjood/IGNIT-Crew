@@ -10,7 +10,7 @@ const Wrapper = styled.section`
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  /* height: 50vh; */
 
   .content {
     padding-left: 3rem;

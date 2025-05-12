@@ -6,7 +6,7 @@ const Wrapper = styled.section`
   align-items: center;
   background-color: var(--black);
   gap: 2rem;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   .logo {
     display: flex;

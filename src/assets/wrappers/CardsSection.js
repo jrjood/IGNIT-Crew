@@ -18,7 +18,7 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-bottom: 2rem;
-    height: 40rem;
+    height: 25rem;
   }
 
   .grid--3--row {
