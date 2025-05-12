@@ -639,7 +639,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       transform: translateY(-8rem);
     }
   }
-`,fS=()=>x.jsxs(cS,{className:"loader-container",children:[x.jsx(Ao,{}),x.jsx("div",{className:"spinner"})]});function dS(){const[a,i]=V.useState(!0);return V.useEffect(()=>{const s=Date.now(),u=()=>{const c=Date.now()-s,d=Math.max(2e3-c,0);setTimeout(()=>{const m=document.getElementById("initial-loader");m&&m.remove(),i(!1)},d)};if(document.readyState==="complete")u();else return window.addEventListener("load",u),()=>window.removeEventListener("load",u)},[]),a?x.jsx(fS,{}):x.jsxs(x.Fragment,{children:[x.jsx(Wx,{}),x.jsx(uS,{}),x.jsx(Gb,{}),x.jsx(kx,{})]})}const Cg=et.main`
+`,fS=()=>x.jsxs(cS,{className:"loader-container",children:[x.jsx(Ao,{}),x.jsx("div",{className:"spinner"})]});function dS(){const[a,i]=V.useState(!0);return V.useEffect(()=>{const s=Date.now(),u=()=>{const c=Date.now()-s,d=Math.max(7e3-c,0);setTimeout(()=>{const m=document.getElementById("initial-loader");m&&m.remove(),i(!1)},d)};if(document.readyState==="complete")u();else return window.addEventListener("load",u),()=>window.removeEventListener("load",u)},[]),a?x.jsx(fS,{}):x.jsxs(x.Fragment,{children:[x.jsx(Wx,{}),x.jsx(uS,{}),x.jsx(Gb,{}),x.jsx(kx,{})]})}const Cg=et.main`
   min-height: 100vh;
   text-align: center;
   display: flex;
