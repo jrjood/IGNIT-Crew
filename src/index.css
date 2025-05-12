@@ -32,10 +32,10 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
   position: relative;
 }
 
+html,
 body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -47,6 +47,7 @@ body::-webkit-scrollbar {
 
 html {
   font-size: 100%;
+  overflow-x: hidden;
 } /*16px*/
 a,
 button {

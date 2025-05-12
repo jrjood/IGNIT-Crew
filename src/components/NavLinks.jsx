@@ -1,19 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import links from '../utils/links';
-import { useNavBarContext } from './NavBar';
 
-const NavLinks = () => {
-  const { toggleSideBar } = useNavBarContext();
+const NavLinks = ({ toggle }) => {
   return (
     <ul className='nav-links'>
       {links.map((link) => (
         <li key={link.text}>
-          <NavLink
-            onClick={toggleSideBar}
-            className='nav-link'
-            to={link.path}
-            end
-          >
+          <NavLink onClick={toggle} className='nav-link' to={link.path} end>
             {link.text}
             <span></span>
           </NavLink>

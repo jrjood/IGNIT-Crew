@@ -3,6 +3,7 @@ import aboutImage from '../../images/backgrounds/AboutPageImages/about-bg2.jpeg'
 
 const Wrapper = styled.section`
   display: flex;
+  gap: 0.5rem;
   background-color: var(--black);
   height: 100%;
   width: 100%;
@@ -11,7 +12,7 @@ const Wrapper = styled.section`
     margin: auto 0;
     /* width: 42%; */
     height: 50rem;
-    width: 30rem;
+    width: 50%;
     display: block;
     background-image: url(${aboutImage});
     background-size: cover;
@@ -25,6 +26,7 @@ const Wrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     padding: 1rem 2rem;
+    max-width: 80rem;
   }
   .text {
     font-size: 1rem;

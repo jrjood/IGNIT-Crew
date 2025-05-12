@@ -15,7 +15,6 @@ const Wrapper = styled.section`
   .content {
     padding-left: 3rem;
     z-index: 2;
-    /* width: 100vw !important; */
     /* width: 100%; */
     gap: 2rem;
     /* height: 200rem !important; */

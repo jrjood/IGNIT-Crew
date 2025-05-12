@@ -8,3 +8,4 @@ export { default as ServicesCard } from './ServicesCard';
 export { default as ValuesBox } from './ValuesBox';
 export { default as ContactsSection } from './ContactsSection';
 export { default as PageStarter } from './PageStarter';
+export { default as ScrollToTop } from './ScrollToTop';

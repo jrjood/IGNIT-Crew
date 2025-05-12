@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -8,8 +8,6 @@ import { Logo, NavLinks } from '../components';
 import Wrapper from '../assets/wrappers/Navbar';
 import MenuButtonWrapper from '../assets/wrappers/MenuButtonWrapper';
 import AsideMenu from '../assets/wrappers/AsideMenu';
-
-const NavBarContext = createContext();
 
 const NavBar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -43,37 +41,30 @@ const NavBar = () => {
   }, [location.pathname]); // 👈 re-run when route changes
 
   return (
-    <NavBarContext.Provider
-      value={{
-        toggleSideBar,
-      }}
-    >
-      <Wrapper $isSticky={isSticky}>
-        <AsideMenu $open={isOpen}>
-          <div className='content'>
-            <NavLinks />
-          </div>
-        </AsideMenu>
-        <nav className='navbar '>
-          <MenuButtonWrapper
-            type='button'
-            className='toggle-btn'
-            onClick={toggleSideBar}
-            $open={isOpen}
-          >
-            {isOpen ? <AiOutlineClose /> : <IoIosMenu />}
-          </MenuButtonWrapper>
-          <Link to='.' className='logo-container'>
-            <Logo />
-          </Link>
-          <div className='big-bar'>
-            <NavLinks />
-          </div>
-        </nav>
-      </Wrapper>
-    </NavBarContext.Provider>
+    <Wrapper $isSticky={isSticky}>
+      <AsideMenu $open={isOpen}>
+        <div className='content'>
+          <NavLinks toggle={toggleSideBar} />
+        </div>
+      </AsideMenu>
+      <nav className='navbar '>
+        <MenuButtonWrapper
+          type='button'
+          className='toggle-btn'
+          onClick={toggleSideBar}
+          $open={isOpen}
+        >
+          {isOpen ? <AiOutlineClose /> : <IoIosMenu />}
+        </MenuButtonWrapper>
+        <Link to='.' className='logo-container'>
+          <Logo />
+        </Link>
+        <div className='big-bar'>
+          <NavLinks />
+        </div>
+      </nav>
+    </Wrapper>
   );
 };
 
-export const useNavBarContext = () => useContext(NavBarContext);
 export default NavBar;

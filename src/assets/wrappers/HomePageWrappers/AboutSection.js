@@ -18,7 +18,7 @@ const Wrapper = styled.section`
   .image-box {
     margin: auto 0;
     height: 45rem;
-    width: 60rem;
+    width: 50%;
     display: block;
     background-image: url(${aboutImage});
     background-size: cover;
@@ -28,8 +28,8 @@ const Wrapper = styled.section`
   .right {
     flex: 1;
     min-width: 40%;
-    padding: 1rem;
-    padding-left: 0;
+    padding: 2rem;
+    padding-left: 1rem;
     color: var(--white);
     display: flex;
     flex-direction: column;

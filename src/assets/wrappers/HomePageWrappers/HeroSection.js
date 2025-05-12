@@ -14,7 +14,7 @@ const Wrapper = styled.section`
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: -2;
+    z-index: 1;
   }
   .background-video {
     position: absolute;
@@ -23,7 +23,7 @@ const Wrapper = styled.section`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -3;
+    /* z-index: -3; */
   }
   .content {
     display: flex;
@@ -36,6 +36,7 @@ const Wrapper = styled.section`
     gap: 2rem;
     /* flex-wrap: wrap; */
     color: var(--white);
+    z-index: 2;
   }
   .left {
     flex-direction: column;

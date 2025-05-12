@@ -12,7 +12,7 @@ const AsideMenu = styled.aside`
   /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  transition: transform 0.3s ease-in-out, opacity 0.6s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
   transform: translateX(${({ $open }) => ($open ? '0' : '-100%')});
   opacity: ${({ $open }) => ($open ? '1' : '0')};
   pointer-events: ${({ $open }) => ($open ? 'auto' : 'none')};

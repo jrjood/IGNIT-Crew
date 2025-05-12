@@ -12,7 +12,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: '//IGNIT-Crew',
+    path: '/IGNIT-Crew',
     element: <HomeLayout />,
     errorElement: <Error />,
     children: [
