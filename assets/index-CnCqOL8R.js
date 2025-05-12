@@ -639,7 +639,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       transform: translateY(-8rem);
     }
   }
-`,fS=()=>x.jsxs(cS,{className:"loader-container",children:[x.jsx(Ao,{}),x.jsx("div",{className:"spinner"})]});function dS(){const[a,i]=V.useState(!0);return V.useEffect(()=>{const r=()=>i(!1);return window.addEventListener("load",r),()=>{window.removeEventListener("load",r)}},[]),x.jsx(x.Fragment,{children:a?x.jsx(fS,{}):x.jsxs(x.Fragment,{children:[x.jsx(Wx,{}),x.jsx(uS,{}),x.jsx(Gb,{}),x.jsx(kx,{})]})})}const Cg=et.main`
+`,fS=()=>x.jsxs(cS,{className:"loader-container",children:[x.jsx(Ao,{}),x.jsx("div",{className:"spinner"})]});function dS(){const[a,i]=V.useState(!0);return V.useEffect(()=>{const r=Array.from(document.images),s=Array.from(document.querySelectorAll("video"));let u=r.length+s.length,c=0;if(u===0){i(!1);return}const d=()=>{c++,c===u&&i(!1)};r.forEach(m=>{m.complete?d():(m.onload=d,m.onerror=d)}),s.forEach(m=>{m.readyState>=3?d():(m.onloadeddata=d,m.onerror=d)}),setTimeout(()=>{i(!1)},1e4)}),x.jsx(x.Fragment,{children:a?x.jsx(fS,{}):x.jsxs(x.Fragment,{children:[x.jsx(Wx,{}),x.jsx(uS,{}),x.jsx(Gb,{}),x.jsx(kx,{})]})})}const Cg=et.main`
   min-height: 100vh;
   text-align: center;
   display: flex;
