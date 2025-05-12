@@ -1,34 +1,38 @@
 import { Outlet } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { NavBar, Footer, ScrollToTop } from '../components';
-import Loader from '../components/Loader'; // 👈 create this component
+import Loader from '../components/Loader';
 
 export default function HomeLayout() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const handleLoad = () => setLoading(false);
+    const MIN_DURATION = 7000; // 👈 2 seconds minimum
+    const start = Date.now();
 
-    // Listen for the page to fully load
-    window.addEventListener('load', handleLoad);
+    const handleLoad = () => {
+      const timePassed = Date.now() - start;
+      const remaining = Math.max(MIN_DURATION - timePassed, 0);
 
-    return () => {
-      window.removeEventListener('load', handleLoad);
+      setTimeout(() => setLoading(false), remaining);
     };
+
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
+    }
   }, []);
 
-  return (
+  return loading ? (
+    <Loader />
+  ) : (
     <>
-      {loading ? (
-        <Loader /> // 👈 loading screen component
-      ) : (
-        <>
-          <NavBar />
-          <ScrollToTop />
-          <Outlet />
-          <Footer />
-        </>
-      )}
+      <NavBar />
+      <ScrollToTop />
+      <Outlet />
+      <Footer />
     </>
   );
 }

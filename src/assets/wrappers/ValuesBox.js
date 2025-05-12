@@ -69,7 +69,7 @@ const Wrapper = styled.div`
       position: absolute;
       top: 17%;
       opacity: 1;
-      line-height: 1.4;
+      line-height: 1.2;
     }
   }
   @media (max-width: 36rem) {
