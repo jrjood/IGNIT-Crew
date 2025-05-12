@@ -13,7 +13,7 @@ export default function HomeLayout() {
     const handleLoad = () => {
       const elapsed = Date.now() - start;
       const remaining = Math.max(MIN_DURATION - elapsed, 0);
-
+      setTimeout(() => setLoading(false), remaining);
       setTimeout(() => {
         // Remove fallback loader in public/index.html
         const hardLoader = document.getElementById('initial-loader');
