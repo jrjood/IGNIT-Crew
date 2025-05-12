@@ -7,7 +7,7 @@ export default function HomeLayout() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const MIN_DURATION = 2000; // Minimum loader duration in ms
+    const MIN_DURATION = 7000; // Minimum loader duration in ms
     const start = Date.now();
 
     const handleLoad = () => {
