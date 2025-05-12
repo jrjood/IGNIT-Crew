@@ -18,7 +18,7 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-bottom: 2rem;
-    max-height: 140vh;
+    height: 40rem;
   }
 
   .grid--3--row {
@@ -28,8 +28,8 @@ const Wrapper = styled.section`
     grid-template-rows: repeat(2, 1fr);
   }
   .card-slide {
-    width: 100%;
-    height: 40vh;
+    /* width: 100%; */
+    height: 17rem;
     border-radius: var(--border-radius);
   }
   .small-screen {
@@ -101,7 +101,6 @@ const Wrapper = styled.section`
     bottom: 3rem;
     left: 0;
     width: 90%;
-    /* height: 7vh; */
     height: 2.5rem;
     background: var(--primary-400);
     padding: 0.5rem 1rem;

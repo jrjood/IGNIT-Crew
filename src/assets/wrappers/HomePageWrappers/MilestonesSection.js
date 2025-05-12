@@ -5,14 +5,12 @@ const Wrapper = styled.section`
   color: #a9a9a9;
   background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0.26)),
     url(${bgImage});
-  height: fit-content;
-  width: 100vw;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
-  height: fit-content;
+  height: 100vh;
 
   .content {
     padding-left: 3rem;
@@ -20,11 +18,11 @@ const Wrapper = styled.section`
     /* width: 100vw !important; */
     /* width: 100%; */
     gap: 2rem;
-    height: 200rem !important;
+    /* height: 200rem !important; */
   }
 
   .container {
-    height: 35rem;
+    /* height: 35rem; */
   }
 
   .stats-container {
@@ -80,7 +78,7 @@ const Wrapper = styled.section`
     background: linear-gradient(
       90deg,
       rgba(255, 200, 0, 0.01),
-      rgba(255, 200, 0, 0.1)
+      rgba(128, 127, 127, 0.49)
     );
     img {
       padding-right: 2rem;
@@ -91,10 +89,10 @@ const Wrapper = styled.section`
     &::after {
       content: 'Since';
       font-size: 5rem;
-      font-family: 'Proxima-Nova' !important;
+      font-family: 'Rama Gothic M' !important;
       text-transform: uppercase;
       font-weight: bold;
-      opacity: 0.5;
+      opacity: 0.3;
       font-weight: 500;
       color: var(--primary-400);
       position: absolute;
@@ -106,8 +104,8 @@ const Wrapper = styled.section`
     display: none;
   }
   @media (max-width: 48rem) {
-    /* margin: 0 auto; */
-    /* height: 80vh; */
+    height: fit-content;
+
     .stats-container {
       gap: 4rem;
     }
@@ -115,11 +113,7 @@ const Wrapper = styled.section`
       bottom: 3.5rem;
       left: -7rem;
     }
-    .logo-container {
-      img {
-        /* height: 80vh; */
-      }
-    }
+
     .stats-container {
       align-self: flex-start;
       gap: 8rem;

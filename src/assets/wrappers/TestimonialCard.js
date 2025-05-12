@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   background: #111;
   border-radius: var(--border-radius);
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
-  height: 21rem;
+  height: 23.2rem;
   margin-bottom: 3rem;
   .client-image {
     width: 5.7rem;
@@ -35,6 +35,16 @@ const Wrapper = styled.div`
   .feedback {
     font-style: italic;
     color: #ddd;
+  }
+  @media (max-width: 14rem) {
+    .feedback {
+      font-size: 0.7rem;
+    }
+    .stars {
+      margin: 1rem 0;
+      color: gold;
+      font-size: 0.7rem;
+    }
   }
 `;
 

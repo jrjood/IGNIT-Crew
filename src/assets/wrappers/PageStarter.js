@@ -3,8 +3,6 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  width: 100vw;
-  /* height: 100vh; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -23,7 +21,7 @@ const Wrapper = styled.section`
   .content {
     display: flex;
     width: 100%;
-    height: 62vh;
+    height: 30rem;
     align-content: center;
     justify-content: start;
     padding: 0 2rem;

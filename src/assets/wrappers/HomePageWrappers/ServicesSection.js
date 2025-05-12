@@ -6,7 +6,6 @@ const Wrapper = styled.section`
   background: url(${bgImage}) center/cover no-repeat;
   color: var(--white);
   text-align: center;
-  width: 100vw;
   height: 100vh;
   .overlay {
     position: absolute;
@@ -20,10 +19,11 @@ const Wrapper = styled.section`
   .container {
     position: relative;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100%;
   }
 
   .title {
@@ -35,9 +35,10 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     justify-items: center;
-    align-content: center;
+    /* align-content: center; */
     gap: 1rem;
     width: 100%;
+    height: 80%;
   }
 
   .card {
@@ -55,7 +56,7 @@ const Wrapper = styled.section`
     letter-spacing: 0.5px;
     transition: var(--transition);
     width: 100%;
-    height: 11rem;
+    height: 100%;
     cursor: pointer;
     .card-text {
       display: flex;
@@ -93,7 +94,6 @@ const Wrapper = styled.section`
   @media (max-width: 27rem) {
     .card {
       width: 90%;
-      height: 15vh;
     }
     .card-text {
       font-size: 0.8rem;

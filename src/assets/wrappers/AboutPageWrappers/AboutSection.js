@@ -9,8 +9,9 @@ const Wrapper = styled.section`
 
   .image-box {
     margin: auto 0;
-    height: 100vh;
-    width: 42%;
+    /* width: 42%; */
+    height: 50rem;
+    width: 30rem;
     display: block;
     background-image: url(${aboutImage});
     background-size: cover;
@@ -26,7 +27,7 @@ const Wrapper = styled.section`
     padding: 1rem 2rem;
   }
   .text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 2rem;
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
@@ -42,8 +43,9 @@ const Wrapper = styled.section`
       url(${aboutImage});
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
+    padding: 2rem 0;
 
     .image-box {
       display: none;

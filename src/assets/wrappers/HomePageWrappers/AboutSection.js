@@ -3,20 +3,22 @@ import aboutImage from '../../../assets/images/backgrounds/HomePageImages/about-
 
 const Wrapper = styled.section`
   display: flex;
+  align-items: center;
   background-color: var(--black);
-  gap: 5rem;
-  height: 100%;
+  gap: 2rem;
+  height: 100vh;
   width: 100%;
   .logo {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 70%;
+    max-width: 40rem;
   }
 
   .image-box {
     margin: auto 0;
-    height: 80vh;
-    width: 100%;
+    height: 45rem;
+    width: 60rem;
     display: block;
     background-image: url(${aboutImage});
     background-size: cover;
@@ -26,7 +28,8 @@ const Wrapper = styled.section`
   .right {
     flex: 1;
     min-width: 40%;
-    padding-right: 1rem;
+    padding: 1rem;
+    padding-left: 0;
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -36,13 +39,17 @@ const Wrapper = styled.section`
     font-size: 1.625rem;
     line-height: 1.5;
     margin-bottom: 2rem;
+    max-width: 90rem;
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
   }
   .highlight {
     color: var(--primary-400);
     margin-bottom: 2.5rem;
+    font-size: 1.6rem;
   }
   @media (max-width: 48rem) {
+    height: 100%;
+
     background-image: linear-gradient(
         to right bottom,
         rgba(17, 17, 17, 0.45),
@@ -84,7 +91,6 @@ const Wrapper = styled.section`
     }
     .highlight {
       margin-bottom: 0.5rem;
-      font-size: 1.6rem;
     }
   }
   @media (max-width: 27rem) {
