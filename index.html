@@ -5,10 +5,59 @@
     <link rel="icon" type="image/svg+xml" href="/IGNIT-Crew/navicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IGNIT Crew</title>
-    <script type="module" crossorigin src="/IGNIT-Crew/assets/index-C59OTI1i.js"></script>
+    <script type="module" crossorigin src="/IGNIT-Crew/assets/index-DVnd0-Si.js"></script>
     <link rel="stylesheet" crossorigin href="/IGNIT-Crew/assets/index-BpMSU2Ix.css">
   </head>
   <body>
+    <div id="initial-loader">
+      <style>
+        #initial-loader {
+          position: fixed;
+          inset: 0;
+          background: #000;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: 99999;
+        }
+
+        #initial-loader .logo {
+          width: 20rem;
+          opacity: 0;
+          transform: translateY(-10rem);
+          animation: fadeSlideIn 1s ease forwards;
+        }
+
+        #initial-loader .spinner {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border: 5px solid #ccc;
+          border-top-color: #333;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+          margin-top: 1.5rem;
+        }
+
+        @keyframes spin {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes fadeSlideIn {
+          to {
+            opacity: 1;
+            transform: translateY(-8rem);
+          }
+        }
+      </style>
+
+      <!-- Optional: add your logo image instead of React component -->
+      <img class="logo" src="/IGNIT-Crew/logo.png" alt="Logo" />
+      <div class="spinner"></div>
+    </div>
     <div id="root"></div>
   </body>
 </html>

@@ -639,7 +639,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       transform: translateY(-8rem);
     }
   }
-`,fS=()=>x.jsxs(cS,{className:"loader-container",children:[x.jsx(Ao,{}),x.jsx("div",{className:"spinner"})]});function dS(){const[a,i]=V.useState(!0);return V.useEffect(()=>{const s=Date.now(),u=()=>{const c=Date.now()-s,d=Math.max(7e3-c,0);setTimeout(()=>i(!1),d)};if(document.readyState==="complete")u();else return window.addEventListener("load",u),()=>window.removeEventListener("load",u)},[]),a?x.jsx(fS,{}):x.jsxs(x.Fragment,{children:[x.jsx(Wx,{}),x.jsx(uS,{}),x.jsx(Gb,{}),x.jsx(kx,{})]})}const Cg=et.main`
+`,fS=()=>x.jsxs(cS,{className:"loader-container",children:[x.jsx(Ao,{}),x.jsx("div",{className:"spinner"})]});function dS(){const[a,i]=V.useState(!0);return V.useEffect(()=>{const s=Date.now(),u=()=>{const c=Date.now()-s,d=Math.max(2e3-c,0);setTimeout(()=>{const m=document.getElementById("initial-loader");m&&m.remove(),i(!1)},d)};if(document.readyState==="complete")u();else return window.addEventListener("load",u),()=>window.removeEventListener("load",u)},[]),a?x.jsx(fS,{}):x.jsxs(x.Fragment,{children:[x.jsx(Wx,{}),x.jsx(uS,{}),x.jsx(Gb,{}),x.jsx(kx,{})]})}const Cg=et.main`
   min-height: 100vh;
   text-align: center;
   display: flex;
@@ -687,7 +687,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-bottom: 2rem;
-    height: 40rem;
+    height: 25rem;
   }
 
   .grid--3--row {
@@ -821,7 +821,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   align-items: center;
   background-color: var(--black);
   gap: 2rem;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   .logo {
     display: flex;
@@ -1066,7 +1066,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  /* height: 50vh; */
 
   .content {
     padding-left: 3rem;
@@ -1239,7 +1239,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   background: url(${LT}) center/cover no-repeat;
   color: var(--white);
   text-align: center;
-  height: 100vh;
+  /* height: 65vh; */
   .overlay {
     position: absolute;
     width: 100%;
@@ -1290,6 +1290,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     transition: var(--transition);
     width: 100%;
     height: 100%;
+    min-height: 10rem;
     cursor: pointer;
     .card-text {
       display: flex;
