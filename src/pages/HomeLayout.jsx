@@ -7,14 +7,20 @@ export default function HomeLayout() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const MIN_DURATION = 7000; // 👈 2 seconds minimum
+    const MIN_DURATION = 2000; // Minimum loader duration in ms
     const start = Date.now();
 
     const handleLoad = () => {
-      const timePassed = Date.now() - start;
-      const remaining = Math.max(MIN_DURATION - timePassed, 0);
+      const elapsed = Date.now() - start;
+      const remaining = Math.max(MIN_DURATION - elapsed, 0);
 
-      setTimeout(() => setLoading(false), remaining);
+      setTimeout(() => {
+        // Remove fallback loader in public/index.html
+        const hardLoader = document.getElementById('initial-loader');
+        if (hardLoader) hardLoader.remove();
+
+        setLoading(false);
+      }, remaining);
     };
 
     if (document.readyState === 'complete') {
