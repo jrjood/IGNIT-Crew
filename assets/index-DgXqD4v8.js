@@ -646,7 +646,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-bottom: 2rem;
-    height: 25rem;
+    height: 35rem;
   }
 
   .grid--3--row {
