@@ -2,7 +2,7 @@
 
 A stunning modern website built with **React**, showcasing smooth page transitions, scroll-triggered animations, styled components, and interactive carousels.
 
-![IGNIT CREW Preview](https://github.com/jrjood/IGNIT-Crew/src/assets/images/preview.png) <!-- Add a real screenshot URL if available -->
+![IGNIT CREW Preview](https://github.com/jrjood/IGNIT-Crew/tree/main/src/assets/images) <!-- Add a real screenshot URL if available -->
 
 ---
 
