@@ -25,7 +25,7 @@ const values = [
   {
     icon: false,
     title: 'experience',
-    text: `Our work in the field for more than two decades, has resulted in us being one of Egypt's longest standing marketing agencies. Our experience is not only associated with time, but also associated with quality, we’ve consistently delivered state of the art projects throughout the years
+    text: `Our work in the field for more than two decades, has resulted in us being one of Egypt's longest standing marketing agencies. Our experience is not only associated with time, but also associated with quality, we’ve consistently delivered state of the art projects throughout the years. 
 
 
 `,

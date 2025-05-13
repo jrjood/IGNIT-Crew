@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Wrapper from '../../assets/wrappers/AboutPageWrappers/AboutSection';
 
 const AboutSection = () => {
@@ -22,7 +23,9 @@ const AboutSection = () => {
         <p className='highlight'>
           our plan for the future is to exceed even higher benchmarks.
         </p>
-        <button className='btn'>start campaign</button>
+        <Link to='/IGNIT-Crew/contact'>
+          <button className='btn'>start campaign</button>
+        </Link>
       </div>
     </Wrapper>
   );
