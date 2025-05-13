@@ -639,7 +639,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       transform: translateY(-8rem);
     }
   }
-`,fS=()=>x.jsxs(cS,{className:"loader-container",children:[x.jsx(Ao,{}),x.jsx("div",{className:"spinner"})]});function dS(){const[a,i]=V.useState(!0);return V.useEffect(()=>{const s=Date.now();(async()=>{const c=document.querySelector("#hero-video");c&&await new Promise(h=>{c.readyState>=3?h():c.addEventListener("loadeddata",h,{once:!0})});const d=Date.now()-s,m=Math.max(3e3-d,0);setTimeout(()=>{const h=document.getElementById("initial-loader");h&&h.remove(),i(!1)},m)})()},[]),a?x.jsx(fS,{}):x.jsxs(x.Fragment,{children:[x.jsx(Wx,{}),x.jsx(uS,{}),x.jsx(Gb,{}),x.jsx(kx,{})]})}const Cg=et.main`
+`,fS=()=>x.jsxs(cS,{className:"loader-container",children:[x.jsx(Ao,{}),x.jsx("div",{className:"spinner"})]});function dS(){const[a,i]=V.useState(!0);return V.useEffect(()=>{const s=Date.now(),u=()=>new Promise(d=>{const m=document.getElementById("hero-video");if(!m)return d();const h=()=>{m.currentTime>0&&!m.paused&&!m.ended&&m.readyState>=3?requestAnimationFrame(()=>d()):setTimeout(h,100)};h()});(async()=>{await u();const d=Date.now()-s,m=Math.max(2e3-d,0);setTimeout(()=>{const h=document.getElementById("initial-loader");h&&h.remove(),i(!1)},m)})()},[]),a?x.jsx(fS,{}):x.jsxs(x.Fragment,{children:[x.jsx(Wx,{}),x.jsx(uS,{}),x.jsx(Gb,{}),x.jsx(kx,{})]})}const Cg=et.main`
   min-height: 100vh;
   text-align: center;
   display: flex;
