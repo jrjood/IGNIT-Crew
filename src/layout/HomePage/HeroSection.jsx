@@ -9,6 +9,7 @@ const HeroSection = () => {
         <div className='overlay' />
         <video
           className='background-video'
+          id='hero-video'
           autoPlay
           loop
           muted

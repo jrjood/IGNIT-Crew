@@ -7,15 +7,29 @@ export default function HomeLayout() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const MIN_DURATION = 7000; // Minimum loader duration in ms
+    const MIN_DURATION = 3000; // optional delay
     const start = Date.now();
 
-    const handleLoad = () => {
+    const waitForMedia = async () => {
+      // 👇 Wait for a specific video or image to load (adjust selector as needed)
+      const bgVideo = document.querySelector('#hero-video');
+
+      if (bgVideo) {
+        await new Promise((resolve) => {
+          if (bgVideo.readyState >= 3) {
+            resolve(); // Already loaded
+          } else {
+            bgVideo.addEventListener('loadeddata', resolve, { once: true });
+          }
+        });
+      }
+
+      // You can also wait for background images or other elements here
+
       const elapsed = Date.now() - start;
       const remaining = Math.max(MIN_DURATION - elapsed, 0);
-      setTimeout(() => setLoading(false), remaining);
+
       setTimeout(() => {
-        // Remove fallback loader in public/index.html
         const hardLoader = document.getElementById('initial-loader');
         if (hardLoader) hardLoader.remove();
 
@@ -23,12 +37,7 @@ export default function HomeLayout() {
       }, remaining);
     };
 
-    if (document.readyState === 'complete') {
-      handleLoad();
-    } else {
-      window.addEventListener('load', handleLoad);
-      return () => window.removeEventListener('load', handleLoad);
-    }
+    waitForMedia();
   }, []);
 
   return loading ? (
