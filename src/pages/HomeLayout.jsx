@@ -1,29 +1,23 @@
 import { Outlet } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { NavBar, Footer, ScrollToTop } from '../components';
-import Loader from '../components/Loader';
 
 export default function HomeLayout() {
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     const MIN_DURATION = 2000;
     const start = Date.now();
 
-    const waitUntilRendered = () => {
+    const waitForVideoRender = () => {
       return new Promise((resolve) => {
         const video = document.getElementById('hero-video');
         if (!video) return resolve();
 
         const check = () => {
-          // Check if video has visible dimensions (rendered on screen)
-          const rect = video.getBoundingClientRect();
-          const visible = rect.width > 0 && rect.height > 0;
-
-          if (visible) {
-            requestAnimationFrame(() => resolve());
+          const isVisible = video.offsetWidth > 0 && video.offsetHeight > 0;
+          if (isVisible && video.readyState >= 3) {
+            requestAnimationFrame(resolve);
           } else {
-            setTimeout(check, 100); // Keep checking every 100ms
+            setTimeout(check, 100);
           }
         };
 
@@ -31,25 +25,32 @@ export default function HomeLayout() {
       });
     };
 
-    const handleRenderComplete = async () => {
-      await waitUntilRendered();
+    const revealApp = async () => {
+      await waitForVideoRender();
 
       const elapsed = Date.now() - start;
       const remaining = Math.max(MIN_DURATION - elapsed, 0);
 
       setTimeout(() => {
-        const hardLoader = document.getElementById('initial-loader');
-        if (hardLoader) hardLoader.remove();
-        setLoading(false);
+        const loader = document.getElementById('initial-loader');
+        if (loader) loader.remove();
+
+        const appRoot = document.getElementById('root');
+        if (appRoot) {
+          appRoot.style.display = 'block';
+          appRoot.style.opacity = '0';
+          appRoot.style.transition = 'opacity 0.5s ease';
+          requestAnimationFrame(() => {
+            appRoot.style.opacity = '1';
+          });
+        }
       }, remaining);
     };
 
-    handleRenderComplete();
+    revealApp();
   }, []);
 
-  return loading ? (
-    <Loader />
-  ) : (
+  return (
     <>
       <NavBar />
       <ScrollToTop />
