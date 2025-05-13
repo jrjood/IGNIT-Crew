@@ -34,6 +34,8 @@ body {
   height: 100vh;
   position: relative;
   background-color: var(--black);
+  /* Ensure safe area fills properly on iPhones */
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 html,
