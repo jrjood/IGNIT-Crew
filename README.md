@@ -1,12 +1,100 @@
-# React + Vite
+# IGNIT CREW 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stunning modern website built with **React**, showcasing smooth page transitions, scroll-triggered animations, styled components, and interactive carousels.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
 
-## Expanding the ESLint configuration
+[🔗 View Live Site](https://jrjood.github.io/IGNIT-Crew/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌟 Features
+
+- ⚛️ Built with **React 18** + **React Router v6**
+- 🎨 Styled using **Styled Components**
+- 💫 Smooth route transitions using **Framer Motion**
+- 🎥 Hero section with **video background**
+- 🔢 Scroll-triggered **animated counters**
+- 💼 Featured projects grid with hover overlays
+- 🚀 Client logos carousel using **Swiper**
+- 🧭 Sticky navigation with transparent-to-solid behavior
+- 📱 Fully responsive across screen sizes
+
+---
+
+## 📂 Project Structure
+
+```
+/src
+│
+├── assets/            # Images, videos, logos
+├── components/        # Reusable components (Navbar, Footer, ScrollToTop, etc.)
+├── features/          # Page-specific UI sections
+│   └── Home/          # Hero, About, Services, Projects, Clients...
+├── pages/             # Full route pages (HomePage, AboutPage, etc.)
+├── layout/            # Shared layout component (HomeLayout)
+├── AppRoutes.jsx      # Router configuration using createBrowserRouter
+└── main.jsx           # Entry point
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/jrjood/IGNIT-Crew.git
+cd IGNIT-Crew
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the Project Locally
+
+```bash
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🧩 Dependencies
+
+- `react`
+- `react-router-dom`
+- `styled-components`
+- `framer-motion`
+- `swiper`
+- `react-countup`
+- `react-intersection-observer`
+
+---
+
+## 📦 Deployment
+
+You can deploy this site to any static host (like **Netlify**, **Vercel**, or **GitHub Pages**) after building:
+
+```bash
+npm run build
+```
+
+---
+
+## 🧠 Author
+
+- **Jordi R.**  
+  [@jrjood](https://github.com/jrjood)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE) © 2025 Youssif Emad.
