@@ -10,33 +10,29 @@ export default function HomeLayout() {
     const MIN_DURATION = 2000;
     const start = Date.now();
 
-    const waitUntilVisible = () => {
+    const waitUntilRendered = () => {
       return new Promise((resolve) => {
         const video = document.getElementById('hero-video');
         if (!video) return resolve();
 
-        const checkPlay = () => {
-          const isPlaying = !!(
-            video.currentTime > 0 &&
-            !video.paused &&
-            !video.ended &&
-            video.readyState >= 3
-          );
+        const check = () => {
+          // Check if video has visible dimensions (rendered on screen)
+          const rect = video.getBoundingClientRect();
+          const visible = rect.width > 0 && rect.height > 0;
 
-          if (isPlaying) {
-            // Give browser one frame to render
+          if (visible) {
             requestAnimationFrame(() => resolve());
           } else {
-            setTimeout(checkPlay, 100);
+            setTimeout(check, 100); // Keep checking every 100ms
           }
         };
 
-        checkPlay();
+        check();
       });
     };
 
-    const runLoaderLogic = async () => {
-      await waitUntilVisible();
+    const handleRenderComplete = async () => {
+      await waitUntilRendered();
 
       const elapsed = Date.now() - start;
       const remaining = Math.max(MIN_DURATION - elapsed, 0);
@@ -48,7 +44,7 @@ export default function HomeLayout() {
       }, remaining);
     };
 
-    runLoaderLogic();
+    handleRenderComplete();
   }, []);
 
   return loading ? (
