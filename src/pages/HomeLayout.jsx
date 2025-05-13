@@ -7,24 +7,36 @@ export default function HomeLayout() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const MIN_DURATION = 3000; // optional delay
+    const MIN_DURATION = 2000;
     const start = Date.now();
 
-    const waitForMedia = async () => {
-      // 👇 Wait for a specific video or image to load (adjust selector as needed)
-      const bgVideo = document.querySelector('#hero-video');
+    const waitUntilVisible = () => {
+      return new Promise((resolve) => {
+        const video = document.getElementById('hero-video');
+        if (!video) return resolve();
 
-      if (bgVideo) {
-        await new Promise((resolve) => {
-          if (bgVideo.readyState >= 3) {
-            resolve(); // Already loaded
+        const checkPlay = () => {
+          const isPlaying = !!(
+            video.currentTime > 0 &&
+            !video.paused &&
+            !video.ended &&
+            video.readyState >= 3
+          );
+
+          if (isPlaying) {
+            // Give browser one frame to render
+            requestAnimationFrame(() => resolve());
           } else {
-            bgVideo.addEventListener('loadeddata', resolve, { once: true });
+            setTimeout(checkPlay, 100);
           }
-        });
-      }
+        };
 
-      // You can also wait for background images or other elements here
+        checkPlay();
+      });
+    };
+
+    const runLoaderLogic = async () => {
+      await waitUntilVisible();
 
       const elapsed = Date.now() - start;
       const remaining = Math.max(MIN_DURATION - elapsed, 0);
@@ -32,12 +44,11 @@ export default function HomeLayout() {
       setTimeout(() => {
         const hardLoader = document.getElementById('initial-loader');
         if (hardLoader) hardLoader.remove();
-
         setLoading(false);
       }, remaining);
     };
 
-    waitForMedia();
+    runLoaderLogic();
   }, []);
 
   return loading ? (
