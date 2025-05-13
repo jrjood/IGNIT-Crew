@@ -4,7 +4,7 @@ import { NavBar, Footer, ScrollToTop } from '../components';
 
 export default function HomeLayout() {
   useEffect(() => {
-    const MIN_DURATION = 2000;
+    const MIN_DURATION = 5000;
     const start = Date.now();
 
     const waitForVideoRender = () => {
