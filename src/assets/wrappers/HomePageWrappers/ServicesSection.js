@@ -58,6 +58,7 @@ const Wrapper = styled.section`
     width: 100%;
     height: 100%;
     min-height: 10rem;
+    border: none;
     cursor: pointer;
     .card-text {
       display: flex;

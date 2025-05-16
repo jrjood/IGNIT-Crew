@@ -5,10 +5,10 @@ import {
   AboutSection,
   MilestonesSection,
   ServicesSection,
-  CardsSection,
   LogoCarousel,
   TestimonialsSection,
   ContactsSection,
+  ProjectsSection,
 } from '../layout/HomePage/';
 
 const HomePage = () => {
@@ -18,13 +18,7 @@ const HomePage = () => {
       <AboutSection />
       <MilestonesSection />
       <ServicesSection />
-      <CardsSection
-        title='featured projects'
-        cardsData={projects}
-        gridRows='big-screen grid grid--2--row'
-        link='projects'
-        button='EXPLORE'
-      />
+      <ProjectsSection />
       <LogoCarousel />
       <TestimonialsSection />
       <ContactsSection />

@@ -1,20 +1,41 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import Popup from './Popup';
+import servicesPopup from '../utils/servicesPopup';
 
 const ServicesCard = ({ services }) => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedData, setSelectedData] = useState(null);
+
+  const handleClick = (serviceName) => {
+    setSelectedData(servicesPopup[serviceName]); // pass one item
+    setShowPopup(true);
+  };
+
   return (
     <div className='grid'>
       {services.map((service, index) => (
-        <Link
+        <button
+          onClick={() => handleClick(service)}
           className='card flex-center'
-          // to={service.toLowerCase().replace(/\s+/g, '-')}
-          to='#'
           key={index}
         >
           <div className='line-highlight'></div>
-          <div className='card-text'>{service}</div>
-        </Link>
+          <div className='card-text'>{service.replace(/_/g, ' ')}</div>
+        </button>
       ))}
+
+      {showPopup && selectedData && (
+        <Popup
+          onClose={() => {
+            setShowPopup(false);
+            setSelectedData(null);
+          }}
+          data={selectedData} // pass as array to match Popup.jsx format
+        />
+      )}
     </div>
   );
 };
+
 export default ServicesCard;

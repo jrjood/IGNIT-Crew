@@ -4,11 +4,11 @@ import {
   Error,
   HomePage,
   AboutPage,
-  ServicesPage,
   ProjectsPage,
   ClientsPage,
   ContactPage,
 } from '../pages';
+import { AllProjectsSection } from '../layout/ProjectsPage';
 
 const router = createBrowserRouter([
   {
@@ -18,8 +18,20 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: 'about', element: <AboutPage /> },
-      { path: 'services', element: <ServicesPage /> },
-      { path: 'projects', element: <ProjectsPage /> },
+      {
+        path: 'projects',
+        element: <ProjectsPage />,
+        children: [
+          {
+            index: true,
+            element: <AllProjectsSection />, // default: all projects
+          },
+          {
+            path: ':category',
+            element: <AllProjectsSection />, // show filtered projects
+          },
+        ],
+      },
       { path: 'clients', element: <ClientsPage /> },
       { path: 'contact', element: <ContactPage /> },
     ],

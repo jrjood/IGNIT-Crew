@@ -18,7 +18,7 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-bottom: 2rem;
-    height: 35rem;
+    height: fit-content;
   }
 
   .grid--3--row {
@@ -114,6 +114,21 @@ const Wrapper = styled.section`
   }
   .btn-container {
     align-self: flex-end;
+  }
+  .category-select {
+    background-color: var(--white);
+    width: 150px;
+    padding: 5px 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    option {
+      color: #555;
+    }
   }
   @media (max-width: 62rem) {
     .label {

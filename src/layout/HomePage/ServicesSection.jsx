@@ -6,10 +6,10 @@ const services = [
   'Events',
   'Exhibitions',
   'Roadshows',
-  'POS Marketing',
+  'POS_Marketing',
   'Stunts',
-  'Team Building',
-  'Digital Marketing',
+  'Team_Building',
+  'Digital_Marketing',
 ];
 
 const ServicesSection = () => {

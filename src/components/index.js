@@ -9,3 +9,5 @@ export { default as ValuesBox } from './ValuesBox';
 export { default as ContactsSection } from './ContactsSection';
 export { default as PageStarter } from './PageStarter';
 export { default as ScrollToTop } from './ScrollToTop';
+export { default as Popup } from './Popup';
+export { default as Cards } from './Cards';
