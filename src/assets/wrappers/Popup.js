@@ -32,9 +32,9 @@ const Wrapper = styled.div`
   .popup-container {
     background: var(--white);
     padding: 2rem;
-    border-radius: 12px;
+    border-radius: var(--border-radius);
     width: 90%;
-    max-width: 700px;
+    max-width: 43.5rem;
     height: fit-content;
     overflow: hidden;
     position: relative;
@@ -43,7 +43,7 @@ const Wrapper = styled.div`
     background-image: linear-gradient(
         to top,
         rgba(17, 17, 17, 0.45),
-        rgba(0, 0, 0, 0.81)
+        rgb(0, 0, 0)
       ),
       url(${(props) => props.$background});
     background-size: cover;
@@ -52,8 +52,8 @@ const Wrapper = styled.div`
   }
   .closeBtn {
     position: absolute;
-    top: 12px;
-    right: 18px;
+    top: 0.75rem;
+    right: 1.125rem;
     background: none;
     color: var(--white);
     border: none;
@@ -70,19 +70,6 @@ const Wrapper = styled.div`
     gap: 1rem;
     padding-bottom: 1rem;
     scroll-behavior: smooth;
-
-    &::-webkit-scrollbar {
-      height: 6px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: #fdd835;
-      border-radius: 3px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
   }
   .popup-card {
     position: relative;
