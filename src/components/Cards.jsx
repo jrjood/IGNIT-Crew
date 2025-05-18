@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import useMediaQuery from '../utils/useMediaQuery';
+import { Link } from 'react-router-dom';
 
 const Cards = ({ gridRows, cardsData }) => {
   const isMobile = useMediaQuery('(max-width: 48rem)');
@@ -19,11 +20,13 @@ const Cards = ({ gridRows, cardsData }) => {
           >
             {cardsData.map((proj, i) => (
               <SwiperSlide>
-                <div className='card-slide'>
-                  <img className='img' src={proj.img} alt={proj.text} />
-                  <div className='overlay' />
-                  <div className='label'>{proj.text}</div>
-                </div>
+                <>
+                  <Link to={proj.link} key={i} className='card-slide'>
+                    <img className='img' src={proj.img} alt={proj.text} />
+                    <div className='overlay' />
+                    <div className='label'>{proj.text}</div>
+                  </Link>
+                </>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -31,11 +34,15 @@ const Cards = ({ gridRows, cardsData }) => {
       )}
       <div className={gridRows}>
         {cardsData.map((proj, i) => (
-          <div className={proj.big ? 'card big-card' : 'card'} key={i}>
+          <Link
+            to={proj.link}
+            key={i}
+            className={proj.big ? 'card big-card' : 'card'}
+          >
             <img className='img' src={proj.img} alt={proj.text} />
             <div className='overlay' />
             <div className='label'>{proj.text}</div>
-          </div>
+          </Link>
         ))}
       </div>
     </>

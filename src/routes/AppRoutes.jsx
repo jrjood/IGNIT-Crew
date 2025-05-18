@@ -8,7 +8,7 @@ import {
   ClientsPage,
   ContactPage,
 } from '../pages';
-import { AllProjectsSection } from '../layout/ProjectsPage';
+import { ProjectBiskrem } from '../pages/AllProjects';
 
 const router = createBrowserRouter([
   {
@@ -18,20 +18,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: 'about', element: <AboutPage /> },
-      {
-        path: 'projects',
-        element: <ProjectsPage />,
-        children: [
-          {
-            index: true,
-            element: <AllProjectsSection />, // default: all projects
-          },
-          {
-            path: ':category',
-            element: <AllProjectsSection />, // show filtered projects
-          },
-        ],
-      },
+      { path: 'projects', element: <ProjectsPage /> },
+      { path: '/IGNIT-Crew/projects/proj1', element: <ProjectBiskrem /> },
       { path: 'clients', element: <ClientsPage /> },
       { path: 'contact', element: <ContactPage /> },
     ],

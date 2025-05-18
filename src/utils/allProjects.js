@@ -9,26 +9,31 @@ const projects = [
     img: proj1,
     text: 'BISKREM-2024 - الحلو بيكمل أحلى',
     category: 'pos-marketing',
+    link: '/IGNIT-Crew/projects/proj1',
   },
   {
     img: proj2,
     text: 'NISSAN-DARING AFRICA-2024',
     category: 'stunts',
+    link: '/IGNIT-Crew/projects/proj2',
   },
   {
     img: proj3,
     text: 'PEPSI-THE HOUSE OF FIZZ-2023',
     category: 'activation',
+    link: '/IGNIT-Crew/projects/proj3',
   },
   {
     img: proj4,
     text: 'BRITISH PETROLEUM - LAUNCH EVENT',
     category: 'events',
+    link: '/IGNIT-Crew/projects/proj4',
   },
   {
     img: proj5,
     text: 'TOTAL ENERGIES - YLT FINAL',
     category: 'team-building',
+    link: '/IGNIT-Crew/projects/proj5',
   },
 ];
 

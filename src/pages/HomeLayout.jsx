@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { NavBar, Footer, ScrollToTop } from '../components';
 
 export default function HomeLayout() {
-  useEffect(() => {
+  /*  useEffect(() => {
     const MIN_DURATION = 3000;
     const start = Date.now();
 
@@ -48,7 +48,7 @@ export default function HomeLayout() {
     };
 
     revealApp();
-  }, []);
+  }, []); */
 
   return (
     <>

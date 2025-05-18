@@ -31,8 +31,8 @@ const Popup = ({ onClose, data }) => {
             <p>{data.text}</p>
           </div>
         </div>
-        <Link to={data.link}>
-          <button className='btn'>show more</button>
+        <Link to='projects'>
+          <button className='btn'>explore more categories</button>
         </Link>
       </div>
     </Wrapper>

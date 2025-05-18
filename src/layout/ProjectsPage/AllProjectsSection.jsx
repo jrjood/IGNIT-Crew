@@ -1,12 +1,9 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import Wrapper from '../../assets/wrappers/CardsSection';
 import { Cards } from '../../components';
 import allProjects from '../../utils/allProjects';
 
 const AllProjectsSection = () => {
-  const { category } = useParams();
-  const navigate = useNavigate();
-
   const categories = [
     'all',
     'activation',
@@ -19,7 +16,7 @@ const AllProjectsSection = () => {
     'digital-marketing',
   ];
 
-  const current = category ? category.toLowerCase() : 'all';
+  const [current, setCurrent] = useState('all');
 
   const filteredProjects =
     current === 'all'
@@ -30,18 +27,11 @@ const AllProjectsSection = () => {
     <Wrapper className='section-container'>
       <div className='container'>
         <div className='header'>
-          <h2 className='title title-medium'>Projects</h2>
+          <h2 className='title title-medium'>Category</h2>
           <select
             className='category-select'
             value={current}
-            onChange={(e) => {
-              const selected = e.target.value;
-              navigate(
-                selected === 'all'
-                  ? '/IGNIT-Crew/projects'
-                  : `/IGNIT-Crew/projects/${selected}`
-              );
-            }}
+            onChange={(e) => setCurrent(e.target.value)}
           >
             {categories.map((cat) => (
               <option key={cat} value={cat.toLowerCase()}>
@@ -51,7 +41,7 @@ const AllProjectsSection = () => {
           </select>
         </div>
 
-        <Cards cardsData={filteredProjects} gridRows='big-screen grid ' />
+        <Cards cardsData={filteredProjects} gridRows='big-screen grid' />
       </div>
     </Wrapper>
   );

@@ -204,7 +204,7 @@ ul {
   background-color: var(--primary-400);
   border: none;
   padding: 0.45rem 2rem;
-  width: 10rem;
+  width: fit-content;
   border-radius: 1rem;
   font-weight: bold;
   font-size: 1.5rem;

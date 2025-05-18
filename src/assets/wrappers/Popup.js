@@ -42,7 +42,7 @@ const Wrapper = styled.div`
     transform-origin: center;
     background-image: linear-gradient(
         to top,
-        rgba(17, 17, 17, 0.45),
+        rgba(17, 17, 17, 0.16),
         rgb(0, 0, 0)
       ),
       url(${(props) => props.$background});

@@ -1,5 +1,3 @@
-import projects from '../utils/projects';
-
 import {
   HeroSection,
   AboutSection,

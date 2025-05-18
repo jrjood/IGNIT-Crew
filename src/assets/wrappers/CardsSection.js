@@ -94,7 +94,6 @@ const Wrapper = styled.section`
     background: black;
     opacity: 0;
     transition: var(--transition);
-    z-index: 1;
   }
   .label {
     position: absolute;
@@ -110,7 +109,6 @@ const Wrapper = styled.section`
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
     text-transform: uppercase;
     transition: var(--transition);
-    z-index: 2;
   }
   .btn-container {
     align-self: flex-end;
