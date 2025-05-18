@@ -63,21 +63,5 @@
     </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      window.addEventListener('load', () => {
-        const loader = document.getElementById('initial-loader');
-
-        // Wait a bit more to ensure final paints and React hydration
-        setTimeout(() => {
-          loader.style.opacity = '0';
-          loader.style.pointerEvents = 'none';
-          loader.style.transition = 'opacity 0.4s ease';
-
-          setTimeout(() => {
-            loader.remove(); // Fully remove from DOM after fade out
-          }, 500);
-        }, 300); // small delay for smoother transition
-      });
-    </script>
   </body>
 </html>
