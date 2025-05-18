@@ -10,8 +10,8 @@
       content="black-translucent"
     />
     <title>IGNIT Crew</title>
-    <script type="module" crossorigin src="/IGNIT-Crew/assets/index-CPJ_TnrD.js"></script>
-    <link rel="stylesheet" crossorigin href="/IGNIT-Crew/assets/index-l_JicfY2.css">
+    <script type="module" crossorigin src="/IGNIT-Crew/assets/index-oiyiWvtw.js"></script>
+    <link rel="stylesheet" crossorigin href="/IGNIT-Crew/assets/index-DMXiojRB.css">
   </head>
   <body>
     <div id="initial-loader">
@@ -64,5 +64,21 @@
       <div class="spinner"></div>
     </div>
     <div id="root"></div>
+    <script>
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('initial-loader');
+
+        // Wait a bit more to ensure final paints and React hydration
+        setTimeout(() => {
+          loader.style.opacity = '0';
+          loader.style.pointerEvents = 'none';
+          loader.style.transition = 'opacity 0.4s ease';
+
+          setTimeout(() => {
+            loader.remove(); // Fully remove from DOM after fade out
+          }, 500);
+        }, 300); // small delay for smoother transition
+      });
+    </script>
   </body>
 </html>
