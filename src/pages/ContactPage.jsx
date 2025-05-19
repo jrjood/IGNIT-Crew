@@ -10,7 +10,7 @@ import {
 const ContactPage = () => {
   return (
     <>
-      <PageStarter title='projects' imgPath={bgImage} />
+      <PageStarter title='contact us' imgPath={bgImage} />
       <ContactForm />
       <JoinCrewForm />
       <NewsletterForm />
