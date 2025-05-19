@@ -8,7 +8,13 @@ import {
   ClientsPage,
   ContactPage,
 } from '../pages';
-import { ProjectBiskrem } from '../pages/AllProjects';
+import {
+  ProjectBiskrem,
+  ProjectTotal,
+  ProjectPepsi,
+  ProjectNissan,
+  ProjectBritishPetroleum,
+} from '../pages/AllProjects';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +26,13 @@ const router = createBrowserRouter([
       { path: 'about', element: <AboutPage /> },
       { path: 'projects', element: <ProjectsPage /> },
       { path: '/IGNIT-Crew/projects/proj1', element: <ProjectBiskrem /> },
+      { path: '/IGNIT-Crew/projects/proj2', element: <ProjectNissan /> },
+      { path: '/IGNIT-Crew/projects/proj3', element: <ProjectPepsi /> },
+      {
+        path: '/IGNIT-Crew/projects/proj4',
+        element: <ProjectBritishPetroleum />,
+      },
+      { path: '/IGNIT-Crew/projects/proj5', element: <ProjectTotal /> },
       { path: 'clients', element: <ClientsPage /> },
       { path: 'contact', element: <ContactPage /> },
     ],
