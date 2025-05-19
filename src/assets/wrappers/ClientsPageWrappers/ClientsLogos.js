@@ -53,6 +53,7 @@ const Wrapper = styled.section`
 
   .pagination span {
     padding: 0.5rem 0.75rem;
+    color: var(--black);
     background: white;
     border-radius: var(--border-radius);
     cursor: pointer;
