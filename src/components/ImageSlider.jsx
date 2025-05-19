@@ -18,19 +18,19 @@ const ImageSlider = ({ images }) => {
 
   return (
     <div className='slider-container'>
-      <button className='arrow left' onClick={handlePrev}>
-        ‹
-      </button>
-
       <img
         className='main-image'
         src={images[current]}
         alt={`Slide ${current}`}
       />
-
-      <button className='arrow right' onClick={handleNext}>
-        ›
-      </button>
+      <div className='arrows'>
+        <button className='arrow left' onClick={handlePrev}>
+          ‹
+        </button>
+        <button className='arrow right' onClick={handleNext}>
+          ›
+        </button>
+      </div>
 
       {/* Thumbnail swiper */}
       <div className='thumbnails'>

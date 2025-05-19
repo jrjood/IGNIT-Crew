@@ -71,13 +71,19 @@ const Wrapper = styled.div`
     border-color: orange;
   }
 
+  .arrows {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+  }
   .arrow {
     background: none;
     color: var(--primary-400);
     font-size: 2rem;
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
-    transform: translateY(-200%);
+    /* transform: translateY(-200%); */
     cursor: pointer;
     z-index: 1;
     border: none;
