@@ -130,8 +130,8 @@ button {
 }
 
 body {
-  background: var(--background-color);
-  color: var(--text-color);
+  background: var(--black);
+  color: var(--white);
   font-family: sans-serif, 'Rubik', system-ui, 'Segoe UI', 'Open Sans',
     'Helvetica Neue';
   font-weight: 400;

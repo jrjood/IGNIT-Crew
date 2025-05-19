@@ -13,7 +13,7 @@ const Wrapper = styled.section`
 
   .container {
     margin: 0 5rem;
-    max-width: 70%;
+    max-width: 60%;
   }
   .content {
     margin-top: 3rem;

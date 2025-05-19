@@ -1,12 +1,12 @@
 const TagList = ({ tags }) => {
   return (
-    <div className='tag-list'>
+    <ul className='tag-list'>
       {tags.map((tag, index) => (
-        <span key={index} className='tag-dot'>
-          ● {tag}
-        </span>
+        <li key={index} className='tag-dot'>
+          {tag}
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 
