@@ -20,6 +20,7 @@ const Wrapper = styled.section`
     font-weight: 700;
     margin-bottom: 2.5rem;
     align-self: flex-start;
+    text-transform: uppercase;
   }
 
   .contact-form {

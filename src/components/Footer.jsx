@@ -1,4 +1,4 @@
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 import { Logo } from '../components';
 import Wrapper from '../assets/wrappers/Footer';
@@ -16,8 +16,12 @@ const Footer = () => {
           >
             <FaFacebookF />
           </a>
-          <a target='_blank' className='linkedin' href='#'>
-            <FaLinkedinIn />
+          <a
+            target='_blank'
+            className='whatsapp'
+            href='https://api.whatsapp.com/send?phone=201027883268&text&context=Affl27NyVtxZG56bwOQldfLm6RyvztFf9SbKWtH89mSgK93Fir54a7SnEYUMEGTljWZCAHwJ77QXOtkDn6yCC-bSjFEkQFScaSZw62I1y2yBkH9oe2FDptR5VUKcLQKg-E7ehMTePtZKm4JmE7WnG21m6g&source&app=facebook'
+          >
+            <FaWhatsapp />
           </a>
           <a
             target='_blank'

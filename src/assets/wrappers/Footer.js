@@ -22,12 +22,15 @@ const Wrapper = styled.footer`
     a {
       color: var(--white);
       transition: var(--transition);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .facebook:hover {
       color: #1877f2;
     }
-    .linkedin:hover {
-      color: #0077b5;
+    .whatsapp:hover {
+      color: #25d366;
     }
     .instagram:hover {
       color: #ee2a7b;

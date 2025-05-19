@@ -58,6 +58,7 @@ const Wrapper = styled.section`
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   .input-wrapper {
@@ -98,6 +99,40 @@ const Wrapper = styled.section`
     font-size: 13px;
     border-radius: 20px;
     cursor: pointer;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    a {
+      color: var(--white);
+      transition: var(--transition);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: var(--border-radius);
+      padding: 0.5rem;
+    }
+    .facebook:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .whatsapp:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .instagram:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .facebook {
+      background-color: #1877f2;
+    }
+    .whatsapp {
+      background-color: #25d366;
+    }
+    .instagram {
+      background-color: #ee2a7b;
+    }
   }
 
   @media (max-width: 48rem) {
