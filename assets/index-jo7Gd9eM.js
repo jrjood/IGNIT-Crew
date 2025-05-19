@@ -1721,6 +1721,7 @@ import{u as Z,j as e,C as ee,d as l,F as te,a as oe,b as re,r as c,c as W,A as a
 
   .pagination span {
     padding: 0.5rem 0.75rem;
+    color: var(--black);
     background: white;
     border-radius: var(--border-radius);
     cursor: pointer;
