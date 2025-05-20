@@ -1,4 +1,4 @@
-import{u as oe,j as e,C as re,d as l,F as W,a as $,b as H,r as d,c as V,A as ae,I as se,L as g,N as ie,m as ne,e as le,f as ce,g as de,S as k,P as S,h as z,i as C,O as me,k as ge,l as pe,n as he,T as ue,B as xe,o as fe,R as we,p as be,q as je}from"./vendor-ABcdtudz.js";(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))s(r);new MutationObserver(r=>{for(const i of r)if(i.type==="childList")for(const n of i.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&s(n)}).observe(document,{childList:!0,subtree:!0});function a(r){const i={};return r.integrity&&(i.integrity=r.integrity),r.referrerPolicy&&(i.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?i.credentials="include":r.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function s(r){if(r.ep)return;r.ep=!0;const i=a(r);fetch(r.href,i)}})();const P=({start:t,end:o,duration:a})=>{const{ref:s,inView:r}=oe({triggerOnce:!0,threshold:.5});return e.jsx("div",{ref:s,children:r?e.jsx(re,{start:t,end:o,duration:a,useEasing:!0,easingFn:(i,n,m,u)=>m*(1-Math.pow(2,-10*i/u))+n}):0})},ve=l.footer`
+import{u as oe,j as e,C as re,d as l,F as W,a as $,b as H,N as ae,m as se,r as d,L as g,I as ie,c as ne,e as le,f as V,S as k,P as S,A as z,g as C,h as ce,i as de,O as me,k as ge,l as pe,n as he,T as ue,B as xe,o as fe,R as we,p as be,q as je}from"./vendor-Bab_8A2M.js";(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))s(r);new MutationObserver(r=>{for(const i of r)if(i.type==="childList")for(const n of i.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&s(n)}).observe(document,{childList:!0,subtree:!0});function a(r){const i={};return r.integrity&&(i.integrity=r.integrity),r.referrerPolicy&&(i.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?i.credentials="include":r.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function s(r){if(r.ep)return;r.ep=!0;const i=a(r);fetch(r.href,i)}})();const P=({start:t,end:o,duration:a})=>{const{ref:s,inView:r}=oe({triggerOnce:!0,threshold:.5});return e.jsx("div",{ref:s,children:r?e.jsx(re,{start:t,end:o,duration:a,useEasing:!0,easingFn:(i,n,m,u)=>m*(1-Math.pow(2,-10*i/u))+n}):0})},ve=l.footer`
   display: flex;
   align-items: center;
   padding: 2.5rem 4rem;
@@ -91,7 +91,356 @@ import{u as oe,j as e,C as re,d as l,F as W,a as $,b as H,r as d,c as V,A as ae,
       line-height: 1.2;
     }
   }
-`,Ne=()=>e.jsxs(ve,{children:[e.jsx(A,{}),e.jsxs("div",{className:"social-container",children:[e.jsxs("div",{className:"social-icons",children:[e.jsx("a",{target:"_blank",className:"facebook",href:"https://www.facebook.com/profile.php?id=61575004481629",children:e.jsx(W,{})}),e.jsx("a",{target:"_blank",className:"whatsapp",href:"https://api.whatsapp.com/send?phone=201027883268&text&context=Affl27NyVtxZG56bwOQldfLm6RyvztFf9SbKWtH89mSgK93Fir54a7SnEYUMEGTljWZCAHwJ77QXOtkDn6yCC-bSjFEkQFScaSZw62I1y2yBkH9oe2FDptR5VUKcLQKg-E7ehMTePtZKm4JmE7WnG21m6g&source&app=facebook",children:e.jsx($,{})}),e.jsx("a",{target:"_blank",className:"instagram",href:"https://www.instagram.com/ignitcrew/",children:e.jsx(H,{})})]}),e.jsx("div",{className:"copy-text",children:e.jsxs("p",{className:"developed-by",children:["IGNITCREW 2023. All Rights Reserved. Developed & Designed By.",e.jsx("a",{target:"_blank",href:"https://portfolio-webpage-jrd.vercel.app/",className:"designer-link",children:"JORDI"})]})})]})]}),ye="/IGNIT-Crew/assets/logo-Dyo60QEa.png",A=()=>e.jsx("img",{src:ye,alt:"logo",className:"logo"}),Ie=l.nav`
+`,Ne=()=>e.jsxs(ve,{children:[e.jsx(A,{}),e.jsxs("div",{className:"social-container",children:[e.jsxs("div",{className:"social-icons",children:[e.jsx("a",{target:"_blank",className:"facebook",href:"https://www.facebook.com/profile.php?id=61575004481629",children:e.jsx(W,{})}),e.jsx("a",{target:"_blank",className:"whatsapp",href:"https://api.whatsapp.com/send?phone=201027883268&text&context=Affl27NyVtxZG56bwOQldfLm6RyvztFf9SbKWtH89mSgK93Fir54a7SnEYUMEGTljWZCAHwJ77QXOtkDn6yCC-bSjFEkQFScaSZw62I1y2yBkH9oe2FDptR5VUKcLQKg-E7ehMTePtZKm4JmE7WnG21m6g&source&app=facebook",children:e.jsx($,{})}),e.jsx("a",{target:"_blank",className:"instagram",href:"https://www.instagram.com/ignitcrew/",children:e.jsx(H,{})})]}),e.jsx("div",{className:"copy-text",children:e.jsxs("p",{className:"developed-by",children:["IGNITCREW 2023. All Rights Reserved. Developed & Designed By.",e.jsx("a",{target:"_blank",href:"https://portfolio-webpage-jrd.vercel.app/",className:"designer-link",children:"JORDI"})]})})]})]}),ye="/IGNIT-Crew/assets/logo-Dyo60QEa.png",A=()=>e.jsx("img",{src:ye,alt:"logo",className:"logo"}),Ie=[{text:"home",path:"."},{text:"about",path:"about"},{text:"projects",path:"projects"},{text:"clients",path:"clients"},{text:"contact",path:"contact"}],B=({toggle:t})=>e.jsx("ul",{className:"nav-links",children:Ie.map(o=>e.jsx("li",{children:e.jsxs(ae,{onClick:t,className:"nav-link",to:o.path,end:!0,children:[o.text,e.jsx("span",{})]})},o.text))}),ke=l.div`
+  background: #111;
+  border-radius: var(--border-radius);
+  padding: 2rem 1rem;
+  text-align: center;
+  height: 23.2rem;
+  margin-bottom: 3rem;
+  .client-image {
+    width: 5.7rem;
+    height: 5.7rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .client-name {
+    margin: 0.5rem 0 0;
+    color: #e6e6e6;
+    font-family: 'Rama Gothic M', sans-serif !important;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .client-role {
+    color: #aaa;
+    margin: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  .stars {
+    margin: 1rem 0;
+    color: gold;
+  }
+  .feedback {
+    font-style: italic;
+    color: #ddd;
+  }
+  @media (max-width: 14rem) {
+    .feedback {
+      font-size: 0.7rem;
+    }
+    .stars {
+      margin: 1rem 0;
+      color: gold;
+      font-size: 0.7rem;
+    }
+  }
+`,Ce=({path:t,alt:o,name:a,role:s,rate:r,feedback:i})=>e.jsxs(ke,{children:[e.jsx("img",{className:"client-image",src:t,alt:o}),e.jsx("h4",{className:"client-name",children:a}),e.jsx("p",{className:"client-role",children:s}),e.jsx("div",{className:"stars",children:r}),e.jsxs("p",{className:"feedback",children:['"',i,'"']})]}),Te=se`
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`,Ge=l.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOverlay 0.3s ease forwards;
+
+  @keyframes fadeOverlay {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .popup-container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 43.5rem;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    animation: ${Te} 0.4s ease forwards;
+    transform-origin: center;
+    background-image: linear-gradient(
+        to top,
+        rgba(17, 17, 17, 0.16),
+        rgb(0, 0, 0)
+      ),
+      url(${t=>t.$background});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 0.75rem;
+    right: 1.125rem;
+    background: none;
+    color: var(--white);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .title {
+    font-size: 2rem;
+    /* color: var(--black); */
+  }
+  .scrollContainer {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+  }
+  .popup-card {
+    position: relative;
+    overflow: hidden;
+    /* height: 15rem; */
+    border-radius: var(--border-radius);
+  }
+`,Ee=({onClose:t,data:o})=>{const a=d.useRef();return d.useEffect(()=>{const s=r=>{a.current&&!a.current.contains(r.target)&&t()};return document.addEventListener("mousedown",s),()=>document.removeEventListener("mousedown",s)},[t]),e.jsx(Ge,{$background:o.image,children:e.jsxs("div",{className:"popup-container",ref:a,children:[e.jsx("button",{className:"closeBtn",onClick:t,children:"×"}),e.jsx("h2",{className:"title",children:o.title}),e.jsx("div",{className:"scrollContainer",children:e.jsx("div",{className:"popup-card",children:e.jsx("p",{children:o.text})})}),e.jsx(g,{to:"projects",children:e.jsx("button",{className:"btn",children:"explore more categories"})})]})})},Se="/IGNIT-Crew/assets/Activation-DaDQUwxf.jpeg",ze="/IGNIT-Crew/assets/Events-CXkKCzY_.jpg",Ae="/IGNIT-Crew/assets/Exhibitions-DbwRcHxY.jpg",Oe="/IGNIT-Crew/assets/Roadshows-C-9Br2Pj.jpg",Me="/IGNIT-Crew/assets/POS_Marketing-C04kltRn.jpg",Pe="/IGNIT-Crew/assets/Stunts-DhDRgnVh.png",Be="/IGNIT-Crew/assets/Team_Building-C9Rg7NbL.jpeg",Re="/IGNIT-Crew/assets/Digital_Marketing-D9p9BxlO.png",Fe={Activation:{image:Se,title:"Activation",text:`Join us on a whirlwind journey as we help your clients experience your brand like never before. From product sampling to road shows, we'll create mini adventures that truly capture your brand's essence.
+
+`},Events:{image:ze,title:"Events",text:"From intimate gatherings to grand spectacles, we are masters at crafting unforgettable experiences for your corporation. Our team's creativity and flawless execution will leave your guests buzzing for weeks to come."},Exhibitions:{image:Ae,title:"Exhibitions",text:`With our top-of-the-line production house, we create full-scale exhibitions and stands that are unmatched in quality. Your brand will shine brighter than ever before.
+
+`},Roadshows:{image:Oe,title:"Roadshows",text:`We're masters of creating jaw-dropping marketing stunts that'll blow your audience's minds. We're always pushing the limits of what's possible with cutting-edge tech and creative concepts that'll capture their attention and generate buzz. From epic guerrilla campaigns that take over the streets to viral social media challenges that spread like wildfire, we're up for any challenge.
+
+`},POS_Marketing:{image:Me,title:"POS Marketing",text:`Our team of experts will transform your brand identity into a revenue-generating machine. We know how to captivate your audience and turn them into loyal customers.
+
+`},Stunts:{image:Pe,title:"Stunts",text:`We bring your brand's unique narrative to life, infusing it with emotion, passion, and authenticity. From ideation to post-production, our team will produce a cinematic masterpiece that showcases your brand's unique journey.
+
+`},Team_Building:{image:Be,title:"Team Building",text:`Our team building activities are designed to inspire and energize your staff, bringing them closer together and enhancing their productivity. Let us help you create a winning team.
+
+`},Digital_Marketing:{image:Re,title:"Digital Marketing",text:"We harness the power of the digital world to elevate your brand’s presence across every screen. From strategic campaigns to targeted content and data-driven performance, we connect your message to the right audience — at the right time — in the most impactful way."}},De=({services:t})=>{const[o,a]=d.useState(!1),[s,r]=d.useState(null),i=n=>{r(Fe[n]),a(!0)};return e.jsxs("div",{className:"grid",children:[t.map((n,m)=>e.jsxs("button",{onClick:()=>i(n),className:"card flex-center",children:[e.jsx("div",{className:"line-highlight"}),e.jsx("div",{className:"card-text",children:n.replace(/_/g," ")})]},m)),o&&s&&e.jsx(Ee,{onClose:()=>{a(!1),r(null)},data:s})]})},Le=l.div`
+  min-width: 100%;
+  overflow: hidden;
+
+  .card-box {
+    padding: 30px;
+    position: relative;
+    background-color: #ffffff40;
+    height: 300px;
+    width: 100%;
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+  }
+  .card-icon {
+    transition: var(--transition);
+    svg {
+      transition: var(--transition);
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .separator {
+    margin: 15px 0;
+    width: 30%;
+    height: 5px;
+    background-color: var(--primary-400);
+    position: absolute;
+    top: 28%;
+    transition: var(--transition);
+  }
+  .card-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    font-size: 1.625rem;
+    top: 42%;
+    transition: var(--transition);
+  }
+  .card-text {
+    position: absolute;
+    line-height: 1.3;
+    top: 50%;
+    opacity: 0;
+    transition: var(--transition);
+    position: absolute;
+    max-width: 80%;
+  }
+
+  &:hover {
+    .card-icon {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .card-icon {
+      opacity: 0;
+    }
+    .separator {
+      position: absolute;
+      top: 7%;
+    }
+    .card-title {
+      opacity: 0;
+    }
+    .card-text {
+      position: absolute;
+      top: 17%;
+      opacity: 1;
+      line-height: 1.2;
+    }
+  }
+  @media (max-width: 36rem) {
+    .card-title {
+      /* font-size: 1.2rem; */
+    }
+    .card-box {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      /* align-items: center; */
+    }
+    .card-text {
+      max-width: 93%;
+    }
+  }
+`,_=({icon:t,title:o,text:a})=>e.jsx(Le,{children:e.jsxs("div",{className:"card-box",children:[t&&e.jsx("div",{className:"card-icon",children:t}),e.jsx("div",{className:"separator"}),e.jsx("h3",{className:" card-title",children:o}),e.jsx("p",{className:"card-text",children:a})]})}),We=l.section`
+  background: var(--black);
+  color: var(--white);
+  /* height: fit-content; */
+  /* padding: 4rem 4rem 2rem; */
+
+  .contact-top {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
+    transform: translateY(-8rem);
+    font-family: 'Proxima-Nova', sans-serif;
+    font-weight: 600;
+  }
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .contact-circle {
+    width: 8rem;
+    height: 8rem;
+    background: var(--primary-400);
+    border-radius: 50%;
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 2.1rem;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      font-size: 2.6rem;
+      transform: rotate(-20deg);
+    }
+  }
+  .label {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+  }
+  .info {
+    color: #00aaff;
+    /* min-height: 8rem; */
+    font-size: 1.2rem;
+    text-decoration: none;
+    &:hover {
+      color: #0075af;
+    }
+  }
+  .divider {
+    width: 1px;
+    height: 5rem;
+    background: var(--white);
+    opacity: 0.2;
+    margin: 0 1rem;
+  }
+  @media (max-width: 44rem) {
+    height: 100%;
+    .contact-top {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      transform: none;
+    }
+
+    .divider {
+      display: none;
+    }
+    .contact-circle {
+      width: 5rem;
+      height: 5rem;
+      font-size: 1.8rem;
+    }
+  }
+`;function O(){return e.jsx(We,{className:"section-container",children:e.jsxs("div",{className:"contact-top flex-center",children:[e.jsxs("div",{className:"contact-item",children:[e.jsx("a",{className:"contact-circle",href:"mailto:info@ignitrew.com",children:e.jsx(ie,{})}),e.jsx("h4",{className:"label",children:"EMAIL US"}),e.jsx("a",{className:"info",href:"mailto:info@ignitrew.com",children:"info@ignitrew.com"})]}),e.jsx("div",{className:"divider"}),e.jsxs("div",{className:"contact-item",children:[e.jsx("a",{target:"_blank",className:"contact-circle",href:"https://api.whatsapp.com/send?phone=201027883268&text&context=Affl27NyVtxZG56bwOQldfLm6RyvztFf9SbKWtH89mSgK93Fir54a7SnEYUMEGTljWZCAHwJ77QXOtkDn6yCC-bSjFEkQFScaSZw62I1y2yBkH9oe2FDptR5VUKcLQKg-E7ehMTePtZKm4JmE7WnG21m6g&source&app=facebook",children:e.jsx(ne,{})}),e.jsx("h4",{className:"label",children:"CALL US"}),e.jsx("a",{target:"_blank",className:"info",href:"https://api.whatsapp.com/send?phone=201027883268&text&context=Affl27NyVtxZG56bwOQldfLm6RyvztFf9SbKWtH89mSgK93Fir54a7SnEYUMEGTljWZCAHwJ77QXOtkDn6yCC-bSjFEkQFScaSZw62I1y2yBkH9oe2FDptR5VUKcLQKg-E7ehMTePtZKm4JmE7WnG21m6g&source&app=facebook",children:"+20 10 27883268"})]}),e.jsx("div",{className:"divider"}),e.jsxs("div",{className:"contact-item",children:[e.jsx("a",{className:"contact-circle",href:"#",children:e.jsx(le,{})}),e.jsx("h4",{className:"label",children:"VISIT US"}),e.jsx("a",{className:"info",href:"#",children:"Address, Street, Cairo, Egypt"})]})]})})}const $e=l.section`
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  padding: 0 5rem;
+  height: fit-content;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.06),
+      rgba(0, 0, 0, 0.57)
+    ),
+    url(${t=>t.$imgPath}) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    display: flex;
+    width: 100%;
+    height: 30rem;
+    align-content: center;
+    justify-content: start;
+    padding: 0 2rem;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rama Gothic M';
+    font-weight: bold;
+    color: var(--primary-400);
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  @media (max-width: 48rem) {
+    .info {
+      font-size: 4.1rem;
+    }
+    .content {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 44rem) {
+    .info {
+      font-size: 3.8rem;
+    }
+  }
+  @media (max-width: 36rem) {
+    .info {
+      font-size: 3rem;
+    }
+  }
+`,T=({title:t,imgPath:o})=>e.jsx($e,{$imgPath:o,id:"hero",className:"section-container",children:e.jsx("div",{className:"content ",children:e.jsxs("h2",{className:"info",children:[" ",t]})})});function He(){const t=V();return d.useEffect(()=>{window.scrollTo({top:0,behavior:"smooth"})},[t.key]),null}function Ve(t){const[o,a]=d.useState(window.matchMedia(t).matches);return d.useEffect(()=>{const s=window.matchMedia(t),r=()=>a(s.matches);return s.addEventListener("change",r),()=>s.removeEventListener("change",r)},[t]),o}const U=({gridRows:t,cardsData:o})=>{const a=Ve("(max-width: 48rem)");return e.jsxs(e.Fragment,{children:[a&&e.jsx("div",{className:"small-screen",children:e.jsx(k,{modules:[S,z],spaceBetween:100,slidesPerView:1,loop:!0,pagination:{clickable:!0},autoplay:{delay:2e3},children:o.map((s,r)=>e.jsx(C,{children:e.jsx(e.Fragment,{children:e.jsxs(g,{to:s.link,className:"card-slide",children:[e.jsx("img",{className:"img",src:s.img,alt:s.text}),e.jsx("div",{className:"overlay"}),e.jsx("div",{className:"label",children:s.text})]},r)})}))})}),e.jsx("div",{className:t,children:o.map((s,r)=>e.jsxs(g,{to:s.link,className:s.big?"card big-card":"card",children:[e.jsx("img",{className:"img",src:s.img,alt:s.text}),e.jsx("div",{className:"overlay"}),e.jsx("div",{className:"label",children:s.text})]},r))})]})},_e=({images:t})=>{const[o,a]=d.useState(0),s=()=>{a(i=>i===0?t.length-1:i-1)},r=()=>{a(i=>i===t.length-1?0:i+1)};return e.jsxs("div",{className:"slider-container",children:[e.jsx("img",{className:"main-image",src:t[o],alt:`Slide ${o}`}),e.jsxs("div",{className:"arrows",children:[e.jsx("button",{className:"arrow left",onClick:s,children:"‹"}),e.jsx("button",{className:"arrow right",onClick:r,children:"›"})]}),e.jsx("div",{className:"thumbnails",children:e.jsx(k,{modules:[S],spaceBetween:30,loop:!1,pagination:{clickable:!0},breakpoints:{0:{slidesPerView:2},350:{slidesPerView:3},768:{slidesPerView:4},769:{slidesPerView:5}},children:t.map((i,n)=>e.jsx(C,{children:e.jsx("img",{src:i,alt:`Thumb ${n}`,className:`thumb ${n===o?"active":""}`,onClick:()=>a(n)})},n))})})]})},Ue=({tags:t})=>e.jsx("ul",{className:"tag-list",children:t.map((o,a)=>e.jsx("li",{className:"tag-dot",children:o},a))}),Ke=l.nav`
   height: 4rem; /* Reserve space for navbar */
   width: 100vw;
   height: ${({$isSticky:t})=>t?"4rem":"6rem"};
@@ -204,7 +553,7 @@ import{u as oe,j as e,C as re,d as l,F as W,a as $,b as H,r as d,c as V,A as ae,
     justify-content: center;
     box-shadow: none;
   }
-`,ke=l.button`
+`,qe=l.button`
   background: transparent;
   border: none;
   color: ${({$open:t})=>t?"var(--black)":"var(--white)"};
@@ -216,7 +565,7 @@ import{u as oe,j as e,C as re,d as l,F as W,a as $,b as H,r as d,c as V,A as ae,
   ${({$open:t})=>t&&`
     transform: rotate(90deg);
   `}
-`,Ce=l.aside`
+`,Je=l.aside`
   @media (max-width: 48rem) {
     display: flex;
   }
@@ -268,356 +617,7 @@ import{u as oe,j as e,C as re,d as l,F as W,a as $,b as H,r as d,c as V,A as ae,
   span {
     display: none;
   }
-`,Te=()=>{const[t,o]=d.useState(!1),[a,s]=d.useState(!1),r=V();function i(){s(n=>!n)}return d.useEffect(()=>{const n=document.getElementById("hero");if(!n)return;const m=new IntersectionObserver(([u])=>{o(!u.isIntersecting)},{root:null,threshold:.2,rootMargin:"0px"});return m.observe(n),()=>{m.unobserve(n)}},[r.pathname]),e.jsxs(Ie,{$isSticky:t,children:[e.jsx(Ce,{$open:a,children:e.jsx("div",{className:"content",children:e.jsx(B,{toggle:i})})}),e.jsxs("nav",{className:"navbar ",children:[e.jsx(ke,{type:"button",className:"toggle-btn",onClick:i,$open:a,children:a?e.jsx(ae,{}):e.jsx(se,{})}),e.jsx(g,{to:".",className:"logo-container",children:e.jsx(A,{})}),e.jsx("div",{className:"big-bar",children:e.jsx(B,{})})]})]})},Ge=[{text:"home",path:"."},{text:"about",path:"about"},{text:"projects",path:"projects"},{text:"clients",path:"clients"},{text:"contact",path:"contact"}],B=({toggle:t})=>e.jsx("ul",{className:"nav-links",children:Ge.map(o=>e.jsx("li",{children:e.jsxs(ie,{onClick:t,className:"nav-link",to:o.path,end:!0,children:[o.text,e.jsx("span",{})]})},o.text))}),Ee=l.div`
-  background: #111;
-  border-radius: var(--border-radius);
-  padding: 2rem 1rem;
-  text-align: center;
-  height: 23.2rem;
-  margin-bottom: 3rem;
-  .client-image {
-    width: 5.7rem;
-    height: 5.7rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-  }
-  .client-name {
-    margin: 0.5rem 0 0;
-    color: #e6e6e6;
-    font-family: 'Rama Gothic M', sans-serif !important;
-    font-weight: bold;
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
-  .client-role {
-    color: #aaa;
-    margin: 0;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-  }
-  .stars {
-    margin: 1rem 0;
-    color: gold;
-  }
-  .feedback {
-    font-style: italic;
-    color: #ddd;
-  }
-  @media (max-width: 14rem) {
-    .feedback {
-      font-size: 0.7rem;
-    }
-    .stars {
-      margin: 1rem 0;
-      color: gold;
-      font-size: 0.7rem;
-    }
-  }
-`,Se=({path:t,alt:o,name:a,role:s,rate:r,feedback:i})=>e.jsxs(Ee,{children:[e.jsx("img",{className:"client-image",src:t,alt:o}),e.jsx("h4",{className:"client-name",children:a}),e.jsx("p",{className:"client-role",children:s}),e.jsx("div",{className:"stars",children:r}),e.jsxs("p",{className:"feedback",children:['"',i,'"']})]}),ze=ne`
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-`,Ae=l.div`
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.42);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  animation: fadeOverlay 0.3s ease forwards;
-
-  @keyframes fadeOverlay {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  .popup-container {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    width: 90%;
-    max-width: 43.5rem;
-    height: fit-content;
-    overflow: hidden;
-    position: relative;
-    animation: ${ze} 0.4s ease forwards;
-    transform-origin: center;
-    background-image: linear-gradient(
-        to top,
-        rgba(17, 17, 17, 0.16),
-        rgb(0, 0, 0)
-      ),
-      url(${t=>t.$background});
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .closeBtn {
-    position: absolute;
-    top: 0.75rem;
-    right: 1.125rem;
-    background: none;
-    color: var(--white);
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  .title {
-    font-size: 2rem;
-    /* color: var(--black); */
-  }
-  .scrollContainer {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    padding-bottom: 1rem;
-    scroll-behavior: smooth;
-  }
-  .popup-card {
-    position: relative;
-    overflow: hidden;
-    /* height: 15rem; */
-    border-radius: var(--border-radius);
-  }
-`,Oe=({onClose:t,data:o})=>{const a=d.useRef();return d.useEffect(()=>{const s=r=>{a.current&&!a.current.contains(r.target)&&t()};return document.addEventListener("mousedown",s),()=>document.removeEventListener("mousedown",s)},[t]),e.jsx(Ae,{$background:o.image,children:e.jsxs("div",{className:"popup-container",ref:a,children:[e.jsx("button",{className:"closeBtn",onClick:t,children:"×"}),e.jsx("h2",{className:"title",children:o.title}),e.jsx("div",{className:"scrollContainer",children:e.jsx("div",{className:"popup-card",children:e.jsx("p",{children:o.text})})}),e.jsx(g,{to:"projects",children:e.jsx("button",{className:"btn",children:"explore more categories"})})]})})},Me="/IGNIT-Crew/assets/Activation-DaDQUwxf.jpeg",Pe="/IGNIT-Crew/assets/Events-CXkKCzY_.jpg",Be="/IGNIT-Crew/assets/Exhibitions-DbwRcHxY.jpg",Re="/IGNIT-Crew/assets/Roadshows-C-9Br2Pj.jpg",Fe="/IGNIT-Crew/assets/POS_Marketing-C04kltRn.jpg",De="/IGNIT-Crew/assets/Stunts-DhDRgnVh.png",Le="/IGNIT-Crew/assets/Team_Building-C9Rg7NbL.jpeg",We="/IGNIT-Crew/assets/Digital_Marketing-D9p9BxlO.png",$e={Activation:{image:Me,title:"Activation",text:`Join us on a whirlwind journey as we help your clients experience your brand like never before. From product sampling to road shows, we'll create mini adventures that truly capture your brand's essence.
-
-`},Events:{image:Pe,title:"Events",text:"From intimate gatherings to grand spectacles, we are masters at crafting unforgettable experiences for your corporation. Our team's creativity and flawless execution will leave your guests buzzing for weeks to come."},Exhibitions:{image:Be,title:"Exhibitions",text:`With our top-of-the-line production house, we create full-scale exhibitions and stands that are unmatched in quality. Your brand will shine brighter than ever before.
-
-`},Roadshows:{image:Re,title:"Roadshows",text:`We're masters of creating jaw-dropping marketing stunts that'll blow your audience's minds. We're always pushing the limits of what's possible with cutting-edge tech and creative concepts that'll capture their attention and generate buzz. From epic guerrilla campaigns that take over the streets to viral social media challenges that spread like wildfire, we're up for any challenge.
-
-`},POS_Marketing:{image:Fe,title:"POS Marketing",text:`Our team of experts will transform your brand identity into a revenue-generating machine. We know how to captivate your audience and turn them into loyal customers.
-
-`},Stunts:{image:De,title:"Stunts",text:`We bring your brand's unique narrative to life, infusing it with emotion, passion, and authenticity. From ideation to post-production, our team will produce a cinematic masterpiece that showcases your brand's unique journey.
-
-`},Team_Building:{image:Le,title:"Team Building",text:`Our team building activities are designed to inspire and energize your staff, bringing them closer together and enhancing their productivity. Let us help you create a winning team.
-
-`},Digital_Marketing:{image:We,title:"Digital Marketing",text:"We harness the power of the digital world to elevate your brand’s presence across every screen. From strategic campaigns to targeted content and data-driven performance, we connect your message to the right audience — at the right time — in the most impactful way."}},He=({services:t})=>{const[o,a]=d.useState(!1),[s,r]=d.useState(null),i=n=>{r($e[n]),a(!0)};return e.jsxs("div",{className:"grid",children:[t.map((n,m)=>e.jsxs("button",{onClick:()=>i(n),className:"card flex-center",children:[e.jsx("div",{className:"line-highlight"}),e.jsx("div",{className:"card-text",children:n.replace(/_/g," ")})]},m)),o&&s&&e.jsx(Oe,{onClose:()=>{a(!1),r(null)},data:s})]})},Ve=l.div`
-  min-width: 100%;
-  overflow: hidden;
-
-  .card-box {
-    padding: 30px;
-    position: relative;
-    background-color: #ffffff40;
-    height: 300px;
-    width: 100%;
-    transition: var(--transition);
-    border-radius: var(--border-radius);
-  }
-  .card-icon {
-    transition: var(--transition);
-    svg {
-      transition: var(--transition);
-      width: 50px;
-      height: 50px;
-    }
-  }
-  .separator {
-    margin: 15px 0;
-    width: 30%;
-    height: 5px;
-    background-color: var(--primary-400);
-    position: absolute;
-    top: 28%;
-    transition: var(--transition);
-  }
-  .card-title {
-    text-transform: uppercase;
-    font-weight: 600;
-    position: absolute;
-    font-size: 1.625rem;
-    top: 42%;
-    transition: var(--transition);
-  }
-  .card-text {
-    position: absolute;
-    line-height: 1.3;
-    top: 50%;
-    opacity: 0;
-    transition: var(--transition);
-    position: absolute;
-    max-width: 80%;
-  }
-
-  &:hover {
-    .card-icon {
-      svg {
-        width: 30px;
-        height: 30px;
-      }
-    }
-    .card-icon {
-      opacity: 0;
-    }
-    .separator {
-      position: absolute;
-      top: 7%;
-    }
-    .card-title {
-      opacity: 0;
-    }
-    .card-text {
-      position: absolute;
-      top: 17%;
-      opacity: 1;
-      line-height: 1.2;
-    }
-  }
-  @media (max-width: 36rem) {
-    .card-title {
-      /* font-size: 1.2rem; */
-    }
-    .card-box {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      /* align-items: center; */
-    }
-    .card-text {
-      max-width: 93%;
-    }
-  }
-`,_=({icon:t,title:o,text:a})=>e.jsx(Ve,{children:e.jsxs("div",{className:"card-box",children:[t&&e.jsx("div",{className:"card-icon",children:t}),e.jsx("div",{className:"separator"}),e.jsx("h3",{className:" card-title",children:o}),e.jsx("p",{className:"card-text",children:a})]})}),_e=l.section`
-  background: var(--black);
-  color: var(--white);
-  /* height: fit-content; */
-  /* padding: 4rem 4rem 2rem; */
-
-  .contact-top {
-    display: grid;
-    grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
-    transform: translateY(-8rem);
-    font-family: 'Proxima-Nova', sans-serif;
-    font-weight: 600;
-  }
-  .contact-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
-  }
-  .contact-circle {
-    width: 8rem;
-    height: 8rem;
-    background: var(--primary-400);
-    border-radius: 50%;
-    display: flex;
-    color: var(--white);
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    font-size: 2.1rem;
-    transition: all 0.1s ease-in-out;
-    &:hover {
-      font-size: 2.6rem;
-      transform: rotate(-20deg);
-    }
-  }
-  .label {
-    margin: 0.5rem 0;
-    font-size: 2rem;
-  }
-  .info {
-    color: #00aaff;
-    /* min-height: 8rem; */
-    font-size: 1.2rem;
-    text-decoration: none;
-    &:hover {
-      color: #0075af;
-    }
-  }
-  .divider {
-    width: 1px;
-    height: 5rem;
-    background: var(--white);
-    opacity: 0.2;
-    margin: 0 1rem;
-  }
-  @media (max-width: 44rem) {
-    height: 100%;
-    .contact-top {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      transform: none;
-    }
-
-    .divider {
-      display: none;
-    }
-    .contact-circle {
-      width: 5rem;
-      height: 5rem;
-      font-size: 1.8rem;
-    }
-  }
-`;function O(){return e.jsx(_e,{className:"section-container",children:e.jsxs("div",{className:"contact-top flex-center",children:[e.jsxs("div",{className:"contact-item",children:[e.jsx("a",{className:"contact-circle",href:"mailto:info@ignitrew.com",children:e.jsx(le,{})}),e.jsx("h4",{className:"label",children:"EMAIL US"}),e.jsx("a",{className:"info",href:"mailto:info@ignitrew.com",children:"info@ignitrew.com"})]}),e.jsx("div",{className:"divider"}),e.jsxs("div",{className:"contact-item",children:[e.jsx("a",{target:"_blank",className:"contact-circle",href:"https://api.whatsapp.com/send?phone=201027883268&text&context=Affl27NyVtxZG56bwOQldfLm6RyvztFf9SbKWtH89mSgK93Fir54a7SnEYUMEGTljWZCAHwJ77QXOtkDn6yCC-bSjFEkQFScaSZw62I1y2yBkH9oe2FDptR5VUKcLQKg-E7ehMTePtZKm4JmE7WnG21m6g&source&app=facebook",children:e.jsx(ce,{})}),e.jsx("h4",{className:"label",children:"CALL US"}),e.jsx("a",{target:"_blank",className:"info",href:"https://api.whatsapp.com/send?phone=201027883268&text&context=Affl27NyVtxZG56bwOQldfLm6RyvztFf9SbKWtH89mSgK93Fir54a7SnEYUMEGTljWZCAHwJ77QXOtkDn6yCC-bSjFEkQFScaSZw62I1y2yBkH9oe2FDptR5VUKcLQKg-E7ehMTePtZKm4JmE7WnG21m6g&source&app=facebook",children:"+20 10 27883268"})]}),e.jsx("div",{className:"divider"}),e.jsxs("div",{className:"contact-item",children:[e.jsx("a",{className:"contact-circle",href:"#",children:e.jsx(de,{})}),e.jsx("h4",{className:"label",children:"VISIT US"}),e.jsx("a",{className:"info",href:"#",children:"Address, Street, Cairo, Egypt"})]})]})})}const Ue=l.section`
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  z-index: 1;
-  padding: 0 5rem;
-  height: fit-content;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.06),
-      rgba(0, 0, 0, 0.57)
-    ),
-    url(${t=>t.$imgPath}) no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  .content {
-    display: flex;
-    width: 100%;
-    height: 30rem;
-    align-content: center;
-    justify-content: start;
-    padding: 0 2rem;
-  }
-
-  .info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Rama Gothic M';
-    font-weight: bold;
-    color: var(--primary-400);
-    text-transform: uppercase;
-    font-size: 5rem;
-    text-align: center;
-  }
-
-  @media (max-width: 48rem) {
-    .info {
-      font-size: 4.1rem;
-    }
-    .content {
-      justify-content: center;
-    }
-  }
-  @media (max-width: 44rem) {
-    .info {
-      font-size: 3.8rem;
-    }
-  }
-  @media (max-width: 36rem) {
-    .info {
-      font-size: 3rem;
-    }
-  }
-`,T=({title:t,imgPath:o})=>e.jsx(Ue,{$imgPath:o,id:"hero",className:"section-container",children:e.jsx("div",{className:"content ",children:e.jsxs("h2",{className:"info",children:[" ",t]})})});function Ke(){const t=V();return d.useEffect(()=>{window.scrollTo({top:0,behavior:"smooth"})},[t.key]),null}function qe(t){const[o,a]=d.useState(window.matchMedia(t).matches);return d.useEffect(()=>{const s=window.matchMedia(t),r=()=>a(s.matches);return s.addEventListener("change",r),()=>s.removeEventListener("change",r)},[t]),o}const U=({gridRows:t,cardsData:o})=>{const a=qe("(max-width: 48rem)");return e.jsxs(e.Fragment,{children:[a&&e.jsx("div",{className:"small-screen",children:e.jsx(k,{modules:[S,z],spaceBetween:100,slidesPerView:1,loop:!0,pagination:{clickable:!0},autoplay:{delay:2e3},children:o.map((s,r)=>e.jsx(C,{children:e.jsx(e.Fragment,{children:e.jsxs(g,{to:s.link,className:"card-slide",children:[e.jsx("img",{className:"img",src:s.img,alt:s.text}),e.jsx("div",{className:"overlay"}),e.jsx("div",{className:"label",children:s.text})]},r)})}))})}),e.jsx("div",{className:t,children:o.map((s,r)=>e.jsxs(g,{to:s.link,className:s.big?"card big-card":"card",children:[e.jsx("img",{className:"img",src:s.img,alt:s.text}),e.jsx("div",{className:"overlay"}),e.jsx("div",{className:"label",children:s.text})]},r))})]})},Je=({images:t})=>{const[o,a]=d.useState(0),s=()=>{a(i=>i===0?t.length-1:i-1)},r=()=>{a(i=>i===t.length-1?0:i+1)};return e.jsxs("div",{className:"slider-container",children:[e.jsx("img",{className:"main-image",src:t[o],alt:`Slide ${o}`}),e.jsxs("div",{className:"arrows",children:[e.jsx("button",{className:"arrow left",onClick:s,children:"‹"}),e.jsx("button",{className:"arrow right",onClick:r,children:"›"})]}),e.jsx("div",{className:"thumbnails",children:e.jsx(k,{modules:[S],spaceBetween:30,loop:!1,pagination:{clickable:!0},breakpoints:{0:{slidesPerView:2},350:{slidesPerView:3},768:{slidesPerView:4},769:{slidesPerView:5}},children:t.map((i,n)=>e.jsx(C,{children:e.jsx("img",{src:i,alt:`Thumb ${n}`,className:`thumb ${n===o?"active":""}`,onClick:()=>a(n)})},n))})})]})},Qe=({tags:t})=>e.jsx("ul",{className:"tag-list",children:t.map((o,a)=>e.jsx("li",{className:"tag-dot",children:o},a))});function Ze(){return e.jsxs(e.Fragment,{children:[e.jsx(Te,{}),e.jsx(Ke,{}),e.jsx(me,{}),e.jsx(Ne,{})]})}const R=l.main`
+`,Qe=()=>{const[t,o]=d.useState(!1),[a,s]=d.useState(!1),r=V();function i(){s(n=>!n)}return d.useEffect(()=>{const n=document.getElementById("hero");if(!n)return;const m=new IntersectionObserver(([u])=>{o(!u.isIntersecting)},{root:null,threshold:.2,rootMargin:"0px"});return m.observe(n),()=>{m.unobserve(n)}},[r.pathname]),e.jsxs(Ke,{$isSticky:t,children:[e.jsx(Je,{$open:a,children:e.jsx("div",{className:"content",children:e.jsx(B,{toggle:i})})}),e.jsxs("nav",{className:"navbar ",children:[e.jsx(qe,{type:"button",className:"toggle-btn",onClick:i,$open:a,children:a?e.jsx(ce,{}):e.jsx(de,{})}),e.jsx(g,{to:".",className:"logo-container",children:e.jsx(A,{})}),e.jsx("div",{className:"big-bar",children:e.jsx(B,{})})]})]})};function Ze(){return e.jsxs(e.Fragment,{children:[e.jsx(Qe,{}),e.jsx(He,{}),e.jsx(me,{}),e.jsx(Ne,{})]})}const R=l.main`
   min-height: 100vh;
   text-align: center;
   display: flex;
@@ -1165,7 +1165,7 @@ import{u as oe,j as e,C as re,d as l,F as W,a as $,b as H,r as d,c as V,A as ae,
       font-size: 0.8rem;
     }
   }
-`,Wo=["Activation","Events","Exhibitions","Roadshows","POS_Marketing","Stunts","Team_Building","Digital_Marketing"],$o=()=>e.jsxs(e.Fragment,{children:[e.jsxs(Lo,{className:"section-container",children:[e.jsx("div",{className:"overlay"}),e.jsxs("div",{className:"container",children:[e.jsx("h2",{className:"title title-medium",children:"SERVICES"}),e.jsx(He,{services:Wo})]})]}),e.jsx("div",{className:"line"})]}),Ho=l.section`
+`,Wo=["Activation","Events","Exhibitions","Roadshows","POS_Marketing","Stunts","Team_Building","Digital_Marketing"],$o=()=>e.jsxs(e.Fragment,{children:[e.jsxs(Lo,{className:"section-container",children:[e.jsx("div",{className:"overlay"}),e.jsxs("div",{className:"container",children:[e.jsx("h2",{className:"title title-medium",children:"SERVICES"}),e.jsx(De,{services:Wo})]})]}),e.jsx("div",{className:"line"})]}),Ho=l.section`
   background-color: var(--primary-400);
   color: var(--white);
   text-align: left;
@@ -1179,7 +1179,7 @@ import{u as oe,j as e,C as re,d as l,F as W,a as $,b as H,r as d,c as V,A as ae,
     margin-bottom: 3rem;
     color: var(--black);
   }
-`,Vo="/IGNIT-Crew/assets/client1-C8QYjGRH.jpg",_o="/IGNIT-Crew/assets/client2-Bz3QThUV.jpg",Uo="/IGNIT-Crew/assets/client3-DIyLr32z.jpg",Ko=[{path:Vo,alt:"Client 1",name:"John Doe",role:"CEO, Example Inc.",rate:"⭐⭐⭐⭐⭐",feedback:"IGNIT Crew helped us achieve fantastic growth with their creative marketing strategies."},{path:_o,alt:"Client 2",name:"Peter Smith",role:"Marketing Head, ABC Corp.",rate:"⭐⭐⭐⭐⭐",feedback:"Amazing team to work with. Very professional and extremely innovative."},{path:Uo,alt:"Client 3",name:"Mike Johnson",role:"Product Manager, XYZ Ltd",rate:"⭐⭐⭐⭐⭐",feedback:"Highly recommend their services to anyone looking for branding and marketing excellence!"}],qo=()=>e.jsx(Ho,{className:"section-container",children:e.jsxs("div",{className:"container",children:[e.jsx("h2",{className:"title title-medium",children:"WHAT CLIENTS SAY"}),e.jsx("p",{className:"subtitle",children:"We build strong relationships with our clients through our work and innovation."}),e.jsx(k,{modules:[S,z],spaceBetween:30,loop:!0,pagination:{clickable:!0},autoplay:{delay:3e3},breakpoints:{768:{slidesPerView:1},769:{slidesPerView:2}},children:Ko.map(t=>e.jsx(C,{children:e.jsx(Se,{path:t.path,alt:t.alt,name:t.name,role:t.role,rate:t.rate,feedback:t.feedback})}))})]})}),K="/IGNIT-Crew/assets/img3-BpbFp77A.jpg",q="/IGNIT-Crew/assets/proj2-DqJvcoHm.jpg",J="/IGNIT-Crew/assets/proj3-CJGZ9r2T.jpg",Q="/IGNIT-Crew/assets/proj4-B2zg24_P.jpg",Z="/IGNIT-Crew/assets/proj5-BcHtY88X.jpg",Jo=[{img:K,text:"BISKREM-2024 - الحلو بيكمل أحلى",big:!0,category:"pos-marketing",link:"/IGNIT-Crew/projects/proj1"},{img:q,text:"NISSAN-DARING AFRICA-2024",category:"stunts",link:"/IGNIT-Crew/projects/proj2"},{img:J,text:"PEPSI-THE HOUSE OF FIZZ-2023",category:"activation",link:"/IGNIT-Crew/projects/proj3"},{img:Q,text:"BRITISH PETROLEUM - LAUNCH EVENT",category:"events",link:"/IGNIT-Crew/projects/proj4"},{img:Z,text:"TOTAL ENERGIES - YLT FINAL",category:"team-building",link:"/IGNIT-Crew/projects/proj5"}],Y=l.section`
+`,Vo="/IGNIT-Crew/assets/client1-C8QYjGRH.jpg",_o="/IGNIT-Crew/assets/client2-Bz3QThUV.jpg",Uo="/IGNIT-Crew/assets/client3-DIyLr32z.jpg",Ko=[{path:Vo,alt:"Client 1",name:"John Doe",role:"CEO, Example Inc.",rate:"⭐⭐⭐⭐⭐",feedback:"IGNIT Crew helped us achieve fantastic growth with their creative marketing strategies."},{path:_o,alt:"Client 2",name:"Peter Smith",role:"Marketing Head, ABC Corp.",rate:"⭐⭐⭐⭐⭐",feedback:"Amazing team to work with. Very professional and extremely innovative."},{path:Uo,alt:"Client 3",name:"Mike Johnson",role:"Product Manager, XYZ Ltd",rate:"⭐⭐⭐⭐⭐",feedback:"Highly recommend their services to anyone looking for branding and marketing excellence!"}],qo=()=>e.jsx(Ho,{className:"section-container",children:e.jsxs("div",{className:"container",children:[e.jsx("h2",{className:"title title-medium",children:"WHAT CLIENTS SAY"}),e.jsx("p",{className:"subtitle",children:"We build strong relationships with our clients through our work and innovation."}),e.jsx(k,{modules:[S,z],spaceBetween:30,loop:!0,pagination:{clickable:!0},autoplay:{delay:3e3},breakpoints:{768:{slidesPerView:1},769:{slidesPerView:2}},children:Ko.map(t=>e.jsx(C,{children:e.jsx(Ce,{path:t.path,alt:t.alt,name:t.name,role:t.role,rate:t.rate,feedback:t.feedback})}))})]})}),K="/IGNIT-Crew/assets/img3-BpbFp77A.jpg",q="/IGNIT-Crew/assets/proj2-DqJvcoHm.jpg",J="/IGNIT-Crew/assets/proj3-CJGZ9r2T.jpg",Q="/IGNIT-Crew/assets/proj4-B2zg24_P.jpg",Z="/IGNIT-Crew/assets/proj5-BcHtY88X.jpg",Jo=[{img:K,text:"BISKREM-2024 - الحلو بيكمل أحلى",big:!0,category:"pos-marketing",link:"/IGNIT-Crew/projects/proj1"},{img:q,text:"NISSAN-DARING AFRICA-2024",category:"stunts",link:"/IGNIT-Crew/projects/proj2"},{img:J,text:"PEPSI-THE HOUSE OF FIZZ-2023",category:"activation",link:"/IGNIT-Crew/projects/proj3"},{img:Q,text:"BRITISH PETROLEUM - LAUNCH EVENT",category:"events",link:"/IGNIT-Crew/projects/proj4"},{img:Z,text:"TOTAL ENERGIES - YLT FINAL",category:"team-building",link:"/IGNIT-Crew/projects/proj5"}],Y=l.section`
   background-color: var(--black);
   color: var(--white);
   text-align: left;
@@ -2014,4 +2014,4 @@ import{u as oe,j as e,C as re,d as l,F as W,a as $,b as H,r as d,c as V,A as ae,
     opacity: 1;
     border: 2px solid orange;
   }
-`,x=({images:t,tags:o,desc:a})=>e.jsxs(Cr,{children:[e.jsx(Qe,{tags:o}),e.jsx(Je,{images:t}),e.jsxs("div",{className:"project-details",children:[e.jsx("h2",{className:"details-title",children:"Project details"}),e.jsx("p",{children:a})]})]}),f="/IGNIT-Crew/assets/img1-D_HFAgcb.jpg",w="/IGNIT-Crew/assets/img2-BCI5aPPr.jpg",b="/IGNIT-Crew/assets/img3-BpbFp77A.jpg",j="/IGNIT-Crew/assets/img4-DIN8IO8-.jpg",v="/IGNIT-Crew/assets/img5-COfP7kjg.jpg",N="/IGNIT-Crew/assets/img6-DhCDc6rL.jpg",y="/IGNIT-Crew/assets/img7-YE5vwpvW.jpg",Tr=[f,w,b,j,v,N,y],Gr=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],Er="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",Sr=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:Tr,tags:Gr,desc:Er}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),zr=[f,w,b,j,v,N,y],Ar=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],Or="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",Mr=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:zr,tags:Ar,desc:Or}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),Pr=[f,w,b,j,v,N,y],Br=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],Rr="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",Fr=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:Pr,tags:Br,desc:Rr}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),Dr=[f,w,b,j,v,N,y],Lr=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],Wr="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",$r=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:Dr,tags:Lr,desc:Wr}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),Hr=[f,w,b,j,v,N,y],Vr=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],_r="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",Ur=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:Hr,tags:Vr,desc:_r}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),Kr=fe([{path:"/IGNIT-Crew",element:e.jsx(Ze,{}),errorElement:e.jsx(Xe,{}),children:[{index:!0,element:e.jsx(Zo,{})},{path:"about",element:e.jsx(pr,{})},{path:"projects",element:e.jsx(kr,{})},{path:"/IGNIT-Crew/projects/proj1",element:e.jsx(Sr,{})},{path:"/IGNIT-Crew/projects/proj2",element:e.jsx($r,{})},{path:"/IGNIT-Crew/projects/proj3",element:e.jsx(Fr,{})},{path:"/IGNIT-Crew/projects/proj4",element:e.jsx(Ur,{})},{path:"/IGNIT-Crew/projects/proj5",element:e.jsx(Mr,{})},{path:"clients",element:e.jsx(fr,{})},{path:"contact",element:e.jsx(Nr,{})}]}]),qr=()=>e.jsx(we,{router:Kr}),Jr=()=>(d.useEffect(()=>{(async()=>{const a=Date.now(),s=document.getElementById("hero-video");s&&await new Promise(n=>{if(s.readyState>=3)return n();s.addEventListener("canplaythrough",n,{once:!0})});const r=Date.now()-a,i=Math.max(3e3-r,0);setTimeout(()=>{const n=document.getElementById("initial-loader");n&&(n.style.opacity="0",n.style.pointerEvents="none",n.style.transition="opacity 0.4s ease",setTimeout(()=>{n.remove()},500))},i)})()},[]),e.jsx(qr,{}));be.createRoot(document.getElementById("root")).render(e.jsx(je.StrictMode,{children:e.jsx(Jr,{})}));
+`,x=({images:t,tags:o,desc:a})=>e.jsxs(Cr,{children:[e.jsx(Ue,{tags:o}),e.jsx(_e,{images:t}),e.jsxs("div",{className:"project-details",children:[e.jsx("h2",{className:"details-title",children:"Project details"}),e.jsx("p",{children:a})]})]}),f="/IGNIT-Crew/assets/img1-D_HFAgcb.jpg",w="/IGNIT-Crew/assets/img2-BCI5aPPr.jpg",b="/IGNIT-Crew/assets/img3-BpbFp77A.jpg",j="/IGNIT-Crew/assets/img4-DIN8IO8-.jpg",v="/IGNIT-Crew/assets/img5-COfP7kjg.jpg",N="/IGNIT-Crew/assets/img6-DhCDc6rL.jpg",y="/IGNIT-Crew/assets/img7-YE5vwpvW.jpg",Tr=[f,w,b,j,v,N,y],Gr=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],Er="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",Sr=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:Tr,tags:Gr,desc:Er}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),zr=[f,w,b,j,v,N,y],Ar=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],Or="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",Mr=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:zr,tags:Ar,desc:Or}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),Pr=[f,w,b,j,v,N,y],Br=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],Rr="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",Fr=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:Pr,tags:Br,desc:Rr}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),Dr=[f,w,b,j,v,N,y],Lr=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],Wr="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",$r=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:Dr,tags:Lr,desc:Wr}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),Hr=[f,w,b,j,v,N,y],Vr=["BISKREM","NORTH COAST, 2024","ACTIVATION EVENT","FMCG"],_r="End of Summer with Biscream in the North Coast ☀️ As summer says goodbye, we celebrated with Biscream in the North Coast—full of games, laughter, and delicious treats! From exciting competitions to those sweet moments of joy, it was a perfect way to wrap up the season! 🎉",Ur=()=>e.jsxs(e.Fragment,{children:[e.jsx(x,{images:Hr,tags:Vr,desc:_r}),e.jsx(p,{quote:"SUMMER WITH BISCREAM IN THE NORTH COAST"})]}),Kr=fe([{path:"/IGNIT-Crew",element:e.jsx(Ze,{}),errorElement:e.jsx(Xe,{}),children:[{index:!0,element:e.jsx(Zo,{})},{path:"about",element:e.jsx(pr,{})},{path:"projects",element:e.jsx(kr,{})},{path:"/IGNIT-Crew/projects/proj1",element:e.jsx(Sr,{})},{path:"/IGNIT-Crew/projects/proj2",element:e.jsx($r,{})},{path:"/IGNIT-Crew/projects/proj3",element:e.jsx(Fr,{})},{path:"/IGNIT-Crew/projects/proj4",element:e.jsx(Ur,{})},{path:"/IGNIT-Crew/projects/proj5",element:e.jsx(Mr,{})},{path:"clients",element:e.jsx(fr,{})},{path:"contact",element:e.jsx(Nr,{})}]}]),qr=()=>e.jsx(we,{router:Kr}),Jr=()=>(d.useEffect(()=>{(async()=>{const a=Date.now(),s=document.getElementById("hero-video");s&&await new Promise(n=>{if(s.readyState>=3)return n();s.addEventListener("canplaythrough",n,{once:!0})});const r=Date.now()-a,i=Math.max(3e3-r,0);setTimeout(()=>{const n=document.getElementById("initial-loader");n&&(n.style.opacity="0",n.style.pointerEvents="none",n.style.transition="opacity 0.4s ease",setTimeout(()=>{n.remove()},500))},i)})()},[]),e.jsx(qr,{}));be.createRoot(document.getElementById("root")).render(e.jsx(je.StrictMode,{children:e.jsx(Jr,{})}));
