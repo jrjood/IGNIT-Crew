@@ -18,21 +18,21 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: '/IGNIT-Crew',
+    path: '/',
     element: <HomeLayout />,
     errorElement: <Error />,
     children: [
       { index: true, element: <HomePage /> },
       { path: 'about', element: <AboutPage /> },
       { path: 'projects', element: <ProjectsPage /> },
-      { path: '/IGNIT-Crew/projects/proj1', element: <ProjectBiskrem /> },
-      { path: '/IGNIT-Crew/projects/proj2', element: <ProjectNissan /> },
-      { path: '/IGNIT-Crew/projects/proj3', element: <ProjectPepsi /> },
+      { path: '/projects/proj1', element: <ProjectBiskrem /> },
+      { path: '/projects/proj2', element: <ProjectNissan /> },
+      { path: '/projects/proj3', element: <ProjectPepsi /> },
       {
-        path: '/IGNIT-Crew/projects/proj4',
+        path: '/projects/proj4',
         element: <ProjectBritishPetroleum />,
       },
-      { path: '/IGNIT-Crew/projects/proj5', element: <ProjectTotal /> },
+      { path: '/projects/proj5', element: <ProjectTotal /> },
       { path: 'clients', element: <ClientsPage /> },
       { path: 'contact', element: <ContactPage /> },
     ],

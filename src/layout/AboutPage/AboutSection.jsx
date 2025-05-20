@@ -23,7 +23,7 @@ const AboutSection = () => {
         <p className='highlight'>
           our plan for the future is to exceed even higher benchmarks.
         </p>
-        <Link to='/IGNIT-Crew/contact'>
+        <Link to='/contact'>
           <button className='btn'>start campaign</button>
         </Link>
       </div>
