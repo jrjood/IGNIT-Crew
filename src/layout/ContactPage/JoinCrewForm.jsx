@@ -38,12 +38,6 @@ const JoinCrewForm = () => {
           </div>
           <div className='right-fields'>
             <textarea name='message' placeholder='MESSAGE' rows='8' />
-            <input type='hidden' name='_captcha' value='false' />
-            <input
-              type='hidden'
-              name='_next'
-              value='https://yourdomain.com/thank-you'
-            />
             <button className='btn' type='submit'>
               SEND
             </button>
