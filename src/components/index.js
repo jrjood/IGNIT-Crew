@@ -12,4 +12,4 @@ export { default as Popup } from './Popup';
 export { default as Cards } from './Cards';
 export { default as ImageSlider } from './ImageSlider';
 export { default as TagList } from './TagList';
-export { default as NavBar } from './NavBar';
+export { default as Navbar } from './Navbar';

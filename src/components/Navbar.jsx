@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineClose } from 'react-icons/ai';
 import { IoIosMenu } from 'react-icons/io';
 
-import { Logo, NavLinks } from '../components';
+import { Logo, NavLinks } from '.';
 import Wrapper from '../assets/wrappers/Navbar';
 import MenuButtonWrapper from '../assets/wrappers/MenuButtonWrapper';
 import AsideMenu from '../assets/wrappers/AsideMenu';
